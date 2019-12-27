@@ -9,7 +9,7 @@ image_preview = ""
 math = true
 publication_types = ["1"]
 publication = "In *Networking, Architecture and Storage (NAS)*, IEEE."
-publication_short = "In *NAS*"
+publication_short = "In *IEEE NAS*"
 selected = false
 
 url_code = ""
@@ -29,4 +29,3 @@ image = ""
 caption = ""
 
 +++
-

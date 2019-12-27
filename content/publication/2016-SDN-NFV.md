@@ -12,7 +12,7 @@ publication_types = ["1"]
 
 publication = "In *ACM International Workshop on Security in Software Defined Networks & Network Function Virtualization (SDN-NFVSec)*."
 
-publication_short = "In *SDN-NFVSec*"
+publication_short = "In *ACM SDN-NFVSec*"
 
 selected = true
 
@@ -36,5 +36,3 @@ image = ""
 caption = ""
 
 +++
-
-

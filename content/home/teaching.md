@@ -10,27 +10,29 @@ subtitle = ""
 widget = "custom"
 
 # Order that this section will appear in.
-weight = 25
+weight = 30
 
 +++
 
-I am currently teaching the following courses at Elizabethtown College:
-- [DS 200: Introduction to Data Science](https://catalog.etown.edu/preview_program.php?catoid=20&poid=2231&returnto=1014#)
-- [DS 300: Data Mining](https://catalog.etown.edu/preview_program.php?catoid=20&poid=2231&returnto=1014#)
-- [CS 113: The Power and Beauty of Programming (in Python)](https://catalog.etown.edu/preview_program.php?catoid=20&poid=2129&returnto=1014)
-- [CS 121: Computer Science I (in Java)](https://catalog.etown.edu/preview_program.php?catoid=20&poid=2231&returnto=1014#)
-- [CS 222: System Programming (in C)](https://catalog.etown.edu/preview_program.php?catoid=20&poid=2129&returnto=1014)
-- [EGR 401: Senior Project in Engineering I](https://catalog.etown.edu/preview_program.php?catoid=20&poid=2128&returnto=1014#)
+For details, visit my Courses page:
+- [Courses page](https://peilong.github.io/courses/)
 
-I taught the following courses at University of Massachusetts Lowell:
+Courses I am teaching at Elizabethtown College:
+- DS 200: Introduction to Data Science
+- DS 300: Data Mining
+- DS 315: Statistical Learning
+- DS 400: Big Data
+- DS 452: Data Science Capstone
+- CS 113 (NPS core): The Power and Beauty of Programming (in Python)
+- CS 121: Computer Science I (in Java)
+- CS 222: System Programming (in C)
+- CS 400: Projects in Computing
+- CS 495: Honors Projects in Computing
+- EGR 401: Senior Project in Engineering I
+- EGR 402: Senior Project in Engineering II
 
+Courses I taught (or guest-lectured) at University of Massachusetts Lowell:
 - [EECE.2160 ECE Application Programming](https://www.uml.edu/catalog/courses/EECE/2160)
-
-And a guest instructor for:
-
 - [EECE.7110 Special Topics: Heterogeneous Computing (now EECE.6540)](https://www.uml.edu/catalog/courses/EECE/6540)
-
-And a teaching assistant for:
-
 - [EECE.3170 Microprocessors Systems Design I](https://www.uml.edu/catalog/courses/EECE/3170)
 - [EECE.5520 Microprocessor Systems II & Embedded Systems](https://www.uml.edu/catalog/courses/EECE/5520)

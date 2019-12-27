@@ -10,9 +10,9 @@ math = true
 
 publication_types = ["1"]
 
-publication = "In *NOMS 2018 - 2018 IEEE/IFIP Network Operations and Management Symposium*, IEEE/IFIP"
+publication = "In *2018 IEEE/IFIP Network Operations and Management Symposium (NOMS)*, IEEE/IFIP"
 
-publication_short = "In *NOMS*"
+publication_short = "In *IEEE/IFIP NOMS*"
 
 selected = true
 
@@ -36,4 +36,3 @@ image = ""
 caption = ""
 
 +++
-  

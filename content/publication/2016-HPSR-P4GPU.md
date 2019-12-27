@@ -9,15 +9,15 @@ image_preview = ""
 math = true
 
 publication_types = ["1"]
-publication = "In *High Performance Switching and Routing (HPSR)*, IEEE."
-publication_short = "In *HPSR*"
+publication = "In *2016 IEEE 17th International Conference on High Performance Switching and Routing (HPSR)*, IEEE."
+publication_short = "In *IEEE HPSR*"
 
 selected = true
 
 url_code = ""
 url_dataset = ""
-url_pdf = ""
-url_project = "https://acanets.uml.edu/?p=418"
+url_pdf = "https://ieeexplore.ieee.org/abstract/document/7525662"
+url_project = ""
 url_slides = ""
 url_video = ""
 
@@ -31,5 +31,3 @@ image = ""
 caption = ""
 
 +++
-
-

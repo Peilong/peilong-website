@@ -10,9 +10,9 @@ math = true
 
 publication_types = ["1"]
 
-publication = "In * Connected Health: Applications, Systems and Engineering Technologies (CHASE)*, IEEE/ACM"
+publication = "In *Connected Health: Applications, Systems and Engineering Technologies (CHASE)*, IEEE/ACM"
 
-publication_short = "In *CHASE*"
+publication_short = "In *IEEE/ACM CHASE*"
 
 selected = true
 
@@ -36,4 +36,3 @@ image = ""
 caption = ""
 
 +++
-  
