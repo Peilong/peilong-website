@@ -20,12 +20,11 @@ For details, visit my Courses page:
 Courses I am teaching at Elizabethtown College:
 - DS 200: Introduction to Data Science
 - DS 300: Data Mining
-- DS 315: Statistical Learning
-- DS 400: Big Data
-- DS 452: Data Science Capstone
+- DS 420: Big Data
+- DS 495: Data Science Capstone
 - CS 113 (NPS core): The Power and Beauty of Programming (in Python)
 - CS 121: Computer Science I (in Java)
-- CS 222: System Programming (in C)
+- CS/EGR 222: Systems Programming (in C)
 - CS 400: Projects in Computing
 - CS 495: Honors Projects in Computing
 - EGR 401: Senior Project in Engineering I

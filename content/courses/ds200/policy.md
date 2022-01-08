@@ -15,11 +15,16 @@ menu:
 weight: 3
 ---
 
+## Course Schedule
+The most up-to-date course schedule will be posted on course website schedule page: https://peilong.github.io/courses/ds200/schedule/. Students are responsible for checking the schedule regularly. Schedule page will include: 1) teaching topics for each meeting; 2) reading assignments for each week and 3) special notes on specific days.
+
 ## Course Announcements & Discussion
 
-All course announcements will be posted via the Canvas Announcements page – you are responsible for checking the email updates (or app notifications) from Canvas regularly.
+All course announcements will be sent to your Etown email accounts via Canvas Announcements. You are responsible for signing up for this service and checking your emails regularly.
 
-Discussions can be made via the Canvas Discussion page – you should never post complete programs to Discussion page (only general questions are permitted).
+Every student should sign up for Microsoft Teams and join the course discussion channel "DS200-SP21". Discussions are encouraged to be posted on this channel. Private instant messages can be sent directly to your recipient, e.g. the instructor "Dr. Li".
+
+Join my Teams group: [link](https://teams.microsoft.com/l/channel/19%3a7c36a42d3b884c2cbbd0dccd01b5c26d%40thread.tacv2/DS200-SP21?groupId=81ffa3c7-aa45-454a-b495-7f43c78e5024&tenantId=1d884f12-a0d7-42f0-8b15-3a91c853bcb5).
 
 ## Attendance Policies
 
@@ -43,7 +48,15 @@ The first infraction of academic honesty in this course will carry a penalty of 
 
 ## Statement on Disability
 
-Elizabethtown College welcomes otherwise qualified students with disabilities to participate in all of its courses, programs, services, and activities. If you have a documented disability and would like to request accommodations in order to access course material, activities, or requirements, please contact the Director of Disability Services, Lynne Davies, by phone (361-1227) or e-mail daviesl@etown.edu. If your documentation meets the college’s documentation guidelines, you will be given a letter from Disability Services for each of your professors.  Students experiencing certain documented temporary conditions, such as post-concussive symptoms, may also qualify for temporary academic accommodations and adjustments. As early as possible in the semester, set up an appointment to meet with the instructor to discuss the academic adjustments specified in your accommodations letter as they pertain to my class.
+Full statement can be found at [link](https://elizabethtown-my.sharepoint.com/:w:/g/personal/ouimetc_etown_edu/EfZ-QooKt_VPjgwsWJz230wB3Rb6CIHsPvE0xuqWCpr-UA?e=4%3acZzjpW&at=9). Elizabethtown College welcomes otherwise qualified students with disabilities to participate in all of its courses, programs, services, and activities. If you have a documented disability and would like to request accommodations in order to access course material, activities, or requirements, please contact the Director of Disability Services, Lynne Davies, by phone (361-1227) or e-mail daviesl@etown.edu. If your documentation meets the college’s documentation guidelines, you will be given a letter from Disability Services for each of your professors.  Students experiencing certain documented temporary conditions, such as post-concussive symptoms, may also qualify for temporary academic accommodations and adjustments. As early as possible in the semester, set up an appointment to meet with the instructor to discuss the academic adjustments specified in your accommodations letter as they pertain to my class.
+
+## COVID-related Expectations
+
+All students are expected to adhere to the established community expectations around safety, including: daily digital health reporting, physical distancing, proper wearing of facial coverings within buildings and classrooms and when within six feet of individuals outdoors, frequent handwashing, and participation in cleaning and sanitizing protocols as requested. You will be turned away from class if you do not have a face covering. Students diagnosed with a health condition that precludes mask wearing can contact Lynne Davies in Disability Services (daviesl@etown.edu) to request remote learning as a reasonable accommodation.
+
+If you are exhibiting any symptoms of COVID or fail to pass the daily health screen, do not come to class.
+Failure to adhere to the established community expectations around safety will result in notification of Campus Security and application of the student conduct process for failure to comply, endangering the well-being of others, and/or disorderly conduct. The student code of conduct applies also to participation in all virtual activities, including Zoom sessions and discussion boards
+
 
 ## Statement on Religious Observances
 

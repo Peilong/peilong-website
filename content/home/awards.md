@@ -12,7 +12,7 @@ title = "Honor & Awards"
 
 
 ##### Outstanding Graduate Student - May 2016
-* Francis College of Engineering, Uni- versity of Massachusetts Lowell.
+* Francis College of Engineering, University of Massachusetts Lowell.
 
 ------
 

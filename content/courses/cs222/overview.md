@@ -26,7 +26,9 @@ By the end of the course, students will be able to:
 * Apply knowledge of computing and mathematics appropriate to the discipline, including common data structures and basic algorithms, to solve problems
 * Analyze a problem and identify and define the computing requirements appropriate to its solution
 * Design, implement, and evaluate a computer-based system, process, component or program, including operating systems, to meet desired needs
+* Function effectively on teams and use software engineering principles to accomplish a common goal
 * Understand fundamentals of procedural programming with applications in electrical and computer engineering and embedded systems
+* Understand hardware and software elements of data communications and computer networking
 * Compare and contrast the features of the Java and C programming languages
 * Manage memory allocation explicitly
 * Perform low-level file access in programs

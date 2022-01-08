@@ -32,10 +32,6 @@ By the end of the course, students will be able to:
 * Give examples of contributions of mathematics and computer science to the modern world
 * Use inductive or deductive reasoning to formulate solutions to problems
 * Model real-world phenomena mathematically and computationally
-* Manipulate strings
-* Use basic I/O constructs
-* Apply Boolean algebra and selection statements to problem solving
-* Apply loop statements to problem solving
-* Apply static methods to improve code design
-* Apply arrays to store aggregate data for problem solving
+* Manipulate strings, use basic I/O constructs
+* Apply Boolean algebra, selection statements, loop statements and arrays to problem solving
 * Use procedural and object-oriented programming paradigms

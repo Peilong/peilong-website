@@ -1,7 +1,7 @@
 ---
 # Course title, summary, and position.
 linktitle: CS 121 Computer Science I
-summary: The fundamental concepts of computer science, with an emphasis on Java programming.
+summary: The fundamental concepts of computer science, with an emphasis on Python programming.
 weight: 2
 
 # Page metadata.
@@ -22,7 +22,7 @@ menu:
 ---
 
 
-The fundamental concepts of computer science, with an emphasis on Java programming.
+The fundamental concepts of computer science, with an emphasis on Python programming.
 
 ## Instructor:
 
@@ -47,16 +47,15 @@ By email
 
 ## Textbooks
 
-* **(Optional)** Chris Mayfield, and Allen Downey.
-*Think Java: How To Think Like a Computer Scientist*.
-2016, O'Reilly Media,
-ISBN: 978-1491929568.
-E-copy: [link](http://greenteapress.com/thinkjava6/thinkjava.pdf)
-<img src="https://images-na.ssl-images-amazon.com/images/I/51vDU2OX0wL._SX379_BO1,204,203,200_.jpg" width="200">
+* **(Required)**
+*Etown-CS121-FA21*.
+Foundamentals of Python Programming from Runestone Academy Interactive Book.
+Sign-up with: [link](https://runestone.academy/runestone/default/user/register)
+<img src="https://avatars.githubusercontent.com/u/1521719?s=280&v=4" width="200">
 
-* **(Optional)** Barry Wittman, et al.
-*Start Concurrent: An Introduction to Problem Solving in Java with a Focus on Concurrency*.
-2014, Purdue University Press,
-ISBN: 978-1626710092.
-E-copy: [link](https://start-concurrent.github.io/full/index.html)
-<img src="https://images-na.ssl-images-amazon.com/images/I/51%2B5gE9lNTL._SX384_BO1,204,203,200_.jpg" width="200">
+* **(Optional)** Allen B. Downey.
+*Think Python, 2nd Ed*.
+2015, O'Reilly Media, Inc.,
+ISBN: 9781491939369.
+E-copy: [link](https://greenteapress.com/wp/think-python-2e/)
+<img src="https://learning.oreilly.com/library/cover/9781491939406/250w/" width="200">

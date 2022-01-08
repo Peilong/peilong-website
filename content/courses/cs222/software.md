@@ -14,21 +14,24 @@ menu:
 weight: 7
 ---
 
-You need an Integrated Development Environment (IDE) that contains a GCC compiler, and a machine that runs Ubuntu Linux system in this course.
+You need an Integrated Development Environment (IDE) that contains a GCC compiler, and a machine that supports Linux command line in this course.
 
-There are many IDEs you can choose, e.g., Eclipse, Code::Blocks, Visual Studio, and CLion, etc, but for the purpose of in-class demonstration, I will stick with Visual Studio on Windows and Xcode on MacOS.
+There are many IDEs you can choose, e.g., Eclipse, Code::Blocks, Visual Studio, and CLion, etc, but for the purpose of in-class demonstration, I will stick with Visual Studio Code.
 
-## For Windows Users
+## Visual Studio Code
+Downlaod VS Code from this [link](https://code.visualstudio.com/download). Follow the instructions from HW1 to install the C/C++ extensions. 
 
-* **IDE**: Visual Studio 2017 (community) and up: https://visualstudio.microsoft.com/vs/
-* **Ubuntu**: 1) Windows and Ubuntu 16.04 (or newer) dual-boot systems; OR 2) running Ubuntu on a virtual machine (e.g. virtualbox); OR 3) Ubuntu App on Windows 10.
+## C Compiler
+For Windows users, install [MinGW-64](http://mingw-w64.org/doku.php/download/mingw-builds) for the GCC compiler. For Mac users, install Apple's version of GCC - Clang: [Tutorial 1](https://www.cs.auckland.ac.nz/~paul/C/Mac/index.php), or [Tutorial 2](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
 
 
-## For MacOS X Users
-* **IDE**: Xcode - download from App Store. Make sure you have the Xcode Command Line tools installed. http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
+## Linux Command Line Tool
 
-## For Linux Users
-* You already have the whole world.
+* **Windows Options**: 1) use Windows and Ubuntu 18.04 (or newer) dual-boot systems; 2) running Ubuntu on a virtual machine (e.g. virtualbox); 3) Ubuntu App on Windows 10; 4) Use Windows PowerShell; 5) Use the campus server cs64.etown.edu.
+
+* **MacOS Options**: Use the default Terminal.app application.  
+
+* **Linux Options**: You are on your own.
 
 **Note:**
 

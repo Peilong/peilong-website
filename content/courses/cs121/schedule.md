@@ -3,7 +3,7 @@ title: Course Schedule
 linktitle: Schedule
 toc: true
 type: docs
-date: "2019-05-05T00:00:00+01:00"
+date: "2021-08-09T00:00:00+01:00"
 draft: false
 menu:
   cs121:
@@ -16,53 +16,53 @@ weight: 6
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-| Week | Starting | Topics                                  | Reading   | Notes                               |
-|------|----------|-----------------------------------------|-----------|-------------------------------------|
-| 1    | 1/13/20  | M: Course introduction and overview     | 1 and 2   |                                     |
-|      |          | W: Introduction to computer science     |           |                                     |
-|      |          | F: Software development & Lab 1         |           |                                     |
-| 2    | 1/20/20  | M: MLK Day, NO CLASS                    | 3         | No class on Mon (MLK Day)           |
-|      |          | W: Data representation and data types   |           |                                     |
-|      |          | F: Math operations & Lab 2              |           |                                     |
-| 3    | 1/27/20  | M: Boolean and character operations     | 3         |                                     |
-|      |          | W: Methods and string operations        |           |                                     |
-|      |          | F: Lab 3                                |           |                                     |
-| 4    | 2/3/20   | M: Conditionals: if statement (part 1)  | 4         | Project 1 posted on Mon             |
-|      |          | W: Conditionals: if statement (part 2)  |           |                                     |
-|      |          | F: Lab 4                                |           |                                     |
-| 5    | 2/10/20  | M: Conditionals: switch statement       | 5         |                                     |
-|      |          | W: Flowchart and debugging              |           |                                     |
-|      |          | F: Lab 5                                |           |                                     |
-| 6    | 2/17/20  | M: While and do-while loops             | 5         | Exam 1 on Friday                    |
-|      |          | W: Exam 1 preview; Q & A                |           |                                     |
-|      |          | F: Exam 1                               |           |                                     |
-| 7    | 2/24/20  | M: For loops                            | 6         | Project 1 due on Mon midnight       |
-|      |          | W: Revisit for loops                    |           | Project 2 posted on Mon             |
-|      |          | F: Lab 6                                |           |                                     |
-| 8    | 3/2/20   | M: Spring break. NO CLASS               |           |                                     |
-|      |          | W: Spring break. NO CLASS               |           |                                     |
-|      |          | F: Spring break. NO CLASS               |           |                                     |
-| 9    | 3/9/20   | M: Arrays                               | 8         | Lab test 1 on Fri                   |
-|      |          | W: 2D arrays                            |           |                                     |
-|      |          | F: Lab test 1                           |           |                                     |
-| 10   | 3/16/20  | M: Standard drawing library             | 8         |                                     |
-|      |          | W: Standard drawing library (cont.)     |           |                                     |
-|      |          | F: Lab 7                                |           |                                     |
-| 11   | 3/23/20  | M: Static methods                       | 9         |                                     |
-|      |          | W: Overloading methods                  |           |                                     |
-|      |          | F: Lab 8                                |           |                                     |
-| 12   | 3/30/20  | M: Dr. Li on travel, finish online quiz | 9         | Project 2 due on Mon midnight       |
-|      |          | W: Classes and objects                  |           | Project 3 posted on Mon             |
-|      |          | F: Lab 9                                |           |                                     |
-| 13   | 4/6/20   | M: Object-oriented programming          | Notes     | No Fri class, Thur has Mon schedule |
-|      |          | W: Algorithms                           |           |                                     |
-|      |          | Th: Lab 10                              |           |                                     |
-| 14   | 4/13/20  | M: Easter break – NO CLASS              | Notes     | No class on Mon (Easter break)      |
-|      |          | W: Searching                            |           | Lab test 2 on Fri                   |
-|      |          | F: Lab test 2                           |           |                                     |
-| 15   | 4/20/20  | M: Sorting                              | 11 and 20 | Exam 2 on Fri                       |
-|      |          | W: Exam 2 preview                       |           |                                     |
-|      |          | F: Exam 2                               |           |                                     |
-| 16   | 4/27/20  | M: Final review 1, Q&A                  | All       | Project 3 due on Mon midnight       |
-|      |          | W: Final review 2, Q&A                  |           |                                     |
-|      |          | F: Q&A                                  |           |                                     |
+| Week | Starting |                         Topics                         |  Reading |              Notes             |
+|:----:|:--------:|:------------------------------------------------------:|:--------:|:------------------------------:|
+|   1  |  8/23/21 | M: Lec1 - Course Intro & Computer Science              |          |                                |
+|      |          | W: Lec2 - Demo of Course Tools & First Program         |  Week1-1 |                                |
+|      |          | F: Lec3 - Values, Data Types and Operations            |  Week1-2 |                                |
+|   2  |  8/30/21 | M: Lec4 - Function Calls & Type Conversion Functions   |  Week2-1 |                                |
+|      |          | W: Lec5 - Variables & Input                            |  Week2-2 |                                |
+|      |          | F: Lab 1                                               |  Week2-3 |                                |
+|   3  |  9/6/21  | M: Labor Day - No Classes                              |          | Project 1 out.                 |
+|      |          | W: Lec6 - Debut of Turtle & OOP Concepts               |  Week3-1 |                                |
+|      |          | F: Lec7 - A Herd of Turtles & More Turtle Methods      |  Week3-2 |                                |
+|   4  |  9/13/21 | M: Lec8 - Repetition with a for Loop                   |  Week4-1 |                                |
+|      |          | W: Lec9 - Boolean Expressions, Logical Operators       |  Week4-2 |                                |
+|      |          | F: Lab 2                                               |  Week4-3 |                                |
+|   5  |  9/20/21 | M: Lec10 - Conditional Execution                       |  Week5-1 | Project 1 due. Project 2 out.  |
+|      |          | W: Lec11 - The Listener Loop: while Loops              |  Week5-2 |                                |
+|      |          | F: Lec12 -  Functions (1)                              |  Week5-3 |                                |
+|   6  |  9/27/21 | M: Lec13 - Functions (2)                               |  Week6-1 |                                |
+|      |          | W: Lab 3                                               |  Week6-2 |                                |
+|      |          | F: Fall Break - No Classes                             |          |                                |
+|   7  |  10/4/21 | M: Take online Quiz 4.                                 |  Week7-1 |                                |
+|      |          | W: Midterm Review                                      |  Week7-2 |                                |
+|      |          | F: Midterm Exam                                        |          |                                |
+|   8  | 10/11/21 | M: Lec14 - Strings                                     |  Week8-1 | Project 2 due. Project 3 out.  |
+|      |          | W: Lec15 - Lists                                       |  Week8-2 |                                |
+|      |          | F: Lec16 - Tuples                                      |  Week8-3 |                                |
+|   9  | 10/18/21 | M: Lec17 - Iteration and Accumulation                  |  Week9-1 |                                |
+|      |          | W: Lab 4                                               |  Week9-2 |                                |
+|      |          | F: Lab Test 1                                          |          |                                |
+|  10  | 10/25/21 | M: Lec18 - Pandas DataFrames                           | Week10-1 | Project 3 due. Project 4 out.  |
+|      |          | W: Lec19 - Access Data From DataFrames                 | Week10-2 |                                |
+|      |          | F: Lec20 - DataFrame Operations (1)                    | Week10-3 |                                |
+|  11  |  11/1/21 | M: Lec21 - DataFrame Operations (2)                    | Week11-1 |                                |
+|      |          | W: Lec22 - Pandas Data Visualization                   | Week11-2 |                                |
+|      |          | F: Lec23 - Data Visualization using Seaborn            | Week11-3 |                                |
+|  12  |  11/8/21 | M: Lec24 - Pandas Exercises                            | Week12-1 | Project 4 due. Project 5 out.  |
+|      |          | W: Lab 5                                               | Week12-2 |                                |
+|      |          | F: Lab Test 2                                          |          |                                |
+|  13  | 11/15/21 | M: Lec25 - OOP Classes and Objects                     | Week13-1 |                                |
+|      |          | W: Lec26 - Methods, Mutators, Accessors                | Week13-2 |                                |
+|      |          | F: Lec27 - OOP Exercises                               | Week13-3 |                                |
+|  14  | 11/22/21 | M: Lec28 - Algorithms & Big O                          | Week14-1 |                                |
+|      |          | W: Lab 6                                               | Week14-2 |                                |
+|      |          | F: Thanksgiving Break - No Classes                     |          |                                |
+|  15  | 11/29/21 | M: Final Exam Q&A                                      |    All   | Project 5 due.                 |
+|      |          | W: Final Exam Q&A                                      |    All   |                                |
+|      |          | F: Final Exam Q&A                                      |    All   |                                |
+|  16  |  12/6/21 | Final Exam: TBD                                        |          |                                |
+|      |          |                                                        |          |                                |
+|      |          |                                                        |          |                                |

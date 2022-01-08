@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: DS 200 Introduction to Data Science
 summary: This project-based hands-on course introduces students to data science in general.
-weight: 1
+weight: 4
 
 # Page metadata.
 title: DS 200 Introduction to Data Science

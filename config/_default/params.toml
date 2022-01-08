@@ -75,7 +75,7 @@ privacy_pack = false
 
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
+# edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
 
 ############################
 ## Contact details
@@ -94,7 +94,7 @@ address = {street = "One Alpha Dr.", city = "Elizabethtown", region = "PA", post
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-# coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+coordinates = {latitude = "40.151318", longitude = "-76.591455"}
 
 # Directions for visitors to locate you.
 directions = "Esbenshade 284B"
@@ -124,7 +124,7 @@ contact_links = [
 sharing_image = ""
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = ""
+twitter = "@LiPeilong"
 
 ############################
 ## Regional Settings

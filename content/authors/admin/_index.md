@@ -15,10 +15,10 @@ role: Assistant Professor
 # Organizations/Affiliations
 organizations:
 - name: Elizabethtown College
-  url: ""
+  url: "https://www.etown.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Dr. Peilong Li is an Assistant Professor at <a href="https://www.etown.edu/" target="_blank">Elizabethtown College</a>. 
+bio: Dr. Peilong Li is an Assistant Professor at Elizabethtown College.
 
 interests:
 - Machine Learning
@@ -64,8 +64,7 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Researchers
-- Visitors
+- PI
 ---
 
-Dr. Peilong Li (<a href="files/cv.pdf" target="_blank">CV</a>) is an Assistant Professor at <a href="https://www.etown.edu/" target="_blank">Elizabethtown College</a>. He is in charge of the Data Science Major at the college. Prior to joining Etown, Dr. Li was a Research Assistant Professor at <a href="https://www.uml.edu/" target="_blank">University of Massachusetts Lowell</a>. His research interests include Machine Learning, Software Defined Infrastructure, Big Data Analytics, and Parallel Computing and Computer Architecture.
+Dr. Peilong Li is an Assistant Professor at [Elizabethtown College](https://www.etown.edu/). He is oversees the Data Science Major and runs the [Advanced Data Analytics Lab (ADAL)](https://bluejayadal.github.io/) at the college. Prior to joining Etown, Dr. Li was a Research Assistant Professor at [University of Massachusetts Lowell](https://www.uml.edu/). His research interests include Machine Learning, Software Defined Infrastructure, Big Data Analytics, and Parallel Computing and Computer Architecture. He has received three research grants from funding agencies including National Science Foundation and Intel Corporation.

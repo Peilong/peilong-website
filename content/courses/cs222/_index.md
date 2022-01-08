@@ -1,11 +1,11 @@
 ---
 # Course title, summary, and position.
-linktitle: CS 222 (EGR 222) Systems Programming
+linktitle: CS/EGR 222 Systems Programming
 summary: This course covers advanced programming and machine representation of data and data structures, including dynamic structures and files.
 weight: 3
 
 # Page metadata.
-title: CS 222 (EGR 222) Systems Programming
+title: CS/EGR 222 Systems Programming
 date: "2018-09-09T00:00:00Z"
 lastmod: "2018-09-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -57,5 +57,5 @@ E-copy: [link](https://kremlin.cc/k&r.pdf)
 *The Linux Programming Interface, First Edition*.
 2010, No Starch Press,
 ISBN: 978-1593272203.
-E-copy: [link](https://repo.zenk-security.com/Linux%20et%20systemes%20d.exploitations/The%20Linux%20Programming%20Interface.pdf)
+E-copy: [link](https://github.com/shihyu/Linux_Programming/blob/master/books/The%20Linux%20Programming%20Interface%20-%20A%20Linux%20and%20UNIX%20System%20Programming%20Handbook.pdf)
 <img src="https://images-na.ssl-images-amazon.com/images/I/51GhTMoAspL._SX376_BO1,204,203,200_.jpg" width="200">
