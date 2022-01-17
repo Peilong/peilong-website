@@ -18,58 +18,61 @@ weight: 6
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-Last updated: 04/29/2021
+Last updated: 01/18/2022
 
-| Week | Starting | Topics                                                        | Reading    | Notes                                                                                     |
-|------|----------|---------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------|
-| 1    | 1/25/21  | M: Lec1: Course introduction and overview                     | Reading 1  | HW1 out.                                                                                  |
-|      |          | W: Lec2: Introduction to data science – the history and trend |            |                                                                                           |
-|      |          | F: Lec3: Review of Python basics                              |            |                                                                                           |
-| 2    | 2/1/21   | M: Lec4: Adavanced Python for data science                    | Reading 2  |                                                                                           |
-|      |          | W: Lab 1                                                      |            |                                                                                           |
-|      |          | F: Lec5: Numpy - arrays and array indexing                    |            |                                                                                           |
-| 3    | 2/8/21   | M: Lec6: Numpy - operations                                   | Reading 3  | HW 1 due on Mon; HW2   out.                                                               |
-|      |          | W: Lab 2                                                      |            |                                                                                           |
-|      |          | F: Lec7: Pandas - Series and DataFrame                        |            |                                                                                           |
-| 4    | 2/15/21  | M: Lec8: Pandas - groupby, concat, merge                      | Reading 4  | Final project topic   search started.                                                     |
-|      |          | W: Lec9: Pandas - file I/O                                    |            |                                                                                           |
-|      |          | F: Lec10: Pandas - time series analysis                       |            |                                                                                           |
-| 5    | 2/22/21  | M: PE1: Pandas exercises                                      | Reading 5  | HW2 due on Mon; HW3   out.                                                                |
-|      |          | W: Lab 3                                                      |            |                                                                                           |
-|      |          | F: Lec11: Data visualization - Matplotlib                     |            |                                                                                           |
-| 6    | 3/1/21   | M: Lec12: Data visualization - Seaborn                        | Reading 6  | Paper presentation reading list   posted; Project meeting with instructor due Fri 4:30 PM |
-|      |          | W: No Class - Day of Service                                  |            |                                                                                           |
-|      |          | F: Lec13: Data visualization - Pandas                         |            |                                                                                           |
-| 7    | 3/8/21   | M: Lab 4                                                      | Reading 7  | HW 3 due Mon.                                                                             |
-|      |          | W: Exam 1 preview; Bring your questions                       |            |                                                                                           |
-|      |          | F: Exam 1                                                     |            |                                                                                           |
-| 8    | 3/15/21  | M: Lec14: Basic   statistics                                  | Reading 8  | Project proposal due Mon.                                                                 |
-|      |          | W: Lec15: More on Statistics and   probability                |            |                                                                                           |
-|      |          | F: Lec16: Intro to machine learning                           |            |                                                                                           |
-| 9    | 3/22/21  | M: Lec17: Bias & variance; ML with Python                     | Reading 9  |                                                                                           |
-|      |          | W: Lec18: Linear regression                                   |            |                                                                                           |
-|      |          | F: PE2: Linear regression exercises                           |            |                                                                                           |
-| 10   | 3/29/21  | M: Lec19: Logistic regression                                 | Reading 10 | HW4 out.                                                                                  |
-|      |          | W: PE3: Logistic regression exercises                         |            |                                                                                           |
-|      |          | F: No Class - College Holiday                                 |            |                                                                                           |
-| 11   | 4/5/21   | M: Lab 5                                                      | Reading 11 | Project milestone   check due Fri 4:30 PM                                                 |
-|      |          | W: Lec20: K nearest neighbors                                 |            |                                                                                           |
-|      |          | F: Lab 6 (KNN)                                                |            |                                                                                           |
-| 12   | 4/12/21  | M: Lec21: K-means clustering                                  | Reading 12 | HW4 due Mon; HW5 out.                                                                     |
-|      |          | W: PE3: K-means exercises                                     |            |                                                                                           |
-|      |          | F: Lab 7                                                      |            |                                                                                           |
-| 13   | 4/19/21  | M: No meeting, take remote quiz                               | Reading 13 |                                                                                           |
-|      |          | W: Lec22: Support vector machine                              |            |                                                                                           |
-|      |          | F: PE4: SVM                                                   |            |                                                                                           |
-| 14   | 4/26/21  | M: Lab 8                                                      | Reading 14 | HW5 due Mon.                                                                              |
-|      |          | W: Exam 2                                                     |            |                                                                                           |
-|      |          | F: Paper presentation group 1                                 |            |                                                                                           |
-| 15   | 5/3/21   | M: Paper presentation group 2                                 |            |                                                                                           |
-|      |          | W: No meeting, prepare for final presentation                 |            |                                                                                           |
-|      |          | F: No Class - Reading Day                                     |            |                                                                                           |
-| 16   | 5/10/21  | Wed 5/12: Final presentation. 11 AM - 2 PM.                   |            | Final project due on   Tue 05/11 midnight                                                 |
-|      |          |                                                               |            |                                                                                           |
-|      |          |                                                               |            |                                                                                           |
+| Week | Starting |                     Topics                     |   Reading  |                      Notes                      |
+|:----:|:--------:|:----------------------------------------------:|:----------:|:-----------------------------------------------:|
+|   1  |  1/17/22 | M: MLK Day; No Classes                         |  Reading 1 | HW1 out.                                        |
+|      |          | W: Lec1: Course introduction                   |            |                                                 |
+|      |          | F: Lec2: Introduction to data science          |            |                                                 |
+|   2  |  1/24/22 | M: Lec3: Review Python for data science        |  Reading 2 |                                                 |
+|      |          | W: Lec4: Numpy arrays and array indexing       |            |                                                 |
+|      |          | F: Lec5: Numpy array operations                |            |                                                 |
+|   3  |  1/31/22 | M: Lab 1 Numpy                                 |  Reading 3 | HW 1 due on Mon; HW2   out;                     |
+|      |          | W: Lec6: Pandas - Series and DataFrame         |            | Team formation due on Mon.                      |
+|      |          | F: Lec7: Pandas - groupby, concat, merge       |            |                                                 |
+|   4  |  2/7/22  | M: Lec8: Time series analysis                  |  Reading 4 | Paper reading   assignment out on Mon.          |
+|      |          | W: PE1: Pandas exercises                       |            |                                                 |
+|      |          | F: Lab 2 Pandas                                |            |                                                 |
+|   5  |  2/14/22 | M: Lec9: Data visualization - Matplotlib       |  Reading 5 | HW2 due on Mon; HW3   out.                      |
+|      |          | W: Lec10: Data visualization - Seaborn         |            |                                                 |
+|      |          | F: Lec11: Data visualization - Pandas          |            |                                                 |
+|   6  |  2/21/22 | M: Lab 3 Visualization                         |  Reading 6 | Project proposal due on Mon.                    |
+|      |          | W: Lec12: Module 1 summary and exam 1 preview  |            |                                                 |
+|      |          | F: Exam 1                                      |            |                                                 |
+|   7  |  2/28/22 | M: Spring Break, No Classes                    |            |                                                 |
+|      |          | W: Spring Break, No Classes                    |            |                                                 |
+|      |          | F: Spring Break, No Classes                    |            |                                                 |
+|   8  |  3/7/22  | M: Lec13: Basic   statistics                   |  Reading 7 | HW 3 due on Mon.                                |
+|      |          | W: Lec14: More on Statistics and   probability |            |                                                 |
+|      |          | F: Lec15: Intro to machine learning            |            |                                                 |
+|   9  |  3/14/22 | M: Lec16: Bias & variance; ML with Python      |  Reading 8 |                                                 |
+|      |          | W: Lec17: Linear regression                    |            |                                                 |
+|      |          | F: PE2: Linear regression exercises            |            |                                                 |
+|  10  |  3/21/22 | M: Lec18: Logistic regression                  |  Reading 9 | Paper reading   assignment due on Mon; HW4 out. |
+|      |          | W: Lec19: K nearest neighbors                  |            |                                                 |
+|      |          | F: PE3: Classification                         |            |                                                 |
+|  11  |  3/28/22 | M: Lab 4 Classification                        | Reading 10 | Project milestone   submission due on Mon.      |
+|      |          | W: Final project milestone demo                |            |                                                 |
+|      |          | F: Lec20: K-means clustering                   |            |                                                 |
+|  12  |  4/4/22  | M: PE3: K-means exercises                      | Reading 11 | HW4 due Mon; HW5   out.                         |
+|      |          | W: Lab 5 Clustering                            |            |                                                 |
+|      |          | F: Lec 21: Dimensionality reduction            |            |                                                 |
+|  13  |  4/11/22 | M: PE4: PCA                                    | Reading 12 |                                                 |
+|      |          | W: Lec22: Support vector machine               |            |                                                 |
+|      |          | F: College Holiday, No Classes                 |            |                                                 |
+|  14  |  4/18/22 | M: PE5: SVM                                    | Reading 13 | HW5 due Mon.                                    |
+|      |          | W: Lab 6 SVM                                   |            |                                                 |
+|      |          | F: Lec23: Module 2 summary and exam 2 preview  |            |                                                 |
+|  15  |  4/25/22 | M: Exam 2                                      | Reading 14 | Paper presentation   slides due on Mon.         |
+|      |          | W: Paper presentation group 1                  |            |                                                 |
+|      |          | F: Paper presentation group 2                  |            | Final project due on Sunday 05/01   midnight    |
+|  16  |  5/2/22  | M: Final project presentation group 1          |            |                                                 |
+|      |          | W: Final project presentation group 2          |            |                                                 |
+|      |          |                                                |            |                                                 |
+|  17  |  5/9/22  | Tue: 2:30 - 5:30 PM: No final exam             |            |                                                 |
+|      |          |                                                |            |                                                 |
+|      |          |                                                |            |                                                 |
 
 ## Weekly Reading Assignments
 

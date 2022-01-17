@@ -19,13 +19,12 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **2%** : Persistence. Including attendance and in-class question answering.
 * **6%** : A number of in-class pop quizzes.
 * **18%**: 6 individual homework.
-*	**24%**: 3 team projects.
+*	**21%**: 3 team projects.
 *	**15%**: 5 in-class labs.
-* **15%**: 1 midterm exam.
-*	**20%**: Final exam.
+* **25%**: 2 midterm exams.
+*	**15%**: Final exam.
 
 Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:
 
@@ -41,25 +40,18 @@ Grades will be computed by rounding numerical percentages to the nearest integer
 
 ## In-class Labs
 
-All labs are to be done in class, with the assistance of the instructor. Each assignment will be given near the beginning of a class and must be uploaded to Canvas (https://etown.instructure.com/) before the end of the class. To receive full credit, a programming assignment must compile, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
+All labs are to be done individually, in class, with the assistance of the instructor. 
+Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credit, a programming assignment must compile, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
 
-## Homework
+## Individual Homework and Team Projects
 
-All homework assignments have to be completed individually in this course. Typically, you will have about two weeks to complete each assignment. 
-   
-## Projects
+All homework assignments have to be completed individually in this course. Homework assignments are "lab-like" small programs that need to be completed in a week or two. 
 
-All projects are team projects in this course. For each project, all students must form teams of two members. Students are permitted to select their own teams; however, no two students may partner up for more than one project. In other words, each team will be different for each project. Students should select their teams by using the Groups tab under People, on the Canvas webpage.
+All projects are team projects in this course. For each project, students must form a team of 2 members. Teams are responsible for dividing their workload and meeting offline for at least 2 times for each project. Documented meeting minutes have to be submitted as part of the deliverable. Students should select their teams by using the Groups tab under People, on the Canvas webpage.
 
-Teams are responsible for dividing their workload and meeting offline for at least 3 times. Documented meeting minutes have to be submitted as part of the deliverable. Except under extreme circumstances, all members of the team will receive the same grade for each project. One member of each team is designated the leader. The files for each project should be zipped up and uploaded by the team leader using Canvas before the due date. Projects must not be stored in a public folder. **If the project does not compile, the student will receive a score of 0.**
+Except under extreme circumstances, all members of the team will receive the same grade for each project. One member of each team is designated the leader. The files for each project should be zipped up and uploaded by the team leader using Canvas before the due date. **If the project does not compile, the student will receive a score of 0.**
 
-## Grading and Late Policy
-
-Homework and projects will be graded based on the following criteria:
-
-* Correctness: Finding the right answer
-* Formatting:	Displaying the right answer according to instructions
-* Style and Documentation: Producing readable code with appropriate comments
+**Late Policy**
 
 In general, homework and projects will be graded with the *diff* utility. For that reason, it is imperative that project output matches sample output to the character.
 

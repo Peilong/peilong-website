@@ -43,7 +43,7 @@ By email
 ## Pre-requisites
 
 * DS 200 Introduction to Data science
-* CS 309 Database Systems
+* CS 209 Database Systems
 
 ## Textbooks
 
