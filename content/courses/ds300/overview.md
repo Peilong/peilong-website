@@ -17,15 +17,15 @@ weight: 2
 
 ## Course Coverage
 
-This project-based hands-on course covers various data processing techniques in the data mining pipeline such as 1) data extraction from large data warehouses, 2) data preprocessing to obtain data features, 3) data modeling and data training, and 4) knowledge generation. A number of well-defined data mining tasks such as classification, prediction, association, clustering, dimensionality reduction and deep learning are thoroughly discussed. Design and implementation issues for the aforementioned tasks are also addressed.
+This project-based course aims to cover the fundamental concepts and core techniques for discovering patterns in large-scale data sets. This course consists of three main modules: (1) **Data Mining Pipeline**, which introduces the key steps of data understanding, data preprocessing, data warehousing, data modeling and interpretation/evaluation; (2) **Data Mining Methods**, which covers core techniques for regression, classification, clustering, dimensionality reduction and association; and (3) **Deep Learning**, which discusses the state-of-art deep learning techniques such as CNN and RNN with the implementation in Tensorflow. 
 
 
 ## Student Learning Outcomes
 
 By the end of the course, the successful students will be able to:
 
-*	(Scope) Understand the background and application scope of data mining.
-* (Data) Extract raw data from SQL databases using data science toolkit.
-*	(Hacking) Proficiently use the Python data science toolset including Jupyter notebook, NumPy, Pandas, Scikit-learn, Seaborn and Tensorflow etc. to address data mining tasks.
-* (Modeling) Apply data analytical models including regression, clustering and neural network to solve data science problems.
-*	(Knowledge) Obtain knowledge from the data with the various models.
+* (Concept Building) Understand the background, uniqueness and application scopes of data mining, 
+* (Data Sourcing) Be able to extract and integrate raw data from various data sources and store the data in proper data formats,
+* (Data Pipeline) Proficiently use the Python data science tool set including NumPy, Pandas, Scikit-learn, Seaborn and Tensorflow etc. to implement computing components within the data pipeline,
+* (Data Mining) Apply data analytical models including classification, clustering and neural networks to discover patterns from large data sets,
+* (Knowledge Transferring) Interpret the results from models to obtain knowledge, and transfer the knowledge to the right audience.

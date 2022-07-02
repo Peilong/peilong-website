@@ -6,7 +6,7 @@ type: docs
 date: "2019-05-05T00:00:00+01:00"
 draft: false
 menu:
-  ds300:
+  cs363:
     parent: Syllabus
     name: Policies
     weight: 3
@@ -26,7 +26,7 @@ I recognize that students may need to miss classes due to personal health reason
 
 
 ## Course Schedule
-The most up-to-date course schedule will be posted on course website schedule page: https://peilong.github.io/courses/ds300/schedule/. Students are responsible for checking the schedule regularly. Schedule page will include: 1) teaching topics for each meeting; 2) reading assignments for each week and 3) special notes on specific days.
+The most up-to-date course schedule will be posted on course website schedule page: https://peilong.github.io/courses/cs363/schedule/. Students are responsible for checking the schedule regularly. Schedule page will include: 1) teaching topics for each meeting; 2) reading assignments for each week and 3) special notes on specific days.
 
 ## Course Announcements & Discussion
 

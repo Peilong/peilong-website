@@ -22,7 +22,7 @@ menu:
 ---
 
 
-This project-based hands-on course covers various data processing techniques in the data mining pipeline.
+This project-based course aims to cover the fundamental concepts and core techniques for discovering patterns in large-scale data sets. This course consists of three main modules: (1) **Data Mining Pipeline**, which introduces the key steps of data understanding, data preprocessing, data warehousing, data modeling and interpretation/evaluation; (2) **Data Mining Methods**, which covers core techniques for regression, classification, clustering, dimensionality reduction and association; and (3) **Deep Learning**, which discusses the state-of-art deep learning techniques such as CNN and RNN with the implementation in Tensorflow. 
 
 ## Instructor:
 
@@ -47,8 +47,8 @@ By email
 
 ## Textbooks
 
-* **(Required)** Pang-Ning Tan et al.
-*Introduction to Data Mining (Second Edition) (IDM)*.
-2019, Pearson
-ISBN: 9780133128901
-<img src="https://www-users.cs.umn.edu/~kumar001/dmbook/dmbook_2ed.jpg" width="200">
+* **(Required)** Aurelien Geron.
+*Hands-on Machine Learning with Scikit-Learn, Keras & Tensorflow*.
+2nd Edition. 2019, O'Reilly.
+ISBN-13: 978-1-492-0326-9
+<img src="https://images-na.ssl-images-amazon.com/images/I/51GcXOrWROL._SX379_BO1,204,203,200_.jpg" width="200">

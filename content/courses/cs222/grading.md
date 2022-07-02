@@ -20,8 +20,8 @@ weight: 4
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
 * **6%** : A number of in-class pop quizzes.
-* **18%**: 6 individual homework.
-*	**21%**: 3 team projects.
+* **15%**: 5 individual homework.
+*	**24%**: 3 team projects.
 *	**15%**: 5 in-class labs.
 * **25%**: 2 midterm exams.
 *	**15%**: Final exam.

@@ -63,7 +63,15 @@ Students are required to form a team of two and read at least one technical pape
 
 ## Final Project
 
-The final project best demonstrates students’ understanding of the lecture contents and their capability of solving real data science problems. Students are encouraged to form teams of no more than 2 people. A single solo project is allowed if class size is odd. Topics of the final project are left open for the teams to find, but the final choice has to be decided upon the instructor’s agreement. A good list of potential projects can be found at [Kaggle](https://www.kaggle.com/datasets) and [Public Datasets](https://github.com/awesomedata/awesome-public-datasets). Teams are responsible for finding the project of their interest and discussing the project feasibility face-to-face with the project manager, a.k.a., the instructor 1 week before the project proposal is due. Project formation is on a rolling basis, meaning formerly finalized projects cannot be taken again by another team. The grading of the final project consists of four major aspects:
+The final project best demonstrates students’ understanding of the lecture contents and their capability of solving real data science problems. Students are encouraged to form teams of no more than 2 people. A single solo project is allowed if class size is odd. Topics of the final project are left open for the teams to find, but the final choice has to be decided upon the instructor’s agreement. A good list of potential projects can be found at:
+
+* [Kaggle](https://www.kaggle.com/datasets)
+* [Papers with Code](https://paperswithcode.com/datasets)
+* [UCI Machine Learning Repo](http://archive.ics.uci.edu/ml/datasets.php)
+* [Hugging Face](https://huggingface.co/datasets)
+* [Google Dataset Search](https://datasetsearch.research.google.com)
+
+Teams are responsible for finding the project of their interest and discussing the project feasibility face-to-face with the project manager, a.k.a., the instructor 1 week before the project proposal is due. Project formation is on a rolling basis, meaning formerly finalized projects cannot be taken again by another team. The grading of the final project consists of four major aspects:
 
 *	10%: the project proposal (including the conversation with the instructor a week before due);
 * 20%: mid-term project check (must have shown substantial exploratory data analysis);

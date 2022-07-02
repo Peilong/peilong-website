@@ -19,12 +19,13 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-*	**32%**: 8 equally weighted in-class labs - 4% for each lab.
-*	**20%**: 5 equally weighted homework assignments – 4% for each assignment.
-*	**25%**: 2 midterm exams - 10% for lower grade, and 15% for higher grade.
-* **3%** : Pop quizzes.
-*	**5%** : Paper Presentation - peer evaluation (50%), instructor evaluation (50%).
-*	**15%**: Final Project - project proposal (10%). Midterm check (10%). Project demonstration and presentation (40%). Final project report and revised code (40%).
+* **6%** : X in-class pop quizzes.
+*	**24%**: 8 take-home quizzes.
+*	**5%**: Individual paper reading assignment.
+*	**5%** : Team paper presentation - peer evaluation (50%), instructor evaluation (50%).
+*	**25%**: 4 individual homework.
+*	**25%**: 2 midterm exams.
+*	**15%**: Final Project - project proposal (10%). Midterm check (20%). Project demonstration and presentation (40%). Final project report and revised code (30%).
 
 Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:
 
@@ -39,33 +40,40 @@ Grades will be computed by rounding numerical percentages to the nearest integer
 ```Note that Canvas does not offer accurate calculation of your final weighted grade (e.g. the two midterm exams do not weigh equally), so students must compute their average by using the Canvas scores with the weights listed above.
 ```
 
-## Homework Assignments
+## Individual Homework
 
-All homework assignments have to be completed individually in this course. Each assignment must be uploaded into Canvas (https://etown.instructure.com/).  Assignments must *NOT* be stored in a public folder. All submissions must follow the provided file name requirements or risk a score of 0.  
-Typically, you will have about two weeks to complete each assignment. All assignments will be graded based on the following criteria:
+All homework assignments have to be completed individually in this course. Homework assignments are meant to be more comprehensive tasks that may need additional reading and research. Homework assignments are to be completed in a week or two. 
 
-* Correctness: Finding the right answer
-* Formatting:	Displaying the right answer according to instructions
-* Style and Documentation: Producing readable code with appropriate comments
+**Late Policy**
 
 Late assignment will lose ![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Cfn_phv%20%5Clarge%202%5E%7B%28n-1%29%7D) points per day, including weekends and holidays. For example, -1 after 1 day, -2 after 2 days, -4 after 3 days … until 8+ days students will receive 0 score.  Under no circumstances should any student disclose their code, or copy the code written by other students or from an outside source. Both students will receive 0 score on the disclosed/copied assignment.
 
-## In-class labs
+## Take-home Quizzes
 
-All labs are to be done individually, in class, with the assistance of the instructor. Each assignment will be given near the beginning of a class and must be uploaded to Canvas (https://etown.instructure.com/) `before the end of the class without late penalty`. `Extended submission is due on the same day before midnight, but any submission during this grace period will receive 15 points (out of 100) of late penalty`. Submissions beyond midnight the same day will not be accepted. To receive full credit, the source code must be well commented and executed without errors, but partial credit will be considered by the instructor based on the understanding of the material demonstrated by the student’s code.
+Similar to homework, all take-home quizzes are to be done individually, out of class. Take-home quizzes are mini assignments that can be completed within 80 minutes, however, a whole week is granted to complete the task. Each quiz will be given on the Monday of a "quiz week", and must be completed within 7 days. Unlike homework, `no late submission` is allowed beyond the due date. Students are responsible for attempting the quiz earlier on the quiz week to prepare questions during the Tue/Thur lecture time. 
 
-## Technical Paper Presentation
+## Paper Reading Assignment & Paper Presentation
 
-Presenting data analysis results to public is one of the highly demanded skills from data science employers. As part of the final grade of this course, students are required to read one to two technical papers from the provided paper list (or other papers agreed by the instructor), and present the paper during the last week of class. The grading of the paper presentation consists of 50% from peers and 50% from the instructor. The evaluation rubrics will be provided via Canvas.
+Presenting data analysis results to public is one of the highly sought skills from data science employers. 
+
+Students are required to form a team of two and read at least one technical paper from the provided paper list (or other papers agreed by the instructor). Students need to complete 1) an **individual** paper reading assignment in the middle of the semester; and 2) **team-present** the paper to the instructor and their peers during the end of the semester. The grading of the paper presentation consists of 50% from peers and 50% from the instructor. The evaluation rubrics will be provided via Canvas.
 
 ## Final Project
 
-The final project best demonstrates students’ understanding of the lecture contents and their capability of solving real data science problems. Students are encouraged to form teams of no more than 2 people. Solo projects are also allowed if having good reasons. Topics of the final project are left open for the teams to find, but the final choice has to be decided upon the instructor’s agreement. A good list of potential projects can be found at UCI Machine Learning Repository (http://archive.ics.uci.edu/ml), Kaggle (https://www.kaggle.com/datasets) and here: https://github.com/awesomedata/awesome-public-datasets. Teams are responsible for finding the project of their interest and discussing the project feasibility face-to-face with the project manager, a.k.a., the instructor 1 week before the project proposal is due. Project formation is on a rolling basis, meaning formerly finalized projects cannot be taken again by another team. The grading of the final project consists of four major aspects:
+The final project best demonstrates students’ understanding of the lecture contents and their capability of solving real data science problems. Students are encouraged to form teams of no more than 2 people. A single solo project is allowed if class size is odd. Topics of the final project are left open for the teams to find, but the final choice has to be decided upon the instructor’s agreement. A good list of potential projects can be found at:
+
+* [Kaggle](https://www.kaggle.com/datasets)
+* [Papers with Code](https://paperswithcode.com/datasets)
+* [UCI Machine Learning Repo](http://archive.ics.uci.edu/ml/datasets.php)
+* [Hugging Face](https://huggingface.co/datasets)
+* [Google Dataset Search](https://datasetsearch.research.google.com)
+
+Teams are responsible for finding the project of their interest and discussing the project feasibility face-to-face with the project manager, a.k.a., the instructor 1 week before the project proposal is due. Project formation is on a rolling basis, meaning formerly finalized projects cannot be taken again by another team. The grading of the final project consists of four major aspects:
 
 *	10%: the project proposal (including the conversation with the instructor a week before due);
-* 10%: mid-term project check (must have shown substantial exploratory data analysis);
+* 20%: mid-term project check (must have shown substantial exploratory data analysis);
 *	40%: the project demonstration; code and slides are due the night before the presentation day;
-*	40%: everything including report; revised code and the report are due on Friday of the final week.
+*	30%: everything else including report; revised code and the report are due on the last day of the final exam week.
 
 The requirements and grading rubric for each component of the project will be posted on Canvas. Under no circumstances should any student copy the code from an outside source. Source code similarity tools will be used to detect plagiarism.
 
