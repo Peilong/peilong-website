@@ -30,7 +30,7 @@ Dr. Peilong Li
 
 ## Office:
 
-Esbenshade 284B
+Nicarry 208
 
 ## Appointments:
 
@@ -48,10 +48,11 @@ By email
 ## Textbooks
 
 * **(Required)**
-*Etown-CS121-FA21*.
-Foundamentals of Python Programming from Runestone Academy Interactive Book.
-Sign-up with: [link](https://runestone.academy/runestone/default/user/register)
-<img src="https://avatars.githubusercontent.com/u/1521719?s=280&v=4" width="200">
+*zyBooks. CS 121: Computer Science I*.
+Sign in or create an account at [learn.zybooks.com](learn.zybooks.com).
+Enter zyBook code: `ETOWNCS121Fall2023`.
+Subscribe. A subscription is $89. Students may begin subscribing on Aug 08, 2023. Subscriptions will last until Dec 27, 2023.
+<img src="https://www.zybooks.com/wp-content/uploads/2016/12/Programming-in-Python-3.png" width="200">
 
 * **(Optional)** Allen B. Downey.
 *Think Python, 2nd Ed*.

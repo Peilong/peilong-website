@@ -15,16 +15,6 @@ menu:
 weight: 3
 ---
 
-## COVID-related Expectations
-
-I recognize that students may need to miss classes due to personal health reasons or for community measures necessary to promote public health. I have already prepared to substitute a reasonable educational experience aligned with that day’s learning objectives for students who miss class due to illness or quarantine.
-
-+ In most cases, this will be downloading the gap notes and watching a recording of last year’s hyflex delivery of that same content. Ask me for the lecture recordings.
-+ If you miss a coaching day, the homework is posted on Canvas and you can use my [Calendly link](https://calendly.com/dr_li/) to sign up for a time during office hours to Zoom with any questions.
-+ Assessments must be taken in person due to academic integrity concerns. However, there are many opportunities to test and if we need a make-up day near the end of the semester, I will offer one.
-+ Assignments are posted far in advance and, in most cases, will not be adjusted for mild illness.
-
-
 ## Course Schedule
 The most up-to-date course schedule will be posted on course website schedule page: https://peilong.github.io/courses/ds420/schedule/. Students are responsible for checking the schedule regularly. Schedule page will include: 1) teaching topics for each meeting; 2) reading assignments for each week and 3) special notes on specific days.
 

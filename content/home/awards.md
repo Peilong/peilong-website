@@ -10,6 +10,15 @@ title = "Honor & Awards"
 
 +++
 
+##### Merit Award in Teaching and Advising - May 2021
+* Elizabethtown College. Only three faculty members in the whole college received this award.
+
+------
+
+##### Merit Award in Scholarship and Professional Activity - May 2020
+* Elizabethtown College.
+  
+------
 
 ##### Outstanding Graduate Student - May 2016
 * Francis College of Engineering, University of Massachusetts Lowell.

@@ -1,7 +1,7 @@
 ---
 # Course title, summary, and position.
 linktitle: CS/EGR 222 Systems Programming
-summary: This course covers advanced programming and machine representation of data and data structures, including dynamic structures and files.
+summary: Advanced system programming course covering C, Linux, Virtual Machines, Cloud Computing, and Containers in modern programming contexts.
 weight: 3
 
 # Page metadata.
@@ -22,7 +22,7 @@ menu:
 ---
 
 
-This course covers advanced programming and machine representation of data and data structures, including dynamic structures and files.
+Advanced system programming course covering C, Linux, Virtual Machines, Cloud Computing, and Containers in modern programming contexts.
 
 ## Instructor:
 
@@ -46,16 +46,10 @@ By email
 
 ## Textbooks
 
-* **(Required)** Brian W. Kernighan and Dennis M. Ritchie.
-*The C Programming Language, 2nd Edition*.
-1988, Prentice Hall,
-ISBN: 978-0131103627.
-E-copy: [link](https://kremlin.cc/k&r.pdf)
-<img src="https://images-na.ssl-images-amazon.com/images/I/41h%2B7zx%2BhFL._SX376_BO1,204,203,200_.jpg" width="200">
-
-* **(Optional)** Michael Kerrisk.
-*The Linux Programming Interface, First Edition*.
-2010, No Starch Press,
-ISBN: 978-1593272203.
-E-copy: [link](https://github.com/shihyu/Linux_Programming/blob/master/books/The%20Linux%20Programming%20Interface%20-%20A%20Linux%20and%20UNIX%20System%20Programming%20Handbook.pdf)
-<img src="https://images-na.ssl-images-amazon.com/images/I/51GhTMoAspL._SX376_BO1,204,203,200_.jpg" width="200">
+* **(Required)** Peilong Li.
+*CS 222/EGR 222 Systems Programming*.
+2023, zyBooks.
+  * Sign in or create an account at: [learn.zybooks.com](https://learn.zybooks.com)
+  * Enter zyBook code: **ETOWNCS222EGR222LiSpring2023**
+  * Subscribe. Subscription fee: $58. Valid through end of May.
+<img src="https://peilong.github.io/img/cs222_textbook.png" width="200">

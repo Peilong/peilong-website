@@ -19,13 +19,12 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **6%** : A number of in-class pop quizzes.
-* **5%** : Individual paper reading assignment.
-* **5%** : Team paper presentation.
-*	**24%**: 8 equally weighted in-class labs - 4% for each lab.
-*	**20%**: 5 equally weighted homework assignments – 4% for each assignment.
+* **4%** : A number of in-class pop quizzes.
+*	**24%**: 6 take-home quizzes.
+*	**7%** : Paper reading and lecture presentation.
+*	**20%**: 5 individual homework.
 *	**25%**: 2 midterm exams.
-*	**15%**: Final Project - project proposal (1.5%). Milestone check (3%). Project demonstration and presentation (6%). Final project report and revised code (4.5%).
+*	**20%**: Final Project - project proposal (10%); Milestone 1 (15%); Milestone 2 (15%); SCAD Day Presentation (20%); Final presentation (20%). Final project report and revised code (20%).
 
 Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:
 
@@ -41,12 +40,7 @@ Grades will be computed by rounding numerical percentages to the nearest integer
 ```
 
 
-## In-class labs
-
-All labs are to be done individually, in class, with the assistance of the instructor. 
-Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credit, a programming assignment must have no code exceptions, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
-
-## Homework Assignments
+## Individual Homework
 
 All homework assignments have to be completed individually in this course. Homework assignments are meant to be more comprehensive tasks that may need additional reading and research. Homework assignments are to be completed in a week or two. 
 
@@ -54,12 +48,13 @@ All homework assignments have to be completed individually in this course. Homew
 
 Late assignment will lose ![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Cfn_phv%20%5Clarge%202%5E%7B%28n-1%29%7D) points per day, including weekends and holidays. For example, -1 after 1 day, -2 after 2 days, -4 after 3 days … until 8+ days students will receive 0 score.  Under no circumstances should any student disclose their code, or copy the code written by other students or from an outside source. Both students will receive 0 score on the disclosed/copied assignment.
 
-## Paper Reading Assignment & Paper Presentation
+## Take-home Quizzes
 
-Presenting data analysis results to public is one of the highly sought skills from data science employers. 
+Similar to homework, all take-home quizzes are to be done individually, out of class. Take-home quizzes are mini assignments that can be completed within 80 minutes, however, a whole week is granted to complete the task. Each quiz will be given on the Monday of a "quiz week", and must be completed within 7 days. Unlike homework, `no late submission` is allowed beyond the due date. Students are responsible for attempting the quiz earlier on the quiz week to prepare questions during the Tue/Thur lecture time. 
 
-Students are required to form a team of two and read at least one technical paper from the provided paper list (or other papers agreed by the instructor). Students need to complete 1) an **individual** paper reading assignment in the middle of the semester; and 2) **team-present** the paper to the instructor and their peers during the end of the semester. The grading of the paper presentation consists of 50% from peers and 50% from the instructor. The evaluation rubrics will be provided via Canvas.
+## Individual Lecture Presentation
 
+Students are required to read a designated paper from the given paper list and present it as a course lecture. The presentation time is 30 minutes and students need to cover all important aspects from the paper. A live demo must be presented to illustrate the presented concept. The presenters will receive evaluations from all their peers and the instructor, and a weighted score will be given to the presenters.
 
 ## Final Project
 
@@ -74,9 +69,10 @@ The final project best demonstrates students’ understanding of the lecture con
 Teams are responsible for finding the project of their interest and discussing the project feasibility face-to-face with the project manager, a.k.a., the instructor 1 week before the project proposal is due. Project formation is on a rolling basis, meaning formerly finalized projects cannot be taken again by another team. The grading of the final project consists of four major aspects:
 
 *	10%: the project proposal (including the conversation with the instructor a week before due);
-* 20%: mid-term project check (must have shown substantial exploratory data analysis);
-*	40%: the project demonstration; code and slides are due the night before the presentation day;
-*	30%: everything else including report; revised code and the report are due on the last day of the final exam week.
+* 20%: milestone 1 (must have shown substantial exploratory data analysis);
+* 20%: milestone 2 (data modeling and evaluations are done);
+*	30%: the project demonstration; code and slides are due the night before the presentation day;
+*	20%: everything else including revised code and the final report is due on the last day of the final exam week.
 
 The requirements and grading rubric for each component of the project will be posted on Canvas. Under no circumstances should any student copy the code from an outside source. Source code similarity tools will be used to detect plagiarism.
 

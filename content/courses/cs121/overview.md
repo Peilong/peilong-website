@@ -17,21 +17,17 @@ weight: 2
 
 ## Course Coverage
 
-The fundamental concepts of computer organization, machine-level representation of data, algorithmic development and structured programming are presented with an emphasis on the syntactic and execution characteristics of the Java programming language, including data types; arithmetic operators and assignment; input/output, selection and iteration constructs; procedural abstraction; arrays; object-oriented programming and class design; and library usage.
+Explore the foundational principles of computer organization, data representation, algorithmic development, and structured programming. Emphasizing Python's syntactic and execution traits, delve into data types, arithmetic operations, input/output mechanisms, selection and iteration constructs. Discover procedural abstraction, arrays, object-oriented programming, class design, and harness Python's power for Data Science.
 
 
 ## Student Learning Outcomes
 
 By the end of the course, students will be able to:
 
-* Apply knowledge of computing and mathematics, including common data structures and basic algorithms, to solve problems
-* Design, implement, and evaluate a computer-based system, process, component or program to meet desired needs
-* Describe fundamental principles of the cycle of designing, implementing, compiling, and testing code
-* Learn to adhere to standards of style and documentation
-* Develop an understanding of data types and basic operations in an object-oriented programming language
-* Give examples of contributions of mathematics and computer science to the modern world
-* Use inductive or deductive reasoning to formulate solutions to problems
-* Model real-world phenomena mathematically and computationally
-* Manipulate strings, use basic I/O constructs
-* Apply Boolean algebra, selection statements, loop statements and arrays to problem solving
-* Use procedural and object-oriented programming paradigms
+* Apply fundamental computing and mathematical knowledge, including data structures and basic algorithms, to effectively solve problems using Python.
+* Design, implement, and evaluate computer-based systems, processes, components, or programs to fulfill specific requirements.
+* Describe and apply the core principles of the software development cycle in the context of Python programming.
+* Demonstrate proficiency in adhering to coding standards, style guidelines, and documentation practices.
+* Develop a solid understanding of data types and object-oriented programming concepts.
+* Utilize Python for Data Science, including data manipulation, analysis, and visualization, to gain insights from real-world datasets.
+* Apply Python programming constructs like strings manipulation, basic I/O operations, Boolean algebra, selection statements, loop statements, and arrays to effectively solve computational challenges using both procedural and object-oriented paradigms.

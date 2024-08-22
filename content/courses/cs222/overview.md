@@ -17,7 +17,7 @@ weight: 2
 
 ## Course Coverage
 
-This course covers advanced programming and machine representation of data and data structures, including dynamic structures and files. Topics include C language syntax, memory allocation, run-time data organization, function linkage and parameter passing, and the relationship between high-level and machine languages. C is the primary language of instruction with Java being a comparative language. Linux operating system and command line skills will be introduced throughout the course.
+This course provides an in-depth exploration of advanced programming, emphasizing system programming, machine representation of data, dynamic structures, and files. It covers C language syntax, memory allocation, run-time data organization, function linkage, parameter passing, and the interplay between high-level and machine languages. The curriculum also introduces Linux OS and command-line skills, and integrates concepts of Virtual Machines, Cloud Computing, and Container technologies, reflecting current trends in the system programming landscape.
 
 ## Student Learning Outcomes
 

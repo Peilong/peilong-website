@@ -14,10 +14,14 @@ menu:
 weight: 7
 ---
 
-## Use software on the campus server:
-* PySpark enabled Jupyter Notebook: http://adal.etown.edu:12345
+## Google Cloud Platform (GCP):
+* Check out the "GCP_setup.pdf" guide on Canvas. 
 
-## Install HDP Sandbox by yourself:
+## Use software on the campus server:
+* Hadoop ecosystem software: [http://adal.etown.edu](http://adal.etown.edu). Use SSH to access. 
+* PySpark enabled Jupyter Notebook: [http://adal.etown.edu:12345](http://adal.etown.edu:12345)
+
+## (Optional) Install HDP Sandbox by yourself:
 *	Docker Engine: https://docs.docker.com/engine/install/.
 Find the correct installation guide for your operating systems.
 

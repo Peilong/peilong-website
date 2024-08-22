@@ -16,53 +16,55 @@ weight: 6
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-| Week | Starting |                         Topics                         |  Reading |              Notes             |
-|:----:|:--------:|:------------------------------------------------------:|:--------:|:------------------------------:|
-|   1  |  8/23/21 | M: Lec1 - Course Intro & Computer Science              |          |                                |
-|      |          | W: Lec2 - Demo of Course Tools & First Program         |  Week1-1 |                                |
-|      |          | F: Lec3 - Values, Data Types and Operations            |  Week1-2 |                                |
-|   2  |  8/30/21 | M: Lec4 - Function Calls & Type Conversion Functions   |  Week2-1 |                                |
-|      |          | W: Lec5 - Variables & Input                            |  Week2-2 |                                |
-|      |          | F: Lab 1                                               |  Week2-3 |                                |
-|   3  |  9/6/21  | M: Labor Day - No Classes                              |          | Project 1 out.                 |
-|      |          | W: Lec6 - Debut of Turtle & OOP Concepts               |  Week3-1 |                                |
-|      |          | F: Lec7 - A Herd of Turtles & More Turtle Methods      |  Week3-2 |                                |
-|   4  |  9/13/21 | M: Lec8 - Repetition with a for Loop                   |  Week4-1 |                                |
-|      |          | W: Lec9 - Boolean Expressions, Logical Operators       |  Week4-2 |                                |
-|      |          | F: Lab 2                                               |  Week4-3 |                                |
-|   5  |  9/20/21 | M: Lec10 - Conditional Execution                       |  Week5-1 | Project 1 due. Project 2 out.  |
-|      |          | W: Lec11 - The Listener Loop: while Loops              |  Week5-2 |                                |
-|      |          | F: Lec12 -  Functions (1)                              |  Week5-3 |                                |
-|   6  |  9/27/21 | M: Lec13 - Functions (2)                               |  Week6-1 |                                |
-|      |          | W: Lab 3                                               |  Week6-2 |                                |
-|      |          | F: Fall Break - No Classes                             |          |                                |
-|   7  |  10/4/21 | M: Take online Quiz 4.                                 |  Week7-1 |                                |
-|      |          | W: Midterm Review                                      |  Week7-2 |                                |
-|      |          | F: Midterm Exam                                        |          |                                |
-|   8  | 10/11/21 | M: Lec14 - Strings                                     |  Week8-1 | Project 2 due. Project 3 out.  |
-|      |          | W: Lec15 - Lists                                       |  Week8-2 |                                |
-|      |          | F: Lec16 - Tuples                                      |  Week8-3 |                                |
-|   9  | 10/18/21 | M: Lec17 - Iteration and Accumulation                  |  Week9-1 |                                |
-|      |          | W: Lab 4                                               |  Week9-2 |                                |
-|      |          | F: Lab Test 1                                          |          |                                |
-|  10  | 10/25/21 | M: Lec18 - Pandas DataFrames                           | Week10-1 | Project 3 due. Project 4 out.  |
-|      |          | W: Lec19 - Access Data From DataFrames                 | Week10-2 |                                |
-|      |          | F: Lec20 - DataFrame Operations (1)                    | Week10-3 |                                |
-|  11  |  11/1/21 | M: Lec21 - DataFrame Operations (2)                    | Week11-1 |                                |
-|      |          | W: Lec22 - Pandas Data Visualization                   | Week11-2 |                                |
-|      |          | F: Lec23 - Data Visualization using Seaborn            | Week11-3 |                                |
-|  12  |  11/8/21 | M: Lec24 - Pandas Exercises                            | Week12-1 | Project 4 due. Project 5 out.  |
-|      |          | W: Lab 5                                               | Week12-2 |                                |
-|      |          | F: Lab Test 2                                          |          |                                |
-|  13  | 11/15/21 | M: Lec25 - OOP Classes and Objects                     | Week13-1 |                                |
-|      |          | W: Lec26 - Methods, Mutators, Accessors                | Week13-2 |                                |
-|      |          | F: Lec27 - OOP Exercises                               | Week13-3 |                                |
-|  14  | 11/22/21 | M: Lec28 - Algorithms & Big O                          | Week14-1 |                                |
-|      |          | W: Lab 6                                               | Week14-2 |                                |
-|      |          | F: Thanksgiving Break - No Classes                     |          |                                |
-|  15  | 11/29/21 | M: Final Exam Q&A                                      |    All   | Project 5 due.                 |
-|      |          | W: Final Exam Q&A                                      |    All   |                                |
-|      |          | F: Final Exam Q&A                                      |    All   |                                |
-|  16  |  12/6/21 | Final Exam: TBD                                        |          |                                |
-|      |          |                                                        |          |                                |
-|      |          |                                                        |          |                                |
+Last updated: 08/21/2023
+
+| Week | Starting |                          Topics                          |  Reading |                Notes               |
+|:----:|:--------:|----------------------------------------------------------|:--------:|------------------------------------|
+|   1  |  8/21/23 | M: Lec1 - Course   Intro & Computer Science              |          |                                    |
+|      |          | W: Lec2 - Demo of Course Tools &   First Program         |  Week1-1 |                                    |
+|      |          | F: Lec3 - Values, Data Types and   Operations            |  Week1-2 |                                    |
+|   2  |  8/28/23 | M: Lec4 - Function Calls & Type   Conversion Functions   |  Week2-1 |                                    |
+|      |          | W: Lec5 - Variables & Input, Lab   1 - Variables and I/O |  Week2-2 |                                    |
+|      |          | F: <span style="color:red">Dr. Li on Travel - Complete Lab 1 with TA</span>        |  Week2-3 |                                    |
+|   3  |  9/4/23  | M: <span style="color:red">Labor Day - No Class</span>   |          |                                    |
+|      |          | W: Lec6 - Debut of Turtle & OOP   Concepts               |  Week3-1 | Wed: Project 1 out.                |
+|      |          | F: Lec7 - A Herd of Turtles &   More Turtle Methods      |  Week3-2 |                                    |
+|   4  |  9/11/23 | M: Lec8 - Repetition with a for Loop                     |  Week4-1 |                                    |
+|      |          | W: Lec9 - Boolean Expressions,   Logical Operators       |  Week4-2 |                                    |
+|      |          | F: Lab 2 - Conditions and   Repetitions                  |  Week4-3 |                                    |
+|   5  |  9/18/23 | M: Lec10 - Conditional Execution                         |  Week5-1 |                                    |
+|      |          | W: Lec11 - The Listener Loop: while   Loops              |  Week5-2 | Wed: Project 1 due. Project 2 out. |
+|      |          | F: Lec12 -  Functions (1)                                |  Week5-3 |                                    |
+|   6  |  9/25/23 | M: Lec13 - Functions (2)                                 |  Week6-1 |                                    |
+|      |          | W: PE1 - Loops and Functions                             |  Week6-2 |                                    |
+|      |          | F: Lab 3 - Functions                                     | Week 6-3 |                                    |
+|   7  |  10/2/23 | M: <span style="color:blue">Lab Test 1</span>            |          |                                    |
+|      |          | W: <span style="color:blue">Midterm Exam</span>          |          |                                    |
+|      |          | F: <span style="color:red">Fall Break - No Class</span>  |          |                                    |
+|   8  |  10/9/23 | M: Lec14 - Strings                                       |  Week8-1 |                                    |
+|      |          | W: Lec15 - Tuples and Lists                              |  Week8-2 | Wed: Project 2 due. Project 3 out. |
+|      |          | F: Lec16 - Dictionaries                                  |  Week8-3 |                                    |
+|   9  | 10/16/23 | M: Lec17 - Iterations                                    |  Week9-1 |                                    |
+|      |          | W: Lec18 - Accumulation                                  |  Week9-2 |                                    |
+|      |          | F: PE2 - Data Structures                                 |  Week9-3 |                                    |
+|  10  | 10/23/23 | M: Lec19 - OOP Classes and Objects.                      | Week10-1 |                                    |
+|      |          | W: Lec20 - Instance methods                              | Week10-2 |                                    |
+|      |          | F: Lab 4 - Data Structures                               | Week10-3 |                                    |
+|  11  | 10/30/23 | M: Lec21 - Class attribute and class   methods           | Week11-1 |                                    |
+|      |          | W: Lec22 - Class customization                           | Week11-2 | Wed: Project 3 due. Project 4 out. |
+|      |          | F: PE3 - OOP                                             | Week11-3 |                                    |
+|  12  |  11/6/23 | M: Lab 5 - OOP                                           | Week12-1 |                                    |
+|      |          | W: PE4 - OOP and Data Structures                         | Week12-2 |                                    |
+|      |          | F: <span style="color:blue">Lab Test 2</span>            |          |                                    |
+|  13  | 11/13/23 | M: Lec23 - Python for Data Science   and AI              | Week13-1 |                                    |
+|      |          | W: Lec24 - Pandas DataFrame                              | Week13-2 | Wed: Project 4 due. Project 5 out. |
+|      |          | F: Lec25 - DataFrame Operations                          | Week13-3 |                                    |
+|  14  | 11/20/23 | M: Lec26 - Data Visualization                            | Week14-1 |                                    |
+|      |          | W: PE5 - Pandas                                          | Week14-2 |                                    |
+|      |          | F: <span style="color:red">Thanksgiving Break - No Class</span> |          |                                    |
+|  15  | 11/27/23 | M: Lab 6 - Pandas                                        |    All   |                                    |
+|      |          | W: Course Review                                         |    All   |                                    |
+|      |          | F: Final Exam Q&A                                        |    All   | Fri: Project 5 due.                |
+|  16  |  12/4/23 | M: <span style="color:blue">Final Exam: 7:30-10:30 AM</span>|          |                                    |
+|      |          | W: Good luck with your finals                            |          |                                    |
+|      |          | F: Good luck with your finals                            |          |                                    |
