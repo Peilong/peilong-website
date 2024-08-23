@@ -1,8 +1,8 @@
 ---
 # Course title, summary, and position.
 linktitle: DS 200 Introduction to Data Science
-summary: This project-based hands-on course introduces students to data science in general.
-weight: 4
+summary: This practical, project-based course covers data science with Python, focusing on statistical methods, advanced visualization, and effective data storytelling.
+weight: 6
 
 # Page metadata.
 title: DS 200 Introduction to Data Science
@@ -22,7 +22,7 @@ menu:
 ---
 
 
-This project-based hands-on course introduces students to data science in general.
+This hands-on, project-based course introduces data science, blending computer science and statistics to extract insights from diverse datasets. Students master Python's data science tools, including Jupyter, NumPy, Pandas, and Scikit-learn, and apply advanced visualization techniques. The curriculum emphasizes statistical understanding and analytical models like regression and clustering. A key focus is on data storytelling, enabling students to effectively communicate complex insights, bridging technical analysis with strategic decision-making.
 
 ## Instructor:
 
@@ -42,12 +42,20 @@ By email
 
 ## Pre-requisites
 
-* CS 113 The Power and Beauty of computing
-* MA 251 Probability and Statistics
+* CS 121 Computer Science I
+* Any Math course from the following: MA 121, MA 135, MA 251
 
 ## Textbooks
 
-* **(Required)** Joel Grus.
+* **(Required)** Peilong Li.
+*DS 200 Introduction to Data Science*.
+2024, zyBooks.
+  * Sign in or create an account at: [learn.zybooks.com](https://learn.zybooks.com)
+  * Enter zyBook code: **ETOWNDS200LiSpring2024**
+  * Subscribe. Subscription fee: $89. Valid through end of May.
+<img src="https://peilong.github.io/img/ds200_textbook.png" width="200">
+
+* **(Optional)** Joel Grus.
 *Data Science from Scratch: First Principles with Python (DSS)*.
 2015, O'Reilly Media,
 ISBN: 0636920033400.
@@ -60,10 +68,3 @@ E-copy: [link](http://math.ecnu.edu.cn/~lfzhou/seminar/[Joel_Grus]_Data_Science_
 ISBN: 0636920023784.
 E-copy: [link](https://www.cin.ufpe.br/~embat/Python%20for%20Data%20Analysis.pdf)
 <img src="https://covers.oreillystatic.com/images/0636920050896/lrg.jpg" width="200">
-
-* **(Optional)** Gareth James, et al.
-*An Introduction to Statistical Learning with Applications in R (ISLR)*.
-2013, Springer,
-ISBN: 978-1-4614-7138-7. 
-E-copy: [link](https://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-<img src="http://faculty.marshall.usc.edu/gareth-james/ISL/ISL%20Cover%202.jpg" width="200">

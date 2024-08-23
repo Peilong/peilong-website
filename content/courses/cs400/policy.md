@@ -15,13 +15,14 @@ menu:
 weight: 3
 ---
 
+## Course Schedule
+The most up-to-date course schedule will be posted on course website schedule page: https://peilong.github.io/courses/ds400/schedule/. Students are responsible for checking the schedule regularly. Schedule page will include: 1) teaching topics for each meeting; 2) reading assignments for each week and 3) special notes on specific days.
+
 ## Course Announcements & Discussion
 
-All course announcements will be posted via the Canvas Announcements page – you are responsible for checking the email updates (or app notifications) from Canvas regularly.
+All course announcements will be sent to your E-Town email accounts via Canvas Announcements. You are responsible for signing up for this service and checking your emails regularly.
 
-Discussions can be made via the Canvas Discussion page – you should never post complete programs to Discussion page (only general questions are permitted).
-
-Need to DM (direct message) me? Join my Discord Q&A server: [link](https://discord.gg/32KEYEn)
+I have created a Microsoft Teams channel ([link](https://teams.microsoft.com/l/team/19%3aa8cdd959c2e249a989d401e20fc95524%40thread.tacv2/conversations?groupId=81ffa3c7-aa45-454a-b495-7f43c78e5024&tenantId=1d884f12-a0d7-42f0-8b15-3a91c853bcb5)) to facilitate course related discussion.  Discussions are encouraged to be posted on the "QA" channel from Teams. Private instant messages can be sent directly to your recipient by search your recipient's name on the "search" bar.
 
 ## Attendance Policies
 
@@ -29,20 +30,19 @@ Attendance is expected of every student at every meeting. Students should come t
 
 ## Statement on School Closure
 
-In the event that classes do not meet because Elizabethtown College is closed or delayed due to inclement weather or some other emergency, the slides that would have been covered during the missed classes will posted through Piazza group.  Students are expected to do the assigned reading, review the slides, and e-mail the instructor with any questions.  There will also be an opportunity to ask questions about the material when classes resume.
+In the event that classes do not meet because Elizabethtown College is closed or delayed due to inclement weather or some other emergency, the slides that would have been covered during the missed classes will be posted through Canvas.  Students are expected to do the assigned reading, review the slides, and e-mail the instructor with any questions. There will also be an opportunity to ask questions about the material when classes resume.
 
 If a scheduled exam or lab is missed, it will normally be made up on the day that classes resume.  If the College is closed on a day when a project is due, the project due date will also normally be extended until the day when classes resume.  If circumstances render either of these makeup policies unreasonable, the instructor will send an e-mail explaining an alternative makeup opportunity to each student’s Elizabethtown e-mail account.
 
 ## Statement on Plagiarism
 
-Please refer to the Student Handbook for the college’s policy.  All projects and assignments must be completed by students individually, without assistance from anyone other than the instructor.  Students can discuss the course material with each other at a conceptual level, but each student must do his or her own work.  For projects, exams, and all other activities in the course, students are expected to act according to the official policy on academic dishonesty and the highest standards of personal integrity.
-
-The first infraction of academic honesty in this course will carry a penalty of a 0 for the project, lab, or exam in question and a reduction of a full letter grade in the final grade.  If a second infraction occurs, the students involved will fail the course, and the instructor will seek the maximum penalty possible under the college’s regulations, up to and including expulsion.
+Check out the up-to-date statement from: [Elizabethtown College Catalog, "Academic Judicial System"](https://catalog.etown.edu/content.php?catoid=24&navoid=1233#Academic_Judicial_System)
 
 ## Statement on Disability
 
-Elizabethtown College welcomes otherwise qualified students with disabilities to participate in all of its courses, programs, services, and activities. If you have a documented disability and would like to request accommodations in order to access course material, activities, or requirements, please contact the Director of Disability Services, Lynne Davies, by phone (361-1227) or e-mail daviesl@etown.edu. If your documentation meets the college’s documentation guidelines, you will be given a letter from Disability Services for each of your professors.  Students experiencing certain documented temporary conditions, such as post-concussive symptoms, may also qualify for temporary academic accommodations and adjustments. As early as possible in the semester, set up an appointment to meet with the instructor to discuss the academic adjustments specified in your accommodations letter as they pertain to my class.
+Full statement can be found at: [Course Syllabus on Disability Services, Religious Observances, and COVID related expectations](https://elizabethtown-my.sharepoint.com/:w:/g/personal/ouimetc_etown_edu/EfZ-QooKt_VPjgwsWJz230wB3Rb6CIHsPvE0xuqWCpr-UA?e=4%3acZzjpW&at=9).
 
-## Statement on Religious Observances
+ 
+## Diversity and Inclusivity Statement
 
-The College is eager to facilitate individual religious beliefs and practices whenever possible while retaining course student learning outcomes. It is your responsibility to meet with the class instructor in advance to request arrangements related to your religious observances that may conflict with this class, and to make appropriate plans to make up any missed work.
+I consider this classroom to be a place where you will be treated with respect, and I welcome individuals of all ages, backgrounds, beliefs, ethnicities, genders, gender identities, gender expressions, national origins, religious affiliations, sexual orientations, ability - and other visible and non-visible differences. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class. 

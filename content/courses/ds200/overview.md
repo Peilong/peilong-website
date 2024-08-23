@@ -17,13 +17,13 @@ weight: 2
 
 ## Course Coverage
 
-This project-based hands-on course introduces students to data science in general. Data science is an interdisciplinary field that applies computer science and statistics to extract useful knowledge from data collected in an almost unlimited range of other disciplines, including business, biology, physics, medicine, meteorology, and many others. In this course, students will apply the popular Python data science toolset to implement analytical models with k-nearest neighbors, regression, decision trees, and clustering, etc., and infer knowledge from real-world data.
-
+This hands-on, project-based course introduces data science, blending computer science and statistics to extract insights from diverse datasets. Students master Python's data science tools, including Jupyter, NumPy, Pandas, and Scikit-learn, and apply advanced visualization techniques. The curriculum emphasizes statistical understanding and analytical models like regression and clustering. A key focus is on data storytelling, enabling students to effectively communicate complex insights, bridging technical analysis with strategic decision-making.
 
 ## Student Learning Outcomes
 
-* (Introduction) Understand the background and rationale behind this new data science discipline.
-* (Hacking) Proficiently use the Python data science toolset including Jupyter notebook, NumPy, Pandas, Scikit-learn etc., in the lab assignments and projects.
-*	(Visualization) Use data visualization python packages Matplotlib and Seaborn to present analytical results.
-*	(Statistics) Reinforce the understanding of statistics and its application in the scope of data science.
-*	(Analytics) Apply data analytical models including regression, clustering and decision trees to solve data science problems.
+* (Foundations) Gain a comprehensive understanding of data science, exploring its evolution, significance, and multidisciplinary applications.
+* (Hacking) Develop proficiency in using Python's data science toolkit, including Jupyter Notebook, NumPy, Pandas, and Scikit-learn, through hands-on labs and projects.
+*	(Visualization) Learn to effectively communicate insights using Python's Matplotlib and Seaborn libraries for sophisticated data visualization.
+*	(Quantification) Enhance your statistical knowledge and learn how to apply statistical methods within the context of data science for more informed analysis.
+*	(Analytics) Master the application of analytical models such as regression, clustering, and decision trees to address and solve real-world data science challenges.
+* (Storytelling) Acquire the skills to effectively communicate data-driven insights, tailoring narratives to engage and inform various stakeholders across multiple platforms.

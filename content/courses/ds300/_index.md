@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: DS 300 Data Mining
 summary: This project-based hands-on course covers various data processing techniques in the data mining pipeline.
-weight: 5
+weight: 7
 
 # Page metadata.
 title: DS 300 Data Mining

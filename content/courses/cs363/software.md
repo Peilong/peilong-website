@@ -16,9 +16,12 @@ weight: 7
 
 A laptop with at least 4GB of RAM and 20 GB of disk space is required for this course. 
 
-## Setup SEED Lab Environment:
-Install SEED VM lab environment on your own laptop: [tutorial](https://github.com/seed-labs/seed-labs/blob/master/manuals/vm/seedvm-manual.md). 
-
 ## All SEED Labs:
 Access all SEED labs from: [link](https://seedsecuritylabs.org/Labs_20.04/).
+
+## Option 1 (Recommended): Setup SEED VM on Google Cloud Platform:
+A GCP setup guide can be found on Canvas.
+
+## Option 2: Setup SEED VM on Virtualbox:
+Install SEED VM lab environment on your own laptop: [tutorial](https://github.com/seed-labs/seed-labs/blob/master/manuals/vm/seedvm-manual.md). 
 

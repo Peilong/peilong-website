@@ -18,78 +18,58 @@ weight: 6
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-Last updated: 04/09/2022
+Last updated: 01/17/2024
 
-| Week | Starting |                      Topics                      |   Reading  |                      Notes                      |
-|:----:|:--------:|--------------------------------------------------|:----------:|-------------------------------------------------|
-|   1  |  1/17/22 | M: MLK Day; No Classes                           |  Reading 1 | HW1 out.                                        |
-|      |          | W: Lec1: Course introduction                     |            |                                                 |
-|      |          | F: Lec2: Introduction to data science            |            |                                                 |
-|   2  |  1/24/22 | M: Lec3: Review Python for data science          |  Reading 2 |                                                 |
-|      |          | W: Lec4: Numpy arrays and array indexing         |            |                                                 |
-|      |          | F: Lec5: Numpy array operations                  |            |                                                 |
-|   3  |  1/31/22 | M: Lab 1 Numpy                                   |  Reading 3 | HW 1 due on Mon; HW2   out;                     |
-|      |          | W: Lec6: Pandas - Series and DataFrame           |            | Team formation due on Mon.                      |
-|      |          | F: Lec7: Pandas - groupby, concat, merge         |            |                                                 |
-|   4  |  2/7/22  | M: Lec8: Pandas - IO and methods                 |  Reading 4 | Paper reading   assignment out on Mon.          |
-|      |          | W: PE1: Pandas exercises                         |            |                                                 |
-|      |          | F: Lab 2 Pandas                                  |            |                                                 |
-|   5  |  2/14/22 | M: Lec9: Data visualization - Matplotlib, Pandas |  Reading 5 | HW2 due on Mon; HW3   out.                      |
-|      |          | W: Lec10: Data visualization - Seaborn           |            |                                                 |
-|      |          | F: Lec11: Data visualization - Plotly            |            |                                                 |
-|   6  |  2/21/22 | M: Lab 3 Visualization                           |  Reading 6 | Project proposal due on Mon.                    |
-|      |          | W: Lec12: Module 1 summary and exam 1 preview    |            |                                                 |
-|      |          | F: Exam 1                                        |            |                                                 |
-|   7  |  2/28/22 | M: Spring Break, No Classes                      |            |                                                 |
-|      |          | W: Spring Break, No Classes                      |            |                                                 |
-|      |          | F: Spring Break, No Classes                      |            |                                                 |
-|   8  |  3/7/22  | M: Lec13: Basic   statistics                     |  Reading 7 | HW 3 due on Mon.                                |
-|      |          | W: Lec14: More on Statistics and   probability   |            |                                                 |
-|      |          | F: Lec15: Intro to machine learning              |            |                                                 |
-|   9  |  3/14/22 | M: Lec16: Linear regression                      |  Reading 8 |                                                 |
-|      |          | W: PE2: Linear regression exercises              |            |                                                 |
-|      |          | F: Lec17: Logistic regression Part 1             |            |                                                 |
-|  10  |  3/21/22 | M: Lec18: Logistic regression Part 2             |  Reading 9 | Paper reading   assignment due on Mon; HW4 out. |
-|      |          | W: Lec19: K nearest neighbors                    |            |                                                 |
-|      |          | F: PE3: Classification                           |            |                                                 |
-|  11  |  3/28/22 | M: Lab 4 Classification                          | Reading 10 | Project milestone   submission due on Mon.      |
-|      |          | W: Final project milestone demo                  |            |                                                 |
-|      |          | F: Lec20: K-means clustering                     |            |                                                 |
-|  12  |  4/4/22  | M: PE4: K-means exercises                        | Reading 11 | HW4 due Mon;                                    |
-|      |          | W: Stomach bug wrangling                         |            |                                                 |
-|      |          | F: Lab 5 Clustering                              |            |                                                 |
-|  13  |  4/11/22 | M: Lec21: Dimensionality reduction               | Reading 12 | HW5 out.                                        |
-|      |          | W: Lec22: Support vector machine                 |            |                                                 |
-|      |          | F: College Holiday, No Classes                   |            |                                                 |
-|  14  |  4/18/22 | M: PE5: SVM                                      | Reading 13 |                                                 |
-|      |          | W: Lab 6 SVM                                     |            |                                                 |
-|      |          | F: Lec23: Module 2 summary and exam 2 preview    |            |                                                 |
-|  15  |  4/25/22 | M: Exam 2                                        | Reading 14 | Paper presentation slides due on Mon.           |
-|      |          | W: Paper presentation group 1                    |            |                                                 |
-|      |          | F: Paper presentation group 2                    |            | Final project due on Sunday 05/01   midnight    |
-|  16  |  5/2/22  | M: Final project presentation group 1            |            | HW5 due Mon.                                    |
-|      |          | W: Final project presentation group 2            |            |                                                 |
-|      |          |                                                  |            |                                                 |
-|  17  |  5/9/22  | Tue: 2:30 - 5:30 PM: No final exam               |            |                                                 |
-|      |          |                                                  |            |                                                 |
-|      |          |                                                  |            |                                                 |
-
-## Weekly Reading Assignments
-
-| Week # | Reading #  | Assignments                |
-|--------|------------|----------------------------|
-| 1      | Reading 1  | DSS Ch.1                   |
-| 2      | Reading 2  | DSS Ch.2                   |
-| 3      | Reading 3  | DSS Ch.4, PDA Ch.4         |
-| 4      | Reading 4  | PDA Ch.5                   |
-| 5      | Reading 5  | PDA Ch.6                   |
-| 6      | Reading 6  | PDA Ch.8                   |
-| 7      | Reading 7  | DSS Ch.5-6                 |
-| 8      | Reading 8  | DSS Ch.11                  |
-| 9      | Reading 9  | DSS Ch.14, ISLR Ch.2-3     |
-| 10     | Reading 10 | DSS Ch.16, ISLR Ch.4.1-4.3 |
-| 11     | Reading 11 | DSS Ch.12, ISLR Ch.4       |
-| 12     | Reading 12 | DSS Ch.19, ISLR Ch.9-10    |
-| 13     | Reading 13 | DSS Ch.24                  |
-| 14     | Reading 14 | All notes                  |
-
+| Week | Starting |                       Topics                       |  Reading  |                     Notes                     |
+|:----:|:--------:|----------------------------------------------------|:---------:|-----------------------------------------------|
+|   1  |  1/15/24 | M: <span style="color:red">MLK Day; No Classes</span>|         | Tue: HW1 out.                                 |
+|      |          | W: Lec1: Course introduction                       |           |                                               |
+|      |          | F: Lec2: Introduction to data science              |  Week 1-1 |                                               |
+|   2  |  1/22/24 | M: Lec3: Review Python for data   science          |  Week 2-1 |                                               |
+|      |          | W: Lec4: Numpy arrays and array indexing           |  Week 2-2 |                                               |
+|      |          | F: Lec5: Numpy array operations                    |  Week 2-3 |                                               |
+|   3  |  1/29/24 | M: Lab1: Numpy                                     |  Week 3-1 | Mon: HW 1 due; HW2 out;                       |
+|      |          | W: Lec6: Pandas - Series and DataFrame             |  Week 3-2 | Mon: Team formation due                       |
+|      |          | F: Lec7: Pandas - groupby, concat, merge           |  Week 3-3 |                                               |
+|   4  |  2/5/24  | M: Lec8: Pandas - IO and methods                   |  Week 4-1 | Mon: Paper reading open.                      |
+|      |          | W: PE1: Pandas exercises                           |  Week 4-2 |                                               |
+|      |          | F: Lab2: Pandas                                    |  Week 4-3 |                                               |
+|   5  |  2/12/24 | M: Lec9: Data visualization -   Matplotlib, Pandas |  Week 5-1 | Mon: HW2 due; HW3 out.                        |
+|      |          | W: Lec10: Data visualization - Seaborn             |  Week 5-2 |                                               |
+|      |          | F: Lec11: Data visualization - Plotly              |  Week 5-3 |                                               |
+|   6  |  2/19/24 | M: Lab3: Visualization                             |  Week 6-1 | Mon: Project proposal due.                    |
+|      |          | W: Lec12: Module 1 summary and exam 1 preview      |  Week 6-2 |                                               |
+|      |          | F: <span style="color:blue">Exam 1</span>          |           |                                               |
+|   7  |  2/26/24 | M: Lec13: Basic statistics                         |  Week 7-1 |                                               |
+|      |          | W: Lec14: More on Statistics and probability       |  Week 7-2 |                                               |
+|      |          | F: Lec15: Intro to machine learning                |  Week 7-3 |                                               |
+|   8  |  3/4/24  | M: <span style="color:red">Spring Break; No Classes</span>|    | Mon: HW 3 due.                                |
+|      |          | W: <span style="color:red">Spring Break; No Classes</span>|    |                                               |
+|      |          | F: <span style="color:red">Spring Break; No Classes</span>|    |                                               |
+|   9  |  3/11/24 | M: Lec16: Linear regression                        |  Week 9-1 |                                               |
+|      |          | W: PE2: Linear regression exercises                |  Week 9-2 |                                               |
+|      |          | F: Lec17: Logistic regression Part 1               |  Week 9-3 |                                               |
+|  10  |  3/18/24 | M: Lec18: Logistic regression Part 2               | Week 10-1 | Mon: Paper reading due; HW4 out.              |
+|      |          | W: Lec19: K nearest neighbors                      | Week 10-2 |                                               |
+|      |          | F: PE3: Classification                             | Week 10-3 |                                               |
+|  11  |  3/25/24 | M: Lab4: Classification                            | Week 11-1 | Mon: Project milestone due.                   |
+|      |          | W: Project milestone demo                          |           |                                               |
+|      |          | F: <span style="color:red">College Holiday, No Classes</span>| |                                               |
+|  12  |  4/1/24  | M: Lec20: K-means clustering                       | Week 12-1 | Mon: HW4 due; HW5 out.                        |
+|      |          | W: PE3: K-means exercises                          | Week 12-2 |                                               |
+|      |          | F: Lab5: Clustering                                | Week 12-3 |                                               |
+|  13  |  4/8/24  | M: Lec21: Dimensionality reduction                 | Week 13-1 |                                               |
+|      |          | W: PE4: PCA                                        | Week 13-2 |                                               |
+|      |          | F: Lec22: Support vector machine                   | Week 13-3 |                                               |
+|  14  |  4/15/24 | M: PE5: SVM                                        | Week 14-1 | Mon: HW5 due.                                 |
+|      |          | W: Lab6: SVM                                       | Week 14-2 |                                               |
+|      |          | F: Lec23: Module 2 summary and exam 2 preview      | Week 14-3 |                                               |
+|  15  |  4/22/24 | M: <span style="color:blue">Exam 2</span>          |           | Mon: Paper presentation due.                  |
+|      |          | W: Paper presentation group 1                      |           |                                               |
+|      |          | F: Paper presentation group 2                      |           | 04/28 midnight: Final project due             |
+|  16  |  4/29/23 | M: Final project presentation group 1              |           |                                               |
+|      |          | W: Final project presentation group 2              |           |                                               |
+|      |          | F: No Class                                        |           |                                               |
+|  17  |  5/6/23  | M: No Class                                        |           |                                               |
+|      |          | Tue 5/7: 11:00 AM - 2:00 PM Presentation group 3   |           |                                               |
+|      |          | F: Enjoy your summer break!                        |           |                                               |

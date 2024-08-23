@@ -23,7 +23,7 @@ The final grade for this course depends upon the grades and scores earned on cou
 *	**24%**: 8 take-home quizzes.
 *	**5%**: Individual paper reading assignment.
 *	**5%** : Team paper presentation - peer evaluation (50%), instructor evaluation (50%).
-*	**25%**: 4 individual homework.
+*	**20%**: 4 individual homework.
 *	**25%**: 2 midterm exams.
 *	**15%**: Final Project - project proposal (10%). Midterm check (20%). Project demonstration and presentation (40%). Final project report and revised code (30%).
 

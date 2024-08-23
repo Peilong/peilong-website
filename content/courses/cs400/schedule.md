@@ -16,21 +16,24 @@ weight: 5
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-| Week | Starting | Activities            | Notes                      |
-|------|----------|-----------------------|----------------------------|
-| 1    | 1/25/21  | Research              |                            |
-| 2    | 2/1/21   | Research              |                            |
-| 3    | 2/8/21   | Research              |                            |
-| 4    | 2/15/21  | Design                | Proposal Due Mon           |
-| 5    | 2/22/21  | Design                |                            |
-| 6    | 3/1/21   | Design                |                            |
-| 7    | 3/8/21   | Implementation        | Milestone 1 Due Mon        |
-| 8    | 3/15/21  | Implementation        |                            |
-| 9    | 3/22/21  | Implementation        |                            |
-| 10   | 3/29/21  | Implementation        | Milestone 2 Due Mon        |
-| 11   | 4/5/21   | Implementation        |                            |
-| 12   | 4/12/21  | Implementation        |                            |
-| 13   | 4/19/21  | Testing and Debugging | Milestone 3 Due Mon        |
-| 14   | 4/26/21  | Testing and Debugging |                            |
-| 15   | 5/3/21   | Testing and Debugging | Presentation due this week |
-| 16   | 5/10/21  | Wrap up               | Paper and Project Due      |
+Last updated: 01/16/2023
+
+| Week | Activities                                            | Notes                                                                  |
+|:----:|-------------------------------------------------------|------------------------------------------------------------------------|
+| 1    | Literature search, Finalize topic with the instructor | Mon: Start proposal                                                    |
+| 2    | Proposal write-up                                     | Mon: create Github repository                                          |
+| 3    | Write software feature specifications                 | Mon: Github commit 1                                                   |
+| 4    | Feature 1 implementation                              | Mon: Start Milestone 1, Proposal Due                                   |
+| 5    | Feature 1 implementation                              | Mon: Github commit 2                                                   |
+| 6    | Feature 2 implementation                              | Mon: Github commit 3                                                   |
+| 7    | Feature 2 implementation                              | Mon: Start Milestone 2, Milestone 1 Due                                |
+| 8    | Spring break, no classes                              |                                                                        |
+| 9    | Feature 3 implementation                              | Mon: Github commit 4                                                   |
+| 10   | Feature 3 implementation                              | Mon: Github commit 5                                                   |
+| 11   | Design revision                                       | Mon: Start Milestone 3, Milestone 2 Due, mid-term demo during the week |
+| 12   | Design revision                                       | Mon: Github commit 6                                                   |
+| 13   | Testing and debugging                                 | Mon: Github commit 7                                                   |
+| 14   | Final paper write-up                                  | Mon: Start final paper, Milestone 3 Due                                |
+| 15   | Final presentation                                    | Tue: Present on SCAD Day                                               |
+| 16   | Code cleanup, packaging, and publishing               | Mon: Github commit 8                                                   |
+| 17   | Revise the project with instructor feedback           | Mon: Final paper and code Due                                          |

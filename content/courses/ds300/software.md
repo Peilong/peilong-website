@@ -22,10 +22,6 @@ In this course the only software you will need to install and play with is the A
 
 Anaconda Distribution is available on the computers in the Esbenshade 281, Hoover 108 and Nicarry 208 computer laboratories and in the Computer Science commons area (E284).
 
-## Jupyter Notebook (included in Anaconda)
-
-A Jupyter Notebook server is hosted at: http://cs64.etown.edu:8000. Note that you need to VPN into campus network if visiting from off campus. If you are a member of the class, your default user name on the server is: your last name followed by first name initial, e.g. Taylor Swift's account is "swiftt", and the default login password is "pass". Reset your password immediately after login.
-
 ## Google Colab
 
 Google Colab ([link](https://colab.research.google.com/)) is a cloud-based Jupyter notebook-like service that is free for use under certain usage quota. It is required that students learn to use this service for speeding up the training time for Deep Learning models. 
