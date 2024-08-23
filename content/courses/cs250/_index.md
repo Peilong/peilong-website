@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: CS 250 Foundations of AI and Data Science
 summary: Introduces fundamental concepts and techniques in artificial intelligence and data science, covering topics such as machine learning, data analysis, and algorithmic decision-making.
-weight: 4
+weight: 5
 
 # Page metadata.
 title: CS 250 Foundations of AI and Data Science

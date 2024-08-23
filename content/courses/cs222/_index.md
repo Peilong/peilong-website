@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: CS/EGR 222 Systems Programming
 summary: Advanced system programming course covering C, Linux, Virtual Machines, Cloud Computing, and Containers in modern programming contexts.
-weight: 3
+weight: 4
 
 # Page metadata.
 title: CS/EGR 222 Systems Programming

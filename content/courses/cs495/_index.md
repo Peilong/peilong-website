@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: CS 495 Honors Projects in Computing
 summary: An advanced research course for Computer Science majors and a prerequisite for Honors in the Discipline.
-weight: 9
+weight: 11
 
 # Page metadata.
 title: CS 495 Honors Projects in Computing

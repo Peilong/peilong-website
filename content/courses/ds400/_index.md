@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: DS 400 Data Science Capstone
 summary: An advanced research course for Data Science majors.
-weight: 9
+weight: 12
 
 # Page metadata.
 title: DS 400 Data Science Capstone

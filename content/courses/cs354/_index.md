@@ -1,8 +1,8 @@
 ---
 # Course title, summary, and position.
-linktitle: DS 420 Big Data
+linktitle: CS 354 Big Data
 summary: This course covers techniques needed to collect, store, analyze, and visualize big data, particularly for applications in machine learning at scale.
-weight: 8
+weight: 7
 
 # Page metadata.
 title: DS 420 Big Data
@@ -16,8 +16,8 @@ type: docs  # Do not modify.
 # - name: Declare this menu item as a parent with ID `name`.
 # - weight: Position of link in menu.
 menu:
-  ds420:
-    name: DS 420
+  cs354:
+    name: CS 354
     weight: 1
 ---
 

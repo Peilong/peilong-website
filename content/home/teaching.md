@@ -24,7 +24,7 @@ Courses I have taught (am teaching) at Elizabethtown College:
 - CS/EGR 222: Systems Programming (C)
 - CS 250: Foundations of AI and Data Science (formerly DS 200)
 - CS 350: From Data Mining to Deep Learning (formerly DS 300)
-- CS 360: Big Data (formerly DS 420)
+- CS 354: Big Data (formerly DS 420)
 - DS 400/495: Data Science Capstone
 - CS 363: Computer Security
 - CS 364: Network Security
