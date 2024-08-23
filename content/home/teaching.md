@@ -17,16 +17,18 @@ weight = 30
 For details, visit my Courses page:
 - [Courses page](https://peilong.github.io/courses/)
 
-Courses I am teaching at Elizabethtown College:
-- DS 200: Introduction to Data Science
-- DS 300: Data Mining
-- DS 420: Big Data
-- DS 495: Data Science Capstone
+Courses I have taught (am teaching) at Elizabethtown College:
 - CS 113 (NPS core): The Power and Beauty of Programming (in Python)
-- CS 121: Computer Science I (in Java)
-- CS/EGR 222: Systems Programming (in C)
-- CS 400: Projects in Computing
-- CS 495: Honors Projects in Computing
+- CS 121: Computer Science I (Python)
+- CS 122: Computer Science II (Java)
+- CS/EGR 222: Systems Programming (C)
+- CS 250: Foundations of AI and Data Science (formerly DS 200)
+- CS 350: From Data Mining to Deep Learning (formerly DS 300)
+- CS 360: Big Data (formerly DS 420)
+- DS 400/495: Data Science Capstone
+- CS 363: Computer Security
+- CS 364: Network Security
+- CS 400/495: Projects in Computing
 - EGR 401: Senior Project in Engineering I
 - EGR 402: Senior Project in Engineering II
 
