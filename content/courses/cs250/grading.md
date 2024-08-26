@@ -19,13 +19,14 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **6%** : A number of in-class pop quizzes.
+* **5%** : A number of in-class pop quizzes.
 * **5%** : Individual paper reading assignment.
 * **5%** : Team paper presentation.
-*	**24%**: 8 equally weighted in-class labs - 4% for each lab.
-*	**20%**: 5 equally weighted homework assignments – 4% for each assignment.
-*	**25%**: 2 midterm exams.
-*	**15%**: Final Project - project proposal (1.5%). Milestone check (3%). Project demonstration and presentation (6%). Final project report and revised code (4.5%).
+* **15%** : Bi-daily reading assignments.
+*	**15%**: 5 individual homework.
+*	**18%**: 6 in-class labs.
+*	**20%**: 2 midterm exams.
+*	**17%**: Final Project - project proposal (1.7%). Milestone check (3.4%). Project demonstration and presentation (6.8%). Final project report and revised code (5.1%).
 
 Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:
 

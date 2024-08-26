@@ -19,13 +19,13 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **6%** : A number of in-class pop quizzes.
+* **5%** : A number of in-class pop quizzes.
 *	**24%**: 8 take-home quizzes.
 *	**5%**: Individual paper reading assignment.
 *	**5%** : Team paper presentation - peer evaluation (50%), instructor evaluation (50%).
-*	**25%**: 4 individual homework.
-*	**25%**: 2 midterm exams.
-*	**15%**: Final Project - project proposal (10%). Milestone check (20%). Project demonstration and presentation (40%). Final project report and revised code (30%).
+*	**20%**: 4 individual homework.
+*	**24%**: 2 midterm exams.
+*	**17%**: Final Project - project proposal (1.7%). Milestone check (3.4%). Project demonstration and presentation (6.8%). Final project report and revised code (5.1%).
 
 Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:
 

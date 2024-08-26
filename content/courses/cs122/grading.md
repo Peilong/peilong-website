@@ -19,7 +19,7 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **8%** : A number of in-class pop quizzes.
+* **5%** : A number of in-class pop quizzes.
 * **15%** : Bi-daily reading assignments.
 * **12%**: 4 individual homework.
 *	**15%**: 3 team projects.
