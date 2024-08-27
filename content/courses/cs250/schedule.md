@@ -56,8 +56,8 @@ Last updated: 08/24/2022
 |      |          | W: Lab5: Clustering                                     | Week 11-2 |                                                      |
 |      |          | F: Lec21: Dimensionality reduction                      | Week 11-3 |                                                      |
 |  12  | 11/11/24 | M: PE4: PCA                                             | Week 12-1 | Mon: Paper presentation due.                         |
-|      |          | W: <span style="color:green;">Paper presentation group 1</span>  | Week 12-2 |                                                      |
-|      |          | F: <span style="color:green;">Paper presentation group 2</span>  | Week 12-3 |                                                      |
+|      |          | W: <span style="color:green;">Paper presentation group 1</span>  |   |                                                      |
+|      |          | F: <span style="color:green;">Paper presentation group 2</span>  |  |                                                      |
 |  13  | 11/18/24 | M: Lec22: Support vector machine                        | Week 13-1 |                                                      |
 |      |          | W: PE5: SVM                                             | Week 13-2 |                                                      |
 |      |          | F: Lab6: SVM                                            | Week 13-3 |                                                      |
