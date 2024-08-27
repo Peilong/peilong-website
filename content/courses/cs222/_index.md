@@ -50,6 +50,6 @@ By email
 *CS 222/EGR 222 Systems Programming*.
 2023, zyBooks.
   * Sign in or create an account at: [learn.zybooks.com](https://learn.zybooks.com)
-  * Enter zyBook code: **ETOWNCS222EGR222LiSpring2023**
-  * Subscribe. Subscription fee: $58. Valid through end of May.
+  * Enter zyBook code: **ETOWNCS222EGR222LiSpring2025**
+  * Subscribe. Subscription fee: $89. Valid through end of May.
 <img src="https://peilong.github.io/img/cs222_textbook.png" width="200">
