@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: CS 400 Projects in Computing
 summary: A capstone course for Computer Science and Information Systems majors.
-weight: 10
+weight: 11
 
 # Page metadata.
 title: CS 400 Projects in Computing

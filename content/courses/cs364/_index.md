@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: CS 364 Network Security
 summary: Network Security covers essentials to advanced defense, including practical projects and 'Capture the Flag' competitions for IT professionals.
-weight: 9
+weight: 10
 
 # Page metadata.
 title: CS 364 Network Security

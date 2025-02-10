@@ -19,9 +19,9 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **4%** : A number of in-class pop quizzes.
+* **8%** : A number of in-class pop quizzes.
 * **15%**: Bi-daily reading assignments.
-* **16%**: 4 individual homework.
+* **12%**: 4 individual homework.
 *	**15%**: 3 team projects.
 *	**15%**: 5 in-class labs.
 * **20%**: 2 midterm exams.

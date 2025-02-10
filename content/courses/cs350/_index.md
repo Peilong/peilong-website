@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: CS 350 From Data Mining to Deep Learning
 summary: This course explores the evolution from data mining techniques to advanced deep learning methodologies, equipping students with the skills to analyze and derive insights from complex datasets.
-weight: 6
+weight: 7
 
 # Page metadata.
 title: CS 350 From Data Mining to Deep Learning

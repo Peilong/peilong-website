@@ -2,12 +2,12 @@
 # Course title, summary, and position.
 linktitle: CS 354 Big Data
 summary: This course covers techniques needed to collect, store, analyze, and visualize big data, particularly for applications in machine learning at scale.
-weight: 7
+weight: 8
 
 # Page metadata.
-title: DS 420 Big Data
+title: CS 354 Big Data
 date: "2018-09-09T00:00:00Z"
-lastmod: "2018-09-09T00:00:00Z"
+lastmod: "2025-01-09T00:00:00Z"
 draft: false  # Is this a draft? true/false
 toc: true  # Show table of contents? true/false
 type: docs  # Do not modify.
@@ -22,7 +22,7 @@ menu:
 ---
 
 
-This course covers techniques needed to collect, store, analyze, and visualize big data, particularly for applications in machine learning at scale.
+This course covers techniques needed to collect, store, analyze, and visualize big data, particularly for applications in machine learning at scale. The MapReduce paradigm will be taught using the popular Hadoop framework. Both batch and real-time analysis of massive quantities of data will be applied to machine learning problems such as clustering, regression, and classification. Relational SQL and NoSQL database models will be discussed and compared with use case analysis. Natural language processing will be studied as a comprehensive big data application. 
 
 ## Instructor:
 
@@ -42,13 +42,12 @@ By email
 
 ## Pre-requisites
 
-* DS 200 Introduction to Data science
+* CS 250 Foundations of AI and Data Science
 * CS 209 Database Systems
 
 ## Textbooks
 
-* **(Required)** Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee.
-*Learning Spark: Lightening-Fast Data Analytics, 2nd Edition. (LS)*.
-2020, O'Reilly Media.
-ISBN-13: 978-1492050018.
-A free version of the textbook can be retrieved at: [Link](https://peilong.github.io/files/ds420/LearningSpark2.0.pdf).
+* **(Required)** Mehrotra, Shrey; Grade, Akash.
+*Apache Spark Quick Start guide : quickly learn the art of writing efficient big data applications with Apache Spark*.
+2019, Birmingham : Packt.
+A free version of the textbook can be retrieved at: [Link](https://klnpa-etown.primo.exlibrisgroup.com/permalink/01SSHELCO_ETOWN/7hq976/alma991004078932003575).

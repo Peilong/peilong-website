@@ -19,12 +19,13 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **4%** : A number of in-class pop quizzes.
-*	**24%**: 6 take-home quizzes.
-*	**7%** : Paper reading and lecture presentation.
+* **5%** : A number of in-class pop quizzes.
+*	**24%**: 6 labs.
+*	**5%**: Individual paper reading assignment.
+*	**5%** : Team lecture presentation - peer evaluation (50%), instructor evaluation (50%).
 *	**20%**: 5 individual homework.
-*	**25%**: 2 midterm exams.
-*	**20%**: Final Project - project proposal (10%); Milestone 1 (15%); Milestone 2 (15%); SCAD Day Presentation (20%); Final presentation (20%). Final project report and revised code (20%).
+*	**24%**: 2 midterm exams.
+*	**17%**: Final Project - project proposal (1.7%); Milestone check (3.4%); SCAD Day Presentation (6.8%); Final project report and revised code (5.1%).
 
 Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:
 

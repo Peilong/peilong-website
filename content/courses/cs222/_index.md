@@ -48,7 +48,7 @@ By email
 
 * **(Required)** Peilong Li.
 *CS 222/EGR 222 Systems Programming*.
-2023, zyBooks.
+2025, zyBooks.
   * Sign in or create an account at: [learn.zybooks.com](https://learn.zybooks.com)
   * Enter zyBook code: **ETOWNCS222EGR222LiSpring2025**
   * Subscribe. Subscription fee: $89. Valid through end of May.

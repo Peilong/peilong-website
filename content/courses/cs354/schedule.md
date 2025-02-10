@@ -16,55 +16,85 @@ weight: 6
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-Last Updated: 04/09/2022
+Last Updated: 01/13/2025
 
-| Week | Starting |                          Topics                          |        Reading        |                      Notes                      |
-|:----:|:--------:|----------------------------------------------------------|-----------------------|-------------------------------------------------|
-|   1  |  1/16/23 | T: Lec1 - Course introduction; Intro to Big Data         |    Reading1_Hadoop    | Mon: HW1 out.                                   |
-|      |          | H: Lec2 - Hadoop Ecosystem                               |                       |                                                 |
-|   2  |  1/23/23 | T: Lec3 - HDFS                                           |     Reading2_HDFS     | Mon: HW1 due.                                   |
-|      |          | H: Lec4 - MapReduce                                      |                       |                                                 |
-|   3  |  1/30/23 | T: PE1 - MapReduce Exercise                              |      Reading3_MR      | Mon: Quiz 1 week; HW 2 out; Team formation due. |
-|      |          | H: Lec5 - Apache Pig                                     |                       |                                                 |
-|   4  |  2/6/23  | T: PE2 - Pig Exercise                                    |      Reading4_Pig     | Mon: Quiz 2 week.                               |
-|      |          | H: Lec6 - NoSQL (Paper 1 Presentation)                   |                       |                                                 |
-|   5  |  2/13/23 | T: Lec7 - Hbase (Paper 2 Presentation)                   |    Paper1 & Paper2    | Mon: HW2 due; HW3 out; Finalize project topic and dataset. |
-|      |          | H: Lec8 - MongoDB                                        |                       |                                                 |
-|   6  |  2/20/23 | T: <span style="color:blue">Exam 1</span>                |      Paper3_Spark     |                                                 |
-|      |          | H: Lec9 - Intro to Apache Spark (Paper 3 Presentation)   |                       |                                                 |
-|   7  |  2/27/23 | T: Lec10 - Spark RDD (Paper 4 Presentation)              |  Paper4_RDD, LS Ch.3  | Mon: HW3 due. Final project proposal due        |
-|      |          | H: Lec11 - Spark DataFrame                               |                       |                                                 |
-|   8  |  3/6/23  | T: <span style="color:red">Spring Break, No Classes</span>|                      |                                                 |
-|      |          | H: <span style="color:red">Spring Break, No Classes</span>|                      |                                                 |
-|   9  |  3/13/23 | T: PE3 - Spark DataFrame Exercise                        | Paper5_Mllib, LS Ch.4 | Mon: Quiz 3 week; HW4 out                       |
-|      |          | H: Lec12 - Spark Machine Learning (Paper 5 Presentation) |                       |                                                 |
-|  10  |  3/20/23 | T: PE4 - Spark Linear Regression Exercise                |        LS Ch.10       |                                                 |
-|      |          | H: Lec13 - Spark Logistic Regression                     |                       |                                                 |
-|  11  |  3/27/23 | T: Lec14 - Spark Tree Classifiers                        |        LS Ch.11       | Mon: Project milestone 1 due (50% work done)    |
-|      |          | H: PE5 - Spark Trees                                     |                       |                                                 |
-|  12  |  4/3/23  | T: Lec15 - Spark K-Means                                 |        LS Ch.7        | Mon: Quiz 4 week                                |
-|      |          | H: <span style="color:blue">Exam 2</span>                |                       |                                                 |
-|  13  |  4/10/23 | T: Lec16 - Intro to NLP                                  |      Reading5_NLP     | Mon: HW4 due                                    |
-|      |          | H: Lec17 - NLP by example                                |                       |                                                 |
-|  14  |  4/17/23 | T: Lec18 - NLP with Spark                                |        LS Ch.8        | Mon: Quiz 5 week                                |
-|      |          | H: Lec19 - Apache Kafka                                  |                       | Fri: Project milestone 2 due (90% work done)    |
-|  15  |  4/24/23 | T: <span style="color:red">Scholarship Day, Student Presentation</span>|  Spark Document   | Mon: HW5 out, SCAD slides due                   |
-|      |          | H: Lec20 - Spark Streaming                               |                       | Tue: Present at SCAD Day                        |
-|  16  |  5/1/23  | T: PE6 - Data Streaming                                  |                       | Mon: Quiz 6 week                                |
-|      |          | H: <span style="color:red">Reading Day, No Classes</span>|                       |                                                 |
-|  17  |  5/8/23  | T: <span style="color:blue">Work on Final Project Report</span>|           | Mon: Final presentation and demo code due       |
-|      |          | H: Have a great summer!                                  |                       | Wed: Final report and revised code due; HW5 due |
+| Week | Starting |                 Topics                 |   Reading  |                  Notes                 |
+|:----:|:--------:|----------------------------------------|------------|----------------------------------------|
+|   1  |  1/13/25 | M: Lec1 - Course intro; Big Data       |   Week 1   | Mon: HW1 out                           |
+|      |          | W: Lec2 -  Hadoop Ecosystem            |            |                                        |
+|      |          | F: Lec3 - HDFS                         |            |                                        |
+|   2  |  1/20/25 | M: <span style="color:red">MLK Day; No Classes</span>|   Week 2   |                                        |
+|      |          | W: Lec4 - MapReduce                    |            | Tue: HW1 due                                        |
+|      |          | F: <span style="color:red">Dr. Li on travel; No Classes</span>|            |                                        |
+|   3  |  1/27/25 | M: PE1 - MapReduce Exercise            |   Week 3   | Mon: HW2 out                  |
+|      |          | W: Lab 1                               |            | Team formation due                     |
+|      |          | F: Lec5 - Apache Pig                   |            |                                        |
+|   4  |  2/3/25  | M: PE2 - Pig Exercise                  |   Week 4   |                                        |
+|      |          | W: Lab 2                               |            |                                        |
+|      |          | F: Lec6 - Apache Spark                 |    Finalize project topic and dataset          |                                        |
+|   5  |  2/10/25 | M: Lec7 - Spark deployment on GCP      |   Week 5   | Mon: HW2 due; HW3 out                  |
+|      |          | W: Lec8 - Spark Low-level API          |            |    |
+|      |          | F: Lec9 - Spark DataFrame              |            |                                        |
+|   6  |  2/17/25 | M: PE3 - Spark DataFrame               |   Week 6   |                                        |
+|      |          | W: Lab 3                               |            |                                        |
+|      |          | F: Lec10 - Module 1 summary            |            |                                        |
+|   7  |  2/24/25 | M: <span style="color:green">Exam 1</span>|            | Mon: HW3 due                           |
+|      |          | W: <span style="color:red">Dr. Li on travel; No Classes</span>|            |                                        |
+|      |          | F: <span style="color:red">Dr. Li on travel; No Classes</span>|            | Fri: Proposal due                      |
+|   8  |  3/3/25  | M: <span style="color:red">Spring Break; No Classes</span>|            |                                        |
+|      |          | W: <span style="color:red">Spring Break; No Classes</span>|            |                                        |
+|      |          | F: <span style="color:red">Spring Break; No Classes</span>|            |                                        |
+|   9  |  3/10/25 | M: Lec11 - Spark Machine Learning      |   Week 9   | Mon: HW4 out                           |
+|      |          | W: Lec12 - Spark Linear Regression     |            |                                        |
+|      |          | F: Lec13 - Spark Logistic Regression   |            |                                        |
+|  10  |  3/17/25 | M: Lec14 - Spark Tree Classifiers      |   Week 10  |                                        |
+|      |          | W: PE4 - Spark ML                      |            |                                        |
+|      |          | F: Lab 4                               |            |                                        |
+|  11  |  3/24/25 | M: Lec15 - Spark KMeans                |   Week 11  | Mon: Project milestone 1 due (40%)     |
+|      |          | W: Lec16 - NLP at Scale                |            |                                        |
+|      |          | F: Lec17 - NLP with Spark              |            |                                        |
+|  12  |  3/31/25 | M: PE5 - ML at Scale                   |            | Mon: HW4 due                           |
+|      |          | W: Lab 5                               |            |                                        |
+|      |          | F: <span style="color:green">Exam 2</span>|            |                                        |
+|  13  |  4/7/25  | M: Paper Presentation: Kafka           | Paper 1, 2 | Mon: HW 5 out                          |
+|      |          | W: Paper Presentation: Spark Streaming |            |                                        |
+|      |          | F: PE6 - Data Streaming                |            |                                        |
+|  14  |  4/14/25 | M: Lab 6                               | Paper 3, 4 | Mon: Project milestone 2 due (80%)     |
+|      |          | W: Paper Presentation: NoSQL Overview  |            |                                        |
+|      |          | F: <span style="color:red">Easter Break; No Classes</span>|            |                                        |
+|  15  |  4/21/25 | M: Paper Presentation: Hbase           | Paper 5, 6 | Mon: HW 5 due                          |
+|      |          | T: SCAD Day: Volunteer Presentation    |            |                                        |
+|      |          | W: Paper Presentation: DynamoDB        |            |                                        |
+|      |          | F: Paper Presentation: Cassandra       |            |                                        |
+|  16  |  4/28/25 | M: <span style="color:red">Project Day; No Classes</span>|            |                                        |
+|      |          | W: Project Presentation Group 1        |            | Wed by noon: presentation and demo due |
+|      |          | F: Project Presentation Group 2        |            |                                        |
+|  17  |  5/5/25  | M: Project Group 3: 2:30 - 5:30 PM     |            |                                        |
+|      |          | W: Have a great summer break!          |            | Wed: Final report and revised code due |
+|      |          | F: Have a great summer break!          |            |                                        |
 
 ## Reading List
 
-1. Textbook "Learning Spark, 2nd Edition" (Short name: <span style="color:red">LS</span>): [Link](https://peilong.github.io/files/ds420/LearningSpark2.0.pdf)
-2. Reading1_Hadoop: [Link](https://peilong.github.io/files/ds420/Reading1_Hadoop.pdf)
-3. Reading2_HDFS: [Link](https://peilong.github.io/files/ds420/Reading2_HDFS.pdf)
-4. Reading3_MR: [Link](https://peilong.github.io/files/ds420/Reading3_MR.pdf)
-5. Reading4_Pig: [Link](https://peilong.github.io/files/ds420/Reading4_Pig.pdf)
-6. Reading5_NLP: [Link](https://peilong.github.io/files/ds420/Reading5_NLP.pdf)
-7. Paper1_NoSQL: [Link](https://peilong.github.io/files/ds420/Paper1_NoSQL.pdf)
-8. Paper2_Hbase: [Link](https://peilong.github.io/files/ds420/Paper2_Hbase.pdf)
-9. Paper3_Spark: [Link](https://peilong.github.io/files/ds420/Paper3_Spark.pdf)
-10. Paper4_RDD: [Link](https://peilong.github.io/files/ds420/Paper4_RDD.pdf)
-11. Paper5_MLlib: [Link](https://peilong.github.io/files/ds420/Paper5_MLlib.pdf)
+| Reading # | Title                       | URL                                                                                                 |
+|:---------:|-----------------------------|-----------------------------------------------------------------------------------------------------|
+| Week 1    | Hadoop in a heartbeat       | https://peilong.github.io/files/cs354/Reading1_Hadoop.pdf                                           |
+| Week 2    | HDFS                        | https://peilong.github.io/files/cs354/Reading2_HDFS.pdf                                             |
+| Week 3    | MapReduce with Python       | https://peilong.github.io/files/cs354/Reading3_MR.pdf                                               |
+| Week 4    | Pig and Python              | https://peilong.github.io/files/cs354/Reading4_Pig.pdf                                              |
+| Week 5    | Apache Spark and RDD API    | https://peilong.github.io/files/cs354/Reading5_RDD.pdf                                              |
+| Week 6    | Spark SQL and DataFrame API | https://peilong.github.io/files/cs354/Reading6_SparkSQL.pdf                                         |
+| Week 9    | PySpark Machine Learning    | https://www.projectpro.io/hadoop-tutorial/pyspark-machine-learning-tutorial                         |
+| Week 10   | Random Forest in PySpark    | https://towardsdatascience.com/a-guide-to-exploit-random-forest-classifier-in-pyspark-46d6999cb5db  |
+| Week 11   | NLP with PySpark            | https://medium.com/@mrunmayee.dhapre/natural-language-processing-nlp-with-spark-python-f67ac513616f |
+| Week 13   | Spark Structured Streaming  | https://medium.com/analytics-vidhya/apache-spark-structured-streaming-with-pyspark-b4a054a7947d     |
+
+## Paper List
+
+| Paper # | Topic                  | URL                                            |
+|:-------:|------------------------|------------------------------------------------|
+| Paper 1 | Apache Kafka           | https://notes.stephenholiday.com/Kafka.pdf     |
+| Paper 2 | Spark Streaming        | https://dl.acm.org/doi/10.1145/2517349.2522737 |
+| Paper 3 | NoSQL Databases Review | https://dl.acm.org/doi/10.1145/1978915.1978919 |
+| Paper 4 | Apache Hbase           | https://dl.acm.org/doi/10.1145/1365815.1365816 |
+| Paper 5 | DynamoDB               | https://dl.acm.org/doi/10.1145/1323293.1294281 |
+| Paper 6 | Apache Cassandra       | https://dl.acm.org/doi/10.1145/1773912.1773922 |

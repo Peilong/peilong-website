@@ -2,7 +2,7 @@
 # Course title, summary, and position.
 linktitle: CS 363 Computer Security
 summary: This course introduces the student to the fundamentals of computer security.
-weight: 8
+weight: 9
 
 # Page metadata.
 title: CS 363 Computer Security
