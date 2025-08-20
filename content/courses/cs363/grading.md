@@ -20,9 +20,9 @@ weight: 4
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
 * **5%**: X in-class pop quizzes
-* **25%**: 5 in-class labs
-* **10%**: Lecture presentation
-* **20%**: 4 individual homework
+* **25%**: 5 in-class team labs
+* **10%**: Creative research: Research paper, new tech, CTF
+* **20%**: 5 individual homework
 * **25%**: 2 midterm exams
 * **15%**: Final project
 
@@ -38,9 +38,9 @@ Grades will be computed by rounding numerical percentages to the nearest integer
 ```Note that Canvas does not offer accurate calculation of your final weighted grade (e.g. the two midterm exams do not weigh equally), so students must compute their average by using the Canvas scores with the weights listed above.
 ```
 
-## In-class Labs in a Team
+## In-class Team Labs
 
-All labs are to be done in class, with the assistance of the instructor. Students are encouraged to form a team of two to solve the lab assignments together. Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credits, a programming assignment must compile, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
+All labs are to be done in class, with the assistance of the instructor. Students are required to form a team of two to solve the lab assignments together. Each assignment will be given near the beginning of a class and the lab report is due within 7 days, then after that, no submission is accepted. To receive full credits, students must take proper screenshots of the working lab and provide detailed answers to each question. Partial credit will be awarded based on the understanding of the material demonstrated by the student’s report.
 
 ## Individual Homework
 
@@ -50,9 +50,9 @@ All homework assignments have to be completed individually in this course. Homew
 
 Late assignment will lose ![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Cfn_phv%20%5Clarge%202%5E%7B%28n-1%29%7D) points per day, including weekends and holidays. For example, -1 after 1 day, -2 after 2 days, -4 after 3 days … until 8+ days students will receive 0 score.  **Under no circumstances should any student disclose their code, or copy the code written by other students or from an outside source. Both students will receive 0 score on the disclosed/copied assignment.**
 
-## Individual Lecture Presentation
+## Creative Group Research
 
-Students are required to read a designated chapter from the **V. Cryptography** module of the textbook and present it as a course lecture. The presentation time is 25-30 minutes and students need to cover all discussed topics from the textbook. The presenters will receive a written evaluation from all their peers and the instructor, and a weighted score (50\% from the peers; 50\% from the instructor) will be given to the presenters.
+To enrich the learning experience and encourage exploration beyond the classroom, students will work in groups of up to four members to complete a creative research assignment in one of the following categories: (1) Research paper (agreed by instructor) reading and analysis; (2) Presentation on a new technology (introduced within the last two years); and (3) CTF competition (within a year) write-up. 
 
 ## Final Team Project
 

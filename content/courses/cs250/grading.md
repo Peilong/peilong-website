@@ -41,13 +41,11 @@ Grades will be computed by rounding numerical percentages to the nearest integer
 ```Note that Canvas does not offer accurate calculation of your final weighted grade (e.g. the two midterm exams do not weigh equally), so students must compute their average by using the Canvas scores with the weights listed above.
 ```
 
+## In-class Team Labs
 
-## In-class labs
+All labs are to be done in class, with the assistance of the instructor. Students are required to form a team of two to solve the lab assignments together. Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credit, a programming assignment must have no code exceptions, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
 
-All labs are to be done individually, in class, with the assistance of the instructor. 
-Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credit, a programming assignment must have no code exceptions, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
-
-## Homework Assignments
+## Individual Homework
 
 All homework assignments have to be completed individually in this course. Homework assignments are meant to be more comprehensive tasks that may need additional reading and research. Homework assignments are to be completed in a week or two. 
 
@@ -55,12 +53,9 @@ All homework assignments have to be completed individually in this course. Homew
 
 Late assignment will lose ![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Cfn_phv%20%5Clarge%202%5E%7B%28n-1%29%7D) points per day, including weekends and holidays. For example, -1 after 1 day, -2 after 2 days, -4 after 3 days … until 8+ days students will receive 0 score.  Under no circumstances should any student disclose their code, or copy the code written by other students or from an outside source. Both students will receive 0 score on the disclosed/copied assignment.
 
-## Paper Reading Assignment & Paper Presentation
+## Creative Group Research
 
-Presenting data analysis results to public is one of the highly sought skills from data science employers. 
-
-Students are required to form a team of two and read at least one technical paper from the provided paper list (or other papers agreed by the instructor). Students need to complete 1) an **individual** paper reading assignment in the middle of the semester; and 2) **team-present** the paper to the instructor and their peers during the end of the semester. The grading of the paper presentation consists of 50% from peers and 50% from the instructor. The evaluation rubrics will be provided via Canvas.
-
+To enrich the learning experience and encourage exploration beyond the classroom, students will work in groups of up to four members to complete a creative research assignment in one of the following categories: (1) Research paper (agreed by instructor) reading and analysis; (2) Presentation on a new technology (introduced within the last two years); and (3) Ongoing Kaggle competition. 
 
 ## Final Project
 

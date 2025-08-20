@@ -40,10 +40,9 @@ Grades will be computed by rounding numerical percentages to the nearest integer
 ```Note that Canvas does not offer accurate calculation of your final weighted grade (e.g. the two midterm exams do not weigh equally), so students must compute their average by using the Canvas scores with the weights listed above.
 ```
 
-## In-class Labs
+## In-class Team Labs
 
-All labs are to be done individually, in class, with the assistance of the instructor. 
-Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credit, a programming assignment must compile, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
+All labs are to be done in class, with the assistance of the instructor. Students are required to form a team of two to solve the lab assignments together. Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credit, a programming assignment must compile, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
 
 ## Individual Homework and Team Projects
 
