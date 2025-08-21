@@ -51,7 +51,7 @@ By email
 *CS 250: Foundations of AI and Data Science*.
 ZyBooks. \
 Sign-up with: [link](learn.zybooks.com). \
-Enter zyBooks code: `ETOWNCS250LiFall2024`, then subscribe.
+Enter zyBooks code: `ETOWNCS250LiFall2025`, then subscribe.
 <img src="/files/cs250/cs250_zyBooks.png" width="200">
 
 * **(Optional)** Gareth James, et al.

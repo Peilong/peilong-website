@@ -51,6 +51,6 @@ By email
 *CS 122: Computer Science II*.
 ZyBooks. \
 Sign-up with: [link](learn.zybooks.com). \
-Enter zyBooks code: `ETOWNCS122LiFall2024`, then subscribe.
+Enter zyBooks code: `ETOWNCS122Fall2025`, then subscribe.
 <img src="/files/cs122/cs122_zyBooks.png" width="200">
 

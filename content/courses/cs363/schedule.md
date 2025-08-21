@@ -19,54 +19,23 @@ weight: 6
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-Last updated: 08/21/2023
+Last updated: 08/21/2025
 
-| Week | Starting |                                  Topics                                 |      Reading     |                         Notes                        |
-|:----:|:--------:|-------------------------------------------------------------------------|:----------------:|------------------------------------------------------|
-|   1  |  8/21/23 | M: Lec1 - Course introduction and computer security                     |       Ch 1       | Mon: HW1 out                                         |
-|      |          | W: Lec2 - Security Basics & SEED environment                            |                  |                                                      |
-|      |          | F: Lec3 - Linux commands for security                                   |                  |                                                      |
-|   2  |  8/28/23 | M: Lec4 -  Web technology basics                                        |       Ch 11      |                                                      |
-|      |          | W: Lec5 - Advanced web technolgy                                        |                  |                                                      |
-|      |          | F: <span style="color:red">Dr. Li on Travel - No Class</span>           |                  |                                                      |
-|   3  |  9/4/23  | M: <span style="color:red">Labor Day - No Class </span>                 |       Ch 12      | Team formation due, Start project proposal writing   |
-|      |          | W: Lec6 - Cross-site request forgery (CSRF)                             |                  |                                                      |
-|      |          | F: Lec7 - CSRF countermeasures                                          |                  |                                                      |
-|   4  |  9/11/23 | M: PE1 - CSRF                                                           |       Ch 13      | Mon: HW1 due, HW2 out                                |
-|      |          | W: Lab1 - CSRF                                                          |                  |                                                      |
-|      |          | F: Lec8 - Cross-site scripting attack   (XSS)                           |                  |                                                      |
-|   5  |  9/18/23 | M: Lec9 - XSS Part 2                                                    |       Ch 14      |                                                      |
-|      |          | W: Lec10 - XSS countermeasures and generalization                       |                  |                                                      |
-|      |          | F: PE2 - XSS                                                            |                  |                                                      |
-|   6  |  9/25/23 | M: Lab2 - XSS                                                           | Project chapters | Mon: HW2 due, HW3 out                                |
-|      |          | W: Lec11 - SQL Injection attack (SQLi)                                  |                  |                                                      |
-|      |          | F: PE3 - SQLi                                                           |                  |                                                      |
-|   7  |  10/2/23 | M: Lab 3 - SQLi; Exam 1 preview                                         | Project chapters | Mon: Project proposal due                            |
-|      |          | W: <span style="color:green">Exam 1</span>                              |                  |                                                      |
-|      |          | F: <span style="color:red">Fall Break - No Class</span>                 |                  |                                                      |
-|   8  |  10/9/23 | M: Lec12 - Users, groups and access control list (ACL)                  |       Ch 2       |                                                      |
-|      |          | W: Lec13 - Set-UID mechanism                                            |                  |                                                      |
-|      |          | F: Lec14 - Set-UID attack surface                                       |                  |                                                      |
-|   9  | 10/16/23 | M: Lec15 -  Environment varialbes (ENV) attacks                         |       Ch 3       | Mon: HW3 due, HW 4 out                               |
-|      |          | W: Lec16 - ENV attack surface and case studies (Simon Burleson)         |                  |                                                      |
-|      |          | F: PE4 - Set-UID                                                        |                  |                                                      |
-|  10  | 10/23/23 | M: Lab4 - Set-UID                                                       |       Ch 4       |                                                      |
-|      |          | W: Lec17 - Buffer overflow (BOF) attack (Matt Sutton)                   |                  |                                                      |
-|      |          | F: Lec18 - BOF countermeasures (Aiden Walmer)                               |                  | Fri: Final project midterm check due                 |
-|  11  | 10/30/23 | M: PE5 - Buffer overflow                                                |       Ch 24      | Mon: HW 4 due, HW 5 out                              |
-|      |          | W: Lab5 - Buffer overflow                                               |                  |                                                      |
-|      |          | F: Module 2 summary; Exam 2 preview                                     |                  |                                                      |
-|  12  |  11/6/23 | M: <span style="color:green">Exam 2</span>                              |       Ch 25      |                                                      |
-|      |          | W: Lec19 - Introduction to cryptography                                 |                  |                                                      |
-|      |          | F: Lec20 - Secret-key encryption (Anfal Al-Hussaini)                    |                  |                                                      |
-|  13  | 11/13/23 | M: Lec21 - One-way hash function (Isabel Pacheco Mattivi)               |       Ch 26      | Mon: HW 5 due                                        |
-|      |          | W: Lec22 - Public-key cryptography (Phillip Goldberg)                   |                  |                                                      |
-|      |          | F: Lec23 - Public-key infrastructure (Alex Fox)                         |                  |                                                      |
-|  14  | 11/20/23 | M: Lec24 - TLS and HTTPS (Giovanni Raso)                                |       Ch 27      |                                                      |
-|      |          | W: Lec25 - Blockchain and Bitcoin (Tyler Souders)                       |                  |                                                      |
-|      |          | F: <span style="color:red">Thanksgiving Break - No Class</span>         |                  |                                                      |
-|  15  | 11/27/23 | M: Project presentation group 1                                         | Project chapters |                                                      |
-|      |          | W: Project presentation group 2                                         |                  |                                                      |
-|      |          | F: Project presentation group 3                                         |                  |                                                      |
-|  16  |  12/4/23 | M: Project presentation group 4 (if needed)                             |                  |                                                      |
-|      |          |                                                                         |                  | Fri: Final report and revised code due               |
+| Week | Starting | Topics | Reading | Notes |
+|:----:|:--------:|--------|:-------:|-------|
+| 1 | 8/25/23 | T: Lec 1 - Course introduction and computer security <br> Th: Lec 2 - SEED environment & Linux Security | Ch 1 | Mon: HW1 out |
+| 2 | 9/1/23 | T: Lec 3 - Web technology basics <br> Th: Lec 4 - Advanced web technology | Ch 11 | Project team formation due |
+| 3 | 9/8/23 | **<span style="color:red">T: Project day - Start proposal writing</span>** <br> Th: Lec 5 - Cross-site request forgery (CSRF) | Ch 12 | Start project proposal writing |
+| 4 | 9/15/23 | T: Lec 6 - CSRF countermeasures; PE 1 <br> Th: Lab 1 - CSRF | Ch 13 | Mon: HW1 due, HW2 out |
+| 5 | 9/22/23 | T: Lec 7 - Cross-site scripting attack (XSS) <br> Th: Lec 8 - XSS Part 2 Bash and shell functions | Ch 14 | Mon: creative research started |
+| 6 | 9/29/23 | T: Lec 9 - XSS countermeasures and generalization; PE 2 <br> Th: Lab 2 - XSS | Project chapters | Mon: HW2 due, HW3 out |
+| 7 | 10/6/23 | T: Lec 10 - SQL Injection attack (SQLi) <br> **<span style="color:red">Th: Fall Break - No Class</span>** | Project chapters | |
+| 8 | 10/13/23 | T: Lab 3 - SQLi <br> **<span style="color:green">Th: Exam 1</span>** | Notes | Mon: Project proposal due |
+| 9 | 10/20/23 | T: Lec 11 - Users, groups and access control list (ACL) <br> Th: Lec 12 - Set-UID mechanism | Ch 2 | Mon: HW3 due |
+| 10 | 10/27/23 | T: Lec 13 - Environment variables (ENV) attacks <br> Th: Lec 14 - ENV attack surface and case studies | Ch 3 | Mon: HW 4 out, creative research check-in |
+| 11 | 11/3/23 | T: Lab 4 - SetUID <br> Th: Lec 15 - Buffer overflow attack | Ch 4 | Mon: Project milestone submission |
+| 12 | 11/10/23 | T: Lec 16 - BOF countermeasures <br> Th: Lab 5 - BOF | Notes | Mon: HW 4 due, HW 5 out |
+| 13 | 11/17/23 | **<span style="color:green">T: Exam 2</span>** <br> Th: Lec 17: Intro to cryptography | Ch 24, 25 | Mon: creative research due |
+| 14 | 11/24/23 | M: Lec 18: Cryptography case study <br> **<span style="color:red">Th: Thanksgiving Break - No Class</span>** | Project chapters | Mon: HW 5 due |
+| 15 | 12/1/23 | **<span style="color:blue">T: Project presentation group 1</span>** <br> **<span style="color:blue">Th: Project presentation group 2</span>** | Project chapters | Mon: Final project presentation due |
+| 16 | 12/8/23 | **<span style="color:blue">Monday (3 hrs): Project presentation group 3</span>** | | Fri: Final report and revised code due |
