@@ -1,7 +1,7 @@
 ---
 # Course title, summary, and position.
 linktitle: CS 363 Computer Security
-summary: This course introduces the student to the fundamentals of computer security.
+summary: This course introduces the student to the fundamentals of computer security that includes hands-on experience in software, web, system security, and cryptography.
 weight: 9
 
 # Page metadata.
@@ -22,7 +22,7 @@ menu:
 ---
 
 
-This course introduces the student to the fundamentals of computer security. Foundational concepts such as confidentiality, integrity, and availability are discussed in the context of both designing systems and evaluating existing systems for vulnerabilities. Cryptography is explored as a tool that can be applied to many aspects of computer security. Theoretical discussions of security principles are enriched by examples from real world systems and protocols.
+This hands-on computer security course provides students with practical experience in software, web, system security, and cryptography. Participants will gain essential cybersecurity skills, learning to identify, analyze, and mitigate security vulnerabilities. Through guided labs and projects, students will apply secure coding practices and ethical hacking techniques. The course emphasizes problem-solving, teamwork, and understanding cybersecurity concepts and terminologies. Upon completion, successful students will be well-prepared to address real-world cybersecurity challenges and pursue careers in the dynamic field of computer security.
 
 ## Instructor:
 
