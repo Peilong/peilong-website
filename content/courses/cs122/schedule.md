@@ -40,7 +40,7 @@ Last updated: 08/21/2025
 |   |          | F: Lec12 - GUI | Week 05-3 | |
 | 6 | 9/29/24 | M: PE 2 | Week 06-1 | |
 |   |          | W: Lab 2 | Week 06-2 | |
-|   |          | F: Lab Test 1 | | |
+|   |          | **<span style="color:green">F: Lab Test 1</span>** | | |
 | 7 | 10/6/24 | M: Exam 1 Preview | Week 07-1 | Mon: HW2 due |
 |   |          | **<span style="color:green">W: Exam 1</span>** | | |
 |   |          | **<span style="color:red">F: Fall Break, No Classes</span>** | | |
