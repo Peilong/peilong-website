@@ -21,24 +21,41 @@ weight: 6
 
 Note this tentative schedule is subject to change. Please check the schedule regularly.
 
-Last updated: 04/01/2025
+Last updated: 01/12/2026
 
-| Week | Starting | Topics | Reading | Notes |
-|------|----------|--------|---------|-------|
-| 1    | 1/13/25  | T: Lec1 - Course intro  <br> H: Lec2 - Boolean Algebra and Expressions | Ch 1 | Tue: P0 out |
-| 2    | 1/20/25  | T: Lec3 - Switch and Logic Gate Implementation <br> <b><span style="color:red;">H: Dr. Li on travel; No Classes</span></b> | Ch 1 | Tue: P0 due |
-| 3    | 1/27/25  | T: Lec4 - Number System and Conversions <br> H: Lec5 - Boolean Addition | Ch 2 | Tue: P1 out |
-| 4    | 2/3/25   | T: Lec6 - Multi-bit and Multi-input Adders <br> H: Lec7 - Boolean Substraction and ALU Design | Ch 2 | |
-| 5    | 2/10/25  | T: Lec8 - Time and Memory Elements <br> H: Lec9 - Registers and RAMs; Meet & Greet | Ch 3 | Tue: P1 due; P2 out |
-| 6    | 2/17/25  | T: Lec10 - State Machine Design and Program Counter <br> H: Lec11 - Module Summary and Exam 1 Preview | Ch 3 | |
-| 7    | 2/24/25  | <b><span style="color:green;">T: Exam 1</span></b> <br> <b><span style="color:red;">H: Dr. Li on travel; No Classes</span></b> | | |
-| 8    | 3/3/25   | <b><span style="color:red;">T: Spring Break, No Classes</span></b> <br> <b><span style="color:red;">H: Spring Break, No Classes</span></b> | | |
-| 9    | 3/10/25  | T: Lec12 - Exam 1 Review; Project 3 <br> H: Lec13 - Machine Language | Ch 4 | Tue: P2 due; P3 out |
-| 10   | 3/17/25  | T: Lec14 - HACK Assembly 1 <br> H: Lec15 - HACK Assembly 2 | Ch 4 | |
-| 11   | 3/24/25  | T: Lec16 - Assembly Exercise 1 <br> H: Lec17 - Assembly Exercise 2; Comp Arch | Ch 5 | Tue: P3 due |
-| 12   | 3/31/25  | T: Lec18 - Comp Arch; CPU Interface <br> H: Lec19 - Hack CPU Design | Ch 6 | Tue: P4 out |
-| 13   | 4/7/25   | T: Lec20 - Hack I/O and Memory <br> H: Lec21 - The Hack Computer; Project 5 | | |
-| 14   | 4/14/25  | T: Lec22 - Module Summary and Exam 2 Preview <br> <b><span style="color:green;">H: Exam 2</span></b> | | Tue: P4 due; P5 out |
-| 15   | 4/21/25  | <b><span style="color:red;">T: Scholarship Day, No Classes</span></b> <br> H: Lec23 - Exam 2 Review and Final Preview | | |
-| 16   | 4/28/25  | T: Q&A <br> <b><span style="color:red;">H: No Classes</span></b> | | Tue: P5 due |
-| 17   | 5/5/25   | <b><span style="color:green;">Monday: Final Exam 11 AM - 2 PM</span></b> <br> Have a great summer! | | |
+| Week | Starting | Topics                                               | Reading | Notes                  |
+|------|----------|------------------------------------------------------|---------|------------------------|
+| 1    | 1/12/25  | T: Lec1 - Course intro                               | Ch 1    | Tue: HW1 out           |
+|      |          | H: Lec2 - Boolean Algebra and Expressions            |         |                        |
+| 2    | 1/19/25  | T: Lec3 - Switch and Logic Gate Implementation       | Ch 1    |                        |
+|      |          | H: PE1 - Boolean Algebra and Logic Gates             |         |                        |
+| 3    | 1/26/25  | T: Lec4 - Number System and Conversions              | Ch 2    | Tue: P1 out, HW 1 due  |
+|      |          | H: Lec5 - Boolean Addition                           |         |                        |
+| 4    | 2/2/25   | T: Lec6 - Multi-bit and Multi-input Adders           | Ch 2    | Tue: HW2 out           |
+|      |          | H: Lec7 - Boolean Substraction and ALU Design        |         |                        |
+| 5    | 2/9/25   | T: Lec8 - Time and Memory Elements                   | Ch 3    | Tue: P1 due; P2 out    |
+|      |          | H: Lec9 - Registers and RAMs; Meet & Greet           |         | P1 Raid                       |
+| 6    | 2/16/25  | T: Lec10 - State Machine Design and Program Counter  | Ch 3    | Tue: HW2 due           |
+|      |          | H: PE2 - ALU and Sequential Logic                    |         | P1 Raid                       |
+| 7    | 2/23/25  | T: Lec 11 - Module Summary and Exam 1 Preview        | All     |                        |
+|      |          | <span style="color:green"><strong>H: Exam 1</strong></span> |         |                        |
+| 8    | 3/2/25   | <span style="color:red"><em>T: Spring Break, No Classes</em></span> |         |                        |
+|      |          | <span style="color:red"><em>H: Spring Break, No Classes</em></span> |         |                        |
+| 9    | 3/9/25   | T: Lec12 - Machine Language                          | Ch 4    | Tue: P2 due; P3 out    |
+|      |          | H: Lec13 - HACK Assembly 1                           |         | P2 Raid                      |
+| 10   | 3/16/25  | T: Lec14 - HACK Assembly 2                           | Ch 4    | P2 Raid                       |
+|      |          | H: Lec15 - HACK Assembly 3                           |         |                        |
+| 11   | 3/23/25  | T: PE3 - Assembly                                    | Ch 5    | Tue: HW3 out; P3 due   |
+|      |          | H: Lec16 - Comp Arch Intro                           |         | P3 Raid                       |
+| 12   | 3/30/25  | T: Lec17 - Buses; CPU Interface                      | Ch 6    | Tue: P4 out            |
+|      |          | H: Lec18 - Hack CPU Design                           |         | P3 Raid                       |
+| 13   | 4/6/25   | T: Lec19 - Hack I/O and Memory                       | Ch 6    | Tue: HW3 due           |
+|      |          | H: Lec20 - The Hack Computer; Project 5              |         |                        |
+| 14   | 4/13/25  | T: Lec21 - Module Summary and Exam 2 Preview         | All     | Tue: P4 due; P5 out    |
+|      |          | <span style="color:green"><strong>H: Exam 2</strong></span> |         |  P4 Raid                      |
+| 15   | 4/20/25  | <span style="color:red"><em>T: Scholarship Day, No Classes</em></span> |        |  P4 Raid                      |
+|      |          | H: Lec22 - Exam 2 Review and Final Preview           |         |                        |
+| 16   | 4/27/25  | T: Q&A                                              |         | Tue: P5 due            |
+|      |          | <span style="color:red"><em>H: Reading Day, No Classes</em></span> |         |   P5 Raid                     |
+| 17   | 5/4/25   | <span style="color:green"><strong>Tue: Final Exam 2:30–5:30 PM</strong></span> |         |   P5 Raid                     |
+|      |          | Have a great summer!                                 |         |                        |

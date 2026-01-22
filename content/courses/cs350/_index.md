@@ -22,7 +22,7 @@ menu:
 ---
 
 
-This project-based course aims to cover the fundamental concepts and core techniques for discovering patterns in large-scale data sets. This course consists of three main modules: (1) **Data Mining Pipeline**, which introduces the key steps of data understanding, data preprocessing, data warehousing, data modeling and interpretation/evaluation; (2) **Data Mining Methods**, which covers core techniques for regression, classification, clustering, dimensionality reduction and association; and (3) **Deep Learning**, which discusses the state-of-art deep learning techniques such as CNN and RNN with the implementation in Tensorflow. 
+This project-based course aims to cover the fundamental concepts and core techniques for discovering patterns in large-scale data sets. This course consists of three main modules: (1) **Data Mining Pipeline**, which introduces the key steps of data extraction, data warehousing, data preprocessing, data modeling and inferencing; (2) **Data Mining Methods**, which covers core techniques for regression, classification, clustering, dimensionality reduction and association; and (3) **Deep Learning**, which discusses the state-of-art deep learning techniques such as CNN and RNN with the implementation in Tensorflow. 
 
 ## Instructor:
 

@@ -19,9 +19,9 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **4%**: X in-class pop quizzes
+* **6%**: Roll call and pop quizzes
 * **16%**: 4 in-class labs
-* **10%**: Lecture presentation
+* **8%**: Individual lecture presentation
 * **20%**: 4 individual homework
 * **30%**: 2 midterm exams
 * **20%**: Final project
@@ -38,9 +38,9 @@ Grades will be computed by rounding numerical percentages to the nearest integer
 ```Note that Canvas does not offer accurate calculation of your final weighted grade (e.g. the two midterm exams do not weigh equally), so students must compute their average by using the Canvas scores with the weights listed above.
 ```
 
-## In-class Labs in a Team
+## In-class Team Labs
 
-All labs are to be done in class, with the assistance of the instructor. Students are encouraged to form a team of two to solve the lab assignments together. Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credits, a programming assignment must compile, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.
+All labs are to be done in class, with the assistance of the instructor. Students are required to form a team of two to solve the lab assignments together. Each assignment will be given near the beginning of a class, and the lab report is due within 7 days, then after that, no submission is accepted. To receive full credits, students must take proper screenshots of the working lab and provide detailed answers to each question. Partial credit will be awarded based on the understanding of the material demonstrated by the student’s report.
 
 ## Individual Homework
 
@@ -52,14 +52,14 @@ Late assignment will lose ![equation](https://latex.codecogs.com/png.latex?%5Cdp
 
 ## Individual Lecture Presentation
 
-Students are required to read a designated chapter from the textbook and present it as a course lecture. The presentation time is 25-30 minutes and students need to cover all discussed topics from the textbook. The presenters will receive a written evaluation from all their peers and the instructor, and a weighted score (50\% from the peers; 50\% from the instructor) will be given to the presenters.
+Each student will act as the "instructors for the day" by leading a lecture topic from the course schedule page. The presenter will teach all the topics from a textbook excerpt related to their chosen SEED project and provide a live demo of the covered lab components. The grade will be a weighted score based on written feedback from both your classmates (50%) and the instructor (50%).
 
 ## Final Team Project
 
-To work on the final project, students are required to form a team of two. Topics of the final project should be one from the [SEED labs](https://seedsecuritylabs.org/Labs_20.04/) in the categories of firewall, VPN and DNS.  
+To work on the final project, students are required to form a team of two. Topics of the final project should be one from the [SEED labs](https://seedsecuritylabs.org/Labs_20.04/) in the categories of Firewall, VPN and DNS.  
 
 The grading of the final project consists of four major aspects: 
-1. 10%: the project proposal (including the conversation with the instructor a week before due date); 
-2. 20%: project milestone check and demonstration (must have completed at least 1 task); 
-3. 40%: the project demonstration;
-4. 30%: everything including revised code and the final report are due on the last day of the final exam week. 
+1. 10%: the project proposal; 
+2. 20%: the project milestone check;
+3. 40%: the project presentation and demonstration;
+4. 30%: the final pacakge, including revised code and the final report, is due on the last day of the final exam week.

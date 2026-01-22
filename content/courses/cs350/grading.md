@@ -19,13 +19,11 @@ weight: 4
 
 The final grade for this course depends upon the grades and scores earned on course components weighted as follows:
 
-* **5%** : A number of in-class pop quizzes.
-*	**24%**: 8 take-home quizzes.
-*	**5%**: Individual paper reading assignment.
-*	**5%** : Team paper presentation - peer evaluation (50%), instructor evaluation (50%).
-*	**20%**: 4 individual homework.
-*	**24%**: 2 midterm exams.
-*	**17%**: Final Project - project proposal (1.7%). Milestone check (3.4%). Project demonstration and presentation (6.8%). Final project report and revised code (5.1%).
+* **5%** : Roll call and pop quizzes.
+*	**25%**: 6 take-home labs.
+*	**25%**: 5 individual homework.
+*	**25%**: 2 midterm exams.
+*	**20%**: Final Project - project proposal, milestone check, project demonstration and presentation, final project report and revised code.
 
 Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:
 
@@ -48,19 +46,13 @@ All homework assignments have to be completed individually in this course. Homew
 
 Late assignment will lose ![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Cfn_phv%20%5Clarge%202%5E%7B%28n-1%29%7D) points per day, including weekends and holidays. For example, -1 after 1 day, -2 after 2 days, -4 after 3 days … until 8+ days students will receive 0 score.  Under no circumstances should any student disclose their code, or copy the code written by other students or from an outside source. Both students will receive 0 score on the disclosed/copied assignment.
 
-## Take-home Quizzes
+## Take-home Labs
 
-Similar to homework, all take-home quizzes are to be done individually, out of class. Take-home quizzes are mini assignments that can be completed within 80 minutes, however, a whole week is granted to complete the task. Each quiz will be given on the Monday of a "quiz week", and must be completed within 7 days. Unlike homework, `no late submission` is allowed beyond the due date. Students are responsible for attempting the quiz earlier on the quiz week to prepare questions during the Tue/Thur lecture time. 
-
-## Paper Reading Assignment & Paper Presentation
-
-Presenting data analysis results to public is one of the highly sought skills from data science employers. 
-
-Students are required to form a team of two and read at least one technical paper from the provided paper list (or other papers agreed by the instructor). Students need to complete 1) an **individual** paper reading assignment in the middle of the semester; and 2) **team-present** the paper to the instructor and their peers during the end of the semester. The grading of the paper presentation consists of 50% from peers and 50% from the instructor. The evaluation rubrics will be provided via Canvas.
+Similar to homework, all take-home labs are to be done individually, out of class. Take-home labs are mini assignments that can be completed within 80 minutes, however, a whole week is granted to complete the task. Unlike homework, `no late submission` is allowed beyond the due date. Students are responsible for attempting the lab earlier on the lab week to prepare questions during the Tue/Thur lecture time. 
 
 ## Final Project
 
-The final project best demonstrates students’ understanding of the lecture contents and their capability of solving real data science problems. Students are encouraged to form teams of no more than 2 people. A single solo project is allowed if class size is odd. Topics of the final project are left open for the teams to find, but the final choice has to be decided upon the instructor’s agreement. A good list of potential projects can be found at:
+The final project best demonstrates students’ understanding of the lecture contents and their capability of solving real data science problems. Students are encouraged to form teams of no more than 2 people. A single solo project is allowed if class size is odd. Preferred final project topics are in the fields of Computer Vision with image datasets and Natural Language Processing with text datasets, but the final choice can be discussed with the instructor. A good list of potential projects can be found at:
 
 * [Kaggle](https://www.kaggle.com/datasets)
 * [Papers with Code](https://paperswithcode.com/datasets)
@@ -68,7 +60,7 @@ The final project best demonstrates students’ understanding of the lecture con
 * [Hugging Face](https://huggingface.co/datasets)
 * [Google Dataset Search](https://datasetsearch.research.google.com)
 
-Teams are responsible for finding the project of their interest and discussing the project feasibility face-to-face with the project manager, a.k.a., the instructor 1 week before the project proposal is due. Project formation is on a rolling basis, meaning formerly finalized projects cannot be taken again by another team. The grading of the final project consists of four major aspects:
+Teams are responsible for finding the project of their interest and discussing the project feasibility face-to-face with the instructor 1 week before the project proposal is due. Project formation is on a rolling basis, meaning formerly finalized projects cannot be taken again by another team. The grading of the final project consists of four major aspects:
 
 *	10%: the project proposal (including the conversation with the instructor a week before due);
 * 20%: mid-term project check (must have shown substantial exploratory data analysis);
