@@ -10,6 +10,11 @@ title = "Honor & Awards"
 
 +++
 
+##### Merit Award in Teaching and Advising - Oct 2026
+* Elizabethtown College.
+
+------
+
 ##### Elizabethtown College Best Advisor of the Year - April 2026
 * Only two faculty members received this award.
 

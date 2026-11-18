@@ -15,7 +15,7 @@ title = "Professional Service"
 ------
 
 ##### Conference Organization
-* Session Chair, The 26th International Conference on Software Quality, Reliability, and Security (QRS'2026)
+* Session Chair, Special Track on Dependable IoT and Edge Software Systems, The 26th International Conference on Software Quality, Reliability, and Security (QRS'2026), Florence, Italy
 * Session Chair, 16th IEEE International Conference on Networking, Architecture, and Storage (NAS'2022)
 * Co-Chair, NetAML Workshop hosted under International Joint Conference on Artificial Intelligence (IJCAI'2020)
 * Session Chair, ACM International Workshop on Security in Software Defined Networks & Network Function Virtualization, 2019
@@ -23,6 +23,7 @@ title = "Professional Service"
 ------
 
 ##### Program Committee
+* Technical Program Committee, IEEE International Conference on Communications (ICC), Communication and Information System Security track
 * 15th IEEE International Conference on Networking, Architecture, and Storage (NAS'2021, NAS'2022)
 * IEEE International Conference on Omni-layer Intelligent Systems (COINS'2020)
 * The 50th ACM Technical Symposium on Computer Science Education

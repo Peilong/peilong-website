@@ -10,7 +10,7 @@ title = "Latest News"
 subtitle = "From the [BlueJay ADAL lab](https://bluejayadal.github.io/)"
 
 feed = "https://bluejayadal.github.io/post/index.xml"
-count = 3
+count = 5
 more_url = "https://bluejayadal.github.io/post/"
 
 [advanced]
