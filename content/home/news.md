@@ -7,7 +7,7 @@ active = true  # Activate this widget? true/false
 weight = 15  # Right after the Biography (about = 10).
 
 title = "Latest News"
-subtitle = "From the [BlueJay ADAL lab](https://bluejayadal.github.io/)"
+subtitle = "From the [ADAL lab](https://bluejayadal.github.io/)"
 
 feed = "https://bluejayadal.github.io/post/index.xml"
 count = 5

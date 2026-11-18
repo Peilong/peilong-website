@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = false  # Folded 2026-11-18: replaced by the compact ADAL news section (news.md). Set true to restore.
 weight = 1  # Order that this section will appear.
 
-title = "BlueJay ADAL"
+title = "ADAL"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = "adal_logo.png"
