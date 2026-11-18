@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Assistant Professor
+role: Associate Professor
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: "https://www.etown.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Dr. Peilong Li is an Assistant Professor at Elizabethtown College.
+bio: Dr. Peilong Li is an Associate Professor of Computer Science at Elizabethtown College.
 
 interests:
 - Machine Learning
@@ -30,7 +30,7 @@ education:
   courses:
   - course: Ph.D., Computer Engineering
     institution: University of Massachusetts Lowell
-    year: 2016
+    year: 2015
   - course: BS, Electrical Engineering
     institution: Qingdao University of Science and Technology
     year: 2011
@@ -67,4 +67,4 @@ user_groups:
 - PI
 ---
 
-Dr. Peilong Li is an Assistant Professor at [Elizabethtown College](https://www.etown.edu/). He currently servers as the Program Director of the Computer Science and Data Science Programs. Prior to joining Etown, Dr. Li was a Research Assistant Professor at [University of Massachusetts Lowell](https://www.uml.edu/). His research interests include Machine Learning, Big Data Analytics, Cybersecurity and High-Performance Computing. He has received research grants from funding agencies including National Science Foundation, Intel and Google. He has also established the [Advanced Data Analytics Lab (ADAL)](https://bluejayadal.github.io/) for undergraduate student research at the college.
+Dr. Peilong Li is an Associate Professor of Computer Science at [Elizabethtown College](https://www.etown.edu/), where he has been on the faculty since 2018. He currently serves as the Program Director of the Computer Science and Data Science Programs. Prior to joining Etown, Dr. Li was a Research Assistant Professor at [University of Massachusetts Lowell](https://www.uml.edu/), where he also received his Ph.D. in Computer Engineering in 2015. His research interests include Machine Learning, Big Data Analytics, Cybersecurity and High-Performance Computing. He has received research grants from funding agencies including the National Science Foundation, Intel and Google, and his work has been cited over 2,000 times (Google Scholar h-index 15). He has also established the [Advanced Data Analytics Lab (ADAL)](https://bluejayadal.github.io/) for undergraduate student research at the college.

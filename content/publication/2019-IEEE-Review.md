@@ -10,11 +10,13 @@ math = true
 
 publication_types = ["2"]
 
-publication = "In *IEEE Access*"
+publication = "In *IEEE Access*, vol. 7, pp. 61656-61669"
 
 publication_short = "In *IEEE Access*"
 
 selected = true
+
+doi = "10.1109/ACCESS.2019.2916503"
 
 url_code = ""
 url_dataset = ""
@@ -25,10 +27,6 @@ url_project = ""
 
 url_slides = ""
 url_video = ""
-
-#[[url_custom]]
-#name = ""
-#url = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

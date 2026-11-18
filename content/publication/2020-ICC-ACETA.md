@@ -16,6 +16,8 @@ publication_short = "In *IEEE ICC*"
 
 selected = true
 
+doi = ""
+
 url_code = ""
 url_dataset = ""
 
@@ -25,10 +27,6 @@ url_project = ""
 
 url_slides = ""
 url_video = ""
-
-#[[url_custom]]
-#name = ""
-#url = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

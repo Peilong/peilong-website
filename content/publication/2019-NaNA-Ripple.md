@@ -10,11 +10,13 @@ math = true
 
 publication_types = ["1"]
 
-publication = "In *IEEE 2019 International Conference on Networking and Network Applications (NaNA)*"
+publication = "In *2019 International Conference on Networking and Network Applications (NaNA)*, pp. 142-148"
 
 publication_short = "In *IEEE NaNA*"
 
 selected = true
+
+doi = ""
 
 url_code = ""
 url_dataset = ""
@@ -25,10 +27,6 @@ url_project = ""
 
 url_slides = ""
 url_video = ""
-
-#[[url_custom]]
-#name = ""
-#url = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

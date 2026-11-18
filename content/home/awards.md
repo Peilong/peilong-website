@@ -10,14 +10,30 @@ title = "Honor & Awards"
 
 +++
 
+##### Elizabethtown College Best Advisor of the Year - April 2026
+* Only two faculty members received this award.
+
+------
+
+##### Elizabethtown College Best Advisor of the Year - April 2024
+* Only two faculty members received this award.
+
+------
+
 ##### Merit Award in Teaching and Advising - May 2021
 * Elizabethtown College. Only three faculty members in the whole college received this award.
 
 ------
 
 ##### Merit Award in Scholarship and Professional Activity - May 2020
-* Elizabethtown College.
-  
+* Elizabethtown College. Only three faculty members in the whole college received this award.
+
+------
+
+##### NSF Aspiring CSR PIs Workshop Travel Grant - May 2018
+* For travel expenses on attending the National Science Foundation PIs workshop.
+* Amount: $800.00
+
 ------
 
 ##### Outstanding Graduate Student - May 2016

@@ -10,11 +10,13 @@ math = true
 
 publication_types = ["1"]
 
-publication = "In *2019 IEEE 25th International Conference on Parallel and Distributed Systems (ICPADS)*"
+publication = "In *2019 IEEE 25th International Conference on Parallel and Distributed Systems (ICPADS)*, pp. 852-861"
 
 publication_short = "In *IEEE ICPADS*"
 
 selected = true
+
+doi = ""
 
 url_code = ""
 url_dataset = ""
@@ -25,10 +27,6 @@ url_project = ""
 
 url_slides = ""
 url_video = ""
-
-#[[url_custom]]
-#name = ""
-#url = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

@@ -1,34 +1,36 @@
 +++
-abstract = "Healthcare network and computing infrastructure is rapidly changing from closed environments to open environments that incorporate new devices and new application scenarios. Home-based healthcare is such an example of leveraging pervasive sensors and analyzing sensor data (often in real-time) to guide therapy or intervene. In this paper, we address the challenges in regulatory compliance when designing and deploying healthcare applications on a heterogeneous cloud environment. We propose CareNet framework, consisting of a set of abstraction and APIs, to allow the specification of compliance requirements. This work is a collaboration among computer scientists, medical researchers, healthcare IT and healthcare providers, and its goal is to reduce the gap between the availability of software defined infrastructure and meeting regulatory compliance in healthcare applications."
+abstract = ""
 
-title = "CareNet: Building a Secure Software-defined Infrastructure for Home-based Healthcare"
-authors = ["Peilong Li", "Chen Xu", "Yan Luo","Yu Cao", "Jomol Mathew", "Yunsheng Ma"]
-date = "2017-03-24"
+title = "NUMAware: Accelerate VM-to-VM I/O Performance in NUMA Servers for NFV Applications"
+authors = ["Peilong Li", "Xiaoban Wu", "Yan Luo", "Liang-min Wang", "Nancy Yadav", "Marc Pepin", "John Morgan"]
+date = "2016-11-07"
 
 image_preview = ""
 math = true
 
 publication_types = ["1"]
 
-publication = "In *ACM International Workshop on Security in Software Defined Networks & Network Function Virtualization (SDN-NFVSec)*."
+publication = "In *2016 IEEE Conference on Network Function Virtualization and Software Defined Networks* (SDN-NFV '16), Palo Alto, CA"
 
-publication_short = "In *ACM SDN-NFVSec*"
+publication_short = "In *IEEE SDN-NFV*"
 
 selected = true
+
+doi = ""
 
 url_code = ""
 url_dataset = ""
 
-url_pdf = "https://www.researchgate.net/profile/Peilong_Li/publication/315639590_CareNet_Building_a_Secure_Software-defined_Infrastructure_for_Home-based_Healthcare/links/58f57581aca27289c21cc81c/CareNet-Building-a-Secure-Software-defined-Infrastructure-for-Home-based-Healthcare.pdf"
+url_pdf = ""
 
-url_project = "https://acanets.uml.edu/?p=7"
+url_project = ""
 
 url_slides = ""
 url_video = ""
 
-#[[url_custom]]
-#name = ""
-#url = ""
+[[links]]
+name = "Program"
+url = "https://nfvsdn2016.ieee-nfvsdn.org/program/demonstrations/"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

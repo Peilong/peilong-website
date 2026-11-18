@@ -9,21 +9,24 @@ image_preview = ""
 math = true
 
 publication_types = ["1"]
-publication = "In *2010 International Conference on Intelligent Computing and Cognitive Informatics*, IEEE."
+
+publication = "In *2010 International Conference on Intelligent Computing and Cognitive Informatics (ICICCI)*, pp. 300-303"
+
 publication_short = "In *IEEE ICICCI*"
 
 selected = true
 
+doi = "10.1109/ICICCI.2010.53"
+
 url_code = ""
 url_dataset = ""
+
 url_pdf = ""
+
 url_project = "https://ieeexplore.ieee.org/abstract/document/5565975"
+
 url_slides = ""
 url_video = ""
-
-#[[url_custom]]
-#name = ""
-#url = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
