@@ -51,7 +51,7 @@ hero_media = "adal_logo.png"
 #  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-**The Advanced Data Analytics Lab (ADAL) at Elizabethtown College**
+**The Agentic and Dependable AI Lab (ADAL) at Elizabethtown College**
 
 * Unleash the power of data
 * Awaken your enthusiasm in data science
