@@ -35,13 +35,13 @@ title = "Research Grants Involved"
 * ```PI```: JayQuery: Private-Preserving Student Success Prediction with Federated Learning.
 * Duration: Summer 2026
 * Amount: $15,264.08
-* Student researchers: Alex Pellet and Wyatt Wilfong
+* Student researchers: Alexander Pellet and Wyatt Wilfong
 
 ##### Elizabethtown College SCARP 2025
 * ```PI```: ARISE - An AI-powered Real-time Interactive Support for Exercise in Elderly Communities.
 * Duration: Summer 2025
 * Amount: $15,064.08
-* Student researchers: Aaron Frist and Alex Roop
+* Student researchers: Aaron Frist and Alexander Roop
 
 ##### Google Cloud Teaching Award 2023-2024
 * ```PI```: Cloud credits for Elizabethtown College cybersecurity course innovation.

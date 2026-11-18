@@ -23,7 +23,7 @@ title = "Professional Service"
 ------
 
 ##### Program Committee
-* Technical Program Committee, IEEE International Conference on Communications (ICC), Communication and Information System Security track
+* Technical Program Committee, IEEE International Conference on Communications (ICC 2027), Washington, DC, Communication and Information System Security track
 * 15th IEEE International Conference on Networking, Architecture, and Storage (NAS'2021, NAS'2022)
 * IEEE International Conference on Omni-layer Intelligent Systems (COINS'2020)
 * The 50th ACM Technical Symposium on Computer Science Education
