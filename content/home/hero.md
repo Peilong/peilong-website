@@ -2,7 +2,7 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Folded 2026-11-18: replaced by the compact ADAL news section (news.md). Set true to restore.
 weight = 1  # Order that this section will appear.
 
 title = "BlueJay ADAL"

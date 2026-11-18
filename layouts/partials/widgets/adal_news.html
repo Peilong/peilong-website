@@ -1,0 +1,76 @@
+{{/* ADAL News widget: a compact list of the latest posts from the ADAL lab site.
+
+     The list is read from the lab's RSS feed in the visitor's browser, so it stays current without
+     rebuilding this site. GitHub Pages serves the feed with `Access-Control-Allow-Origin: *`.
+     If the feed cannot be loaded, the section falls back to a link to the lab's news page.
+
+     Front matter (content/home/news.md):
+       feed     - RSS URL of the news feed
+       count    - number of items to show (default 3)
+       more_url - "more news" link target
+*/}}
+{{ $st := .page }}
+{{ $feed := $st.Params.feed | default "https://bluejayadal.github.io/post/index.xml" }}
+{{ $count := $st.Params.count | default 3 }}
+{{ $more := $st.Params.more_url | default "https://bluejayadal.github.io/post/" }}
+
+<style>
+  .adal-news { list-style: none; padding: 0; margin: 0 0 .75rem 0; min-height: calc({{ $count }} * 2.6em); }
+  .adal-news li { display: flex; align-items: baseline; gap: 1rem; padding: .45em 0; border-bottom: 1px solid rgba(127, 127, 127, .2); }
+  .adal-news li:last-child { border-bottom: 0; }
+  .adal-news-date { flex: 0 0 5.5em; font-size: .85em; opacity: .7; white-space: nowrap; }
+  .adal-news-title { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+  .adal-news-more { font-size: .9em; }
+</style>
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+    {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+  </div>
+  <div class="col-12 col-lg-8">
+    <ul class="adal-news" id="adal-news-{{ $.hash_id }}" aria-live="polite"></ul>
+    <a class="adal-news-more" href="{{ $more }}">More news from ADAL &rarr;</a>
+  </div>
+</div>
+
+<script>
+(function () {
+  var list = document.getElementById("adal-news-{{ $.hash_id }}");
+  var feed = {{ $feed }}, count = {{ $count }}, more = {{ $more }};
+  var origin = new URL(feed).origin + "/";
+
+  function fallback() {
+    list.style.minHeight = "0";
+    list.innerHTML = "";
+  }
+
+  fetch(feed, { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+    .then(function (xml) {
+      var items = new DOMParser().parseFromString(xml, "application/xml").querySelectorAll("item");
+      if (!items.length) return fallback();
+      list.innerHTML = "";
+      Array.prototype.slice.call(items, 0, count).forEach(function (it) {
+        var title = (it.querySelector("title") || {}).textContent || "";
+        var link = (it.querySelector("link") || {}).textContent || more;
+        var date = new Date((it.querySelector("pubDate") || {}).textContent || "");
+        if (link.indexOf(origin) !== 0) link = more;  // only link back into the lab site
+
+        var li = document.createElement("li");
+        var d = document.createElement("span");
+        d.className = "adal-news-date";
+        // Posts are dated by month; format in UTC so "Jul 1 00:00 UTC" never shows as June.
+        d.textContent = isNaN(date) ? "" : date.toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+        var a = document.createElement("a");
+        a.className = "adal-news-title";
+        a.href = link;
+        a.textContent = title;
+        li.appendChild(d);
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    })
+    .catch(fallback);
+})();
+</script>
