@@ -1,6 +1,6 @@
 ---
 title: Courses
-layout: docs  # Do not modify.
+layout: courses-home  # layouts/courses/courses-home.html (current semester + teaching history)
 
 # Optional header image (relative to `static/img/` folder).
 header:

@@ -1,0 +1,1320 @@
+{
+ "current": {
+  "term": "Spring 2027",
+  "courses": [
+   {
+    "course": "cs122",
+    "code": "CS 122",
+    "title": "Computer Science II",
+    "summary": "As a continuation of CS I, this course will cover Java software development essentials, focusing on algorithms, data structures, threads, file processing, exception handling, OOP, and extensive GUI programming.",
+    "url": "/courses/cs122/",
+    "links": [
+     {
+      "label": "Schedule",
+      "url": "/courses/cs122/schedule/"
+     },
+     {
+      "label": "Overview",
+      "url": "/courses/cs122/overview/"
+     },
+     {
+      "label": "Grading",
+      "url": "/courses/cs122/grading/"
+     },
+     {
+      "label": "Policies",
+      "url": "/courses/cs122/policy/"
+     }
+    ]
+   },
+   {
+    "course": "cs230",
+    "code": "CS 230",
+    "title": "Computer Architecture",
+    "summary": "The foundational principles of computer architecture, including the design and organization of processors, memory hierarchies, input/output systems, and multiple CPU systems.",
+    "url": "/courses/cs230/",
+    "links": [
+     {
+      "label": "Schedule",
+      "url": "/courses/cs230/schedule/"
+     },
+     {
+      "label": "Overview",
+      "url": "/courses/cs230/overview/"
+     },
+     {
+      "label": "Grading",
+      "url": "/courses/cs230/grading/"
+     },
+     {
+      "label": "Policies",
+      "url": "/courses/cs230/policy/"
+     }
+    ]
+   },
+   {
+    "course": "cs354",
+    "code": "CS 354",
+    "title": "Big Data",
+    "summary": "This course covers techniques needed to collect, store, analyze, and visualize big data, particularly for applications in machine learning at scale.",
+    "url": "/courses/cs354/",
+    "links": [
+     {
+      "label": "Schedule",
+      "url": "/courses/cs354/schedule/"
+     },
+     {
+      "label": "Overview",
+      "url": "/courses/cs354/overview/"
+     },
+     {
+      "label": "Grading",
+      "url": "/courses/cs354/grading/"
+     },
+     {
+      "label": "Policies",
+      "url": "/courses/cs354/policy/"
+     }
+    ]
+   }
+  ]
+ },
+ "terms": [
+  "Fall 2018",
+  "Spring 2019",
+  "Fall 2019",
+  "Spring 2020",
+  "Fall 2020",
+  "Spring 2021",
+  "Fall 2021",
+  "Spring 2022",
+  "Fall 2022",
+  "Spring 2023",
+  "Fall 2023",
+  "Spring 2024",
+  "Fall 2024",
+  "Spring 2025",
+  "Fall 2025",
+  "Spring 2026",
+  "Fall 2026"
+ ],
+ "rows": [
+  {
+   "key": "cs113",
+   "code": "CS 113",
+   "title": "The Power and Beauty of Computing",
+   "former": "",
+   "url": "/courses/cs113/",
+   "offerings": {
+    "Spring 2021": {
+     "url": "/courses/archive/2021-spring/cs113/",
+     "code": "CS 113",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs121",
+   "code": "CS 121",
+   "title": "Computer Science I",
+   "former": "",
+   "url": "/courses/cs121/",
+   "offerings": {
+    "Fall 2018": {
+     "url": "",
+     "code": "CS 121",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)",
+     "former": false
+    },
+    "Spring 2019": {
+     "url": "",
+     "code": "CS 121",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)",
+     "former": false
+    },
+    "Fall 2019": {
+     "url": "",
+     "code": "CS 121",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)",
+     "former": false
+    },
+    "Spring 2020": {
+     "url": "/courses/archive/2020-spring/cs121/",
+     "code": "CS 121",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2020": {
+     "url": "/courses/archive/2020-fall/cs121/",
+     "code": "CS 121",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2021": {
+     "url": "/courses/archive/2021-fall/cs121/",
+     "code": "CS 121",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2022": {
+     "url": "/courses/archive/2022-fall/cs121/",
+     "code": "CS 121",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2023": {
+     "url": "/courses/archive/2023-spring/cs121/",
+     "code": "CS 121",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2023": {
+     "url": "/courses/archive/2023-fall/cs121/",
+     "code": "CS 121",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs122",
+   "code": "CS 122",
+   "title": "Computer Science II",
+   "former": "",
+   "url": "/courses/cs122/",
+   "offerings": {
+    "Fall 2024": {
+     "url": "/courses/archive/2024-fall/cs122/",
+     "code": "CS 122",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2025": {
+     "url": "/courses/archive/2025-fall/cs122/",
+     "code": "CS 122",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs222",
+   "code": "CS/EGR 222",
+   "title": "Systems Programming",
+   "former": "",
+   "url": "/courses/cs222/",
+   "offerings": {
+    "Spring 2019": {
+     "url": "",
+     "code": "CS 222",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)",
+     "former": false
+    },
+    "Spring 2020": {
+     "url": "/courses/archive/2020-spring/cs222/",
+     "code": "CS 222",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2021": {
+     "url": "/courses/archive/2021-spring/cs222/",
+     "code": "CS/EGR 222",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2022": {
+     "url": "/courses/archive/2022-spring/cs222/",
+     "code": "CS/EGR 222",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2023": {
+     "url": "/courses/archive/2023-spring/cs222/",
+     "code": "CS/EGR 222",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2024": {
+     "url": "/courses/archive/2024-spring/cs222/",
+     "code": "CS/EGR 222",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2025": {
+     "url": "/courses/archive/2025-spring/cs222/",
+     "code": "CS/EGR 222",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs230",
+   "code": "CS 230",
+   "title": "Computer Architecture",
+   "former": "",
+   "url": "/courses/cs230/",
+   "offerings": {
+    "Spring 2025": {
+     "url": "/courses/archive/2025-spring/cs230/",
+     "code": "CS 230",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2026": {
+     "url": "/courses/archive/2026-spring/cs230/",
+     "code": "CS 230",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs250",
+   "code": "CS 250",
+   "title": "Foundations of AI and Data Science",
+   "former": "DS 200 Introduction to Data Science",
+   "url": "/courses/cs250/",
+   "offerings": {
+    "Fall 2018": {
+     "url": "",
+     "code": "DS 200",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)",
+     "former": true
+    },
+    "Spring 2019": {
+     "url": "",
+     "code": "DS 200",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)",
+     "former": true
+    },
+    "Spring 2020": {
+     "url": "/courses/archive/2020-spring/ds200/",
+     "code": "DS 200",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Spring 2021": {
+     "url": "/courses/archive/2021-spring/ds200/",
+     "code": "DS 200",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Spring 2022": {
+     "url": "/courses/archive/2022-spring/ds200/",
+     "code": "DS 200",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Spring 2024": {
+     "url": "/courses/archive/2024-spring/ds200/",
+     "code": "DS 200",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Fall 2024": {
+     "url": "/courses/archive/2024-fall/cs250/",
+     "code": "CS 250",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2025": {
+     "url": "/courses/archive/2025-fall/cs250/",
+     "code": "CS 250",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs350",
+   "code": "CS 350",
+   "title": "From Data Mining to Deep Learning",
+   "former": "DS 300 Data Mining",
+   "url": "/courses/cs350/",
+   "offerings": {
+    "Fall 2019": {
+     "url": "",
+     "code": "DS 300",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)",
+     "former": true
+    },
+    "Fall 2020": {
+     "url": "/courses/archive/2020-fall/ds300/",
+     "code": "DS 300",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Fall 2021": {
+     "url": "",
+     "code": "DS 300",
+     "kind": "none",
+     "note": "the course page was not updated this semester",
+     "former": true
+    },
+    "Fall 2022": {
+     "url": "/courses/archive/2022-fall/ds300/",
+     "code": "DS 300",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Fall 2024": {
+     "url": "/courses/archive/2024-fall/cs350/",
+     "code": "CS 350",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2026": {
+     "url": "/courses/archive/2026-spring/cs350/",
+     "code": "CS 350",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs354",
+   "code": "CS 354",
+   "title": "Big Data",
+   "former": "DS 420 Big Data",
+   "url": "/courses/cs354/",
+   "offerings": {
+    "Fall 2020": {
+     "url": "/courses/archive/2020-fall/ds420/",
+     "code": "DS 420",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Fall 2021": {
+     "url": "",
+     "code": "DS 420",
+     "kind": "none",
+     "note": "the course page was not updated this semester",
+     "former": true
+    },
+    "Spring 2022": {
+     "url": "/courses/archive/2022-spring/ds420/",
+     "code": "DS 420",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Spring 2023": {
+     "url": "/courses/archive/2023-spring/ds420/",
+     "code": "DS 420",
+     "kind": "archive",
+     "note": "",
+     "former": true
+    },
+    "Spring 2025": {
+     "url": "/courses/archive/2025-spring/cs354/",
+     "code": "CS 354",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs363",
+   "code": "CS 363",
+   "title": "Computer Security",
+   "former": "",
+   "url": "/courses/cs363/",
+   "offerings": {
+    "Fall 2022": {
+     "url": "/courses/archive/2022-fall/cs363/",
+     "code": "CS 363",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2023": {
+     "url": "/courses/archive/2023-fall/cs363/",
+     "code": "CS 363",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2025": {
+     "url": "/courses/archive/2025-fall/cs363/",
+     "code": "CS 363",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs364",
+   "code": "CS 364",
+   "title": "Network Security",
+   "former": "",
+   "url": "/courses/cs364/",
+   "offerings": {
+    "Spring 2024": {
+     "url": "/courses/archive/2024-spring/cs364/",
+     "code": "CS 364",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2026": {
+     "url": "/courses/archive/2026-spring/cs364/",
+     "code": "CS 364",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs400",
+   "code": "CS 400",
+   "title": "Projects in Computing",
+   "former": "",
+   "url": "/courses/cs400/",
+   "offerings": {
+    "Spring 2020": {
+     "url": "/courses/archive/2020-spring/cs400/",
+     "code": "CS 400",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2021": {
+     "url": "/courses/archive/2021-spring/cs400/",
+     "code": "CS 400",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2022": {
+     "url": "/courses/archive/2022-fall/cs400/",
+     "code": "CS 400",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2023": {
+     "url": "/courses/archive/2023-spring/cs400/",
+     "code": "CS 400",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2024": {
+     "url": "",
+     "code": "CS 400",
+     "kind": "none",
+     "note": "the course page was not updated this semester",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "cs495",
+   "code": "CS 495",
+   "title": "Honors Projects in Computing",
+   "former": "",
+   "url": "/courses/cs495/",
+   "offerings": {
+    "Spring 2020": {
+     "url": "/courses/archive/2020-spring/cs495/",
+     "code": "CS 495",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2020": {
+     "url": "/courses/archive/2020-fall/cs495/",
+     "code": "CS 495",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2023": {
+     "url": "",
+     "code": "CS 495",
+     "kind": "none",
+     "note": "the course page was not updated this semester",
+     "former": false
+    },
+    "Spring 2024": {
+     "url": "",
+     "code": "CS 495",
+     "kind": "none",
+     "note": "the course page was not updated this semester",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "ds400",
+   "code": "DS 400",
+   "title": "Data Science Capstone",
+   "former": "",
+   "url": "/courses/ds400/",
+   "offerings": {
+    "Spring 2023": {
+     "url": "/courses/archive/2023-spring/ds400/",
+     "code": "DS 400",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Fall 2024": {
+     "url": "",
+     "code": "DS 400",
+     "kind": "none",
+     "note": "the course page was not updated this semester",
+     "former": false
+    },
+    "Spring 2025": {
+     "url": "",
+     "code": "DS 400",
+     "kind": "none",
+     "note": "the course page was not updated this semester",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "ds495",
+   "code": "DS 495",
+   "title": "Honors Data Science Capstone",
+   "former": "",
+   "url": "",
+   "offerings": {
+    "Fall 2020": {
+     "url": "/courses/archive/2020-fall/ds495/",
+     "code": "DS 495",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2021": {
+     "url": "/courses/archive/2021-spring/ds495/",
+     "code": "DS 495",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    },
+    "Spring 2022": {
+     "url": "/courses/archive/2022-spring/ds495/",
+     "code": "DS 495",
+     "kind": "archive",
+     "note": "",
+     "former": false
+    }
+   }
+  },
+  {
+   "key": "egr401",
+   "code": "EGR 401",
+   "title": "Senior Project in Engineering I",
+   "former": "",
+   "url": "",
+   "offerings": {
+    "Fall 2019": {
+     "url": "https://users.etown.edu/w/wunderjt/syllabi/EGR401%20Wunderlich,Joseph%20and%20Li,Peilong.pdf",
+     "code": "EGR 401",
+     "kind": "external",
+     "note": "co-taught with Dr. Joseph Wunderlich",
+     "former": false
+    },
+    "Spring 2020": {
+     "url": "https://users.etown.edu/w/wunderjt/syllabi/EGR401%20Wunderlich,Joseph%20and%20Li,Peilong.pdf",
+     "code": "EGR 401",
+     "kind": "external",
+     "note": "co-taught with Dr. Joseph Wunderlich",
+     "former": false
+    }
+   }
+  }
+ ],
+ "semesters": [
+  {
+   "term": "Fall 2026",
+   "slug": "2026-fall",
+   "offerings": [],
+   "note": "Sabbatical leave (no teaching)"
+  },
+  {
+   "term": "Spring 2026",
+   "slug": "2026-spring",
+   "offerings": [
+    {
+     "course": "cs230",
+     "code": "CS 230",
+     "title": "CS 230 Computer Architecture",
+     "url": "/courses/archive/2026-spring/cs230/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs350",
+     "code": "CS 350",
+     "title": "CS 350 From Data Mining to Deep Learning",
+     "url": "/courses/archive/2026-spring/cs350/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs364",
+     "code": "CS 364",
+     "title": "CS 364 Network Security",
+     "url": "/courses/archive/2026-spring/cs364/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2025",
+   "slug": "2025-fall",
+   "offerings": [
+    {
+     "course": "cs122",
+     "code": "CS 122",
+     "title": "CS 122 Computer Science II",
+     "url": "/courses/archive/2025-fall/cs122/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs250",
+     "code": "CS 250",
+     "title": "CS 250 Foundations of AI and Data Science",
+     "url": "/courses/archive/2025-fall/cs250/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs363",
+     "code": "CS 363",
+     "title": "CS 363 Computer Security",
+     "url": "/courses/archive/2025-fall/cs363/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Spring 2025",
+   "slug": "2025-spring",
+   "offerings": [
+    {
+     "course": "cs230",
+     "code": "CS 230",
+     "title": "CS 230 Computer Architecture",
+     "url": "/courses/archive/2025-spring/cs230/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs354",
+     "code": "CS 354",
+     "title": "CS 354 Big Data",
+     "url": "/courses/archive/2025-spring/cs354/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs222",
+     "code": "CS/EGR 222",
+     "title": "CS/EGR 222 Systems Programming",
+     "url": "/courses/archive/2025-spring/cs222/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds400",
+     "code": "DS 400",
+     "title": "DS 400 Data Science Capstone",
+     "url": "",
+     "kind": "none",
+     "note": "the course page was not updated this semester"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2024",
+   "slug": "2024-fall",
+   "offerings": [
+    {
+     "course": "cs122",
+     "code": "CS 122",
+     "title": "CS 122 Computer Science II",
+     "url": "/courses/archive/2024-fall/cs122/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs250",
+     "code": "CS 250",
+     "title": "CS 250 Foundations of AI and Data Science",
+     "url": "/courses/archive/2024-fall/cs250/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs350",
+     "code": "CS 350",
+     "title": "CS 350 From Data Mining to Deep Learning",
+     "url": "/courses/archive/2024-fall/cs350/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds400",
+     "code": "DS 400",
+     "title": "DS 400 Data Science Capstone",
+     "url": "",
+     "kind": "none",
+     "note": "the course page was not updated this semester"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Spring 2024",
+   "slug": "2024-spring",
+   "offerings": [
+    {
+     "course": "cs364",
+     "code": "CS 364",
+     "title": "CS 364 Network Security",
+     "url": "/courses/archive/2024-spring/cs364/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs400",
+     "code": "CS 400",
+     "title": "CS 400 Projects in Computing",
+     "url": "",
+     "kind": "none",
+     "note": "the course page was not updated this semester"
+    },
+    {
+     "course": "cs495",
+     "code": "CS 495",
+     "title": "CS 495 Honors Projects in Computing",
+     "url": "",
+     "kind": "none",
+     "note": "the course page was not updated this semester"
+    },
+    {
+     "course": "cs222",
+     "code": "CS/EGR 222",
+     "title": "CS/EGR 222 Systems Programming",
+     "url": "/courses/archive/2024-spring/cs222/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds200",
+     "code": "DS 200",
+     "title": "DS 200 Introduction to Data Science",
+     "url": "/courses/archive/2024-spring/ds200/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2023",
+   "slug": "2023-fall",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "/courses/archive/2023-fall/cs121/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs363",
+     "code": "CS 363",
+     "title": "CS 363 Computer Security",
+     "url": "/courses/archive/2023-fall/cs363/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Spring 2023",
+   "slug": "2023-spring",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "/courses/archive/2023-spring/cs121/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs400",
+     "code": "CS 400",
+     "title": "CS 400 Projects in Computing",
+     "url": "/courses/archive/2023-spring/cs400/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs495",
+     "code": "CS 495",
+     "title": "CS 495 Honors Projects in Computing",
+     "url": "",
+     "kind": "none",
+     "note": "the course page was not updated this semester"
+    },
+    {
+     "course": "cs222",
+     "code": "CS/EGR 222",
+     "title": "CS/EGR 222 Systems Programming",
+     "url": "/courses/archive/2023-spring/cs222/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds400",
+     "code": "DS 400",
+     "title": "DS 400 Data Science Capstone",
+     "url": "/courses/archive/2023-spring/ds400/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds420",
+     "code": "DS 420",
+     "title": "DS 420 Big Data",
+     "url": "/courses/archive/2023-spring/ds420/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2022",
+   "slug": "2022-fall",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "/courses/archive/2022-fall/cs121/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs363",
+     "code": "CS 363",
+     "title": "CS 363 Computer Security",
+     "url": "/courses/archive/2022-fall/cs363/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs400",
+     "code": "CS 400",
+     "title": "CS 400 Projects in Computing",
+     "url": "/courses/archive/2022-fall/cs400/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds300",
+     "code": "DS 300",
+     "title": "DS 300 Data Mining",
+     "url": "/courses/archive/2022-fall/ds300/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Spring 2022",
+   "slug": "2022-spring",
+   "offerings": [
+    {
+     "course": "cs222",
+     "code": "CS/EGR 222",
+     "title": "CS/EGR 222 Systems Programming",
+     "url": "/courses/archive/2022-spring/cs222/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds200",
+     "code": "DS 200",
+     "title": "DS 200 Introduction to Data Science",
+     "url": "/courses/archive/2022-spring/ds200/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds420",
+     "code": "DS 420",
+     "title": "DS 420 Big Data",
+     "url": "/courses/archive/2022-spring/ds420/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds495",
+     "code": "DS 495",
+     "title": "DS 495 Data Science Capstone",
+     "url": "/courses/archive/2022-spring/ds495/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2021",
+   "slug": "2021-fall",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "/courses/archive/2021-fall/cs121/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds300",
+     "code": "DS 300",
+     "title": "DS 300 Data Mining",
+     "url": "",
+     "kind": "none",
+     "note": "the course page was not updated this semester"
+    },
+    {
+     "course": "ds420",
+     "code": "DS 420",
+     "title": "DS 420 Big Data",
+     "url": "",
+     "kind": "none",
+     "note": "the course page was not updated this semester"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Spring 2021",
+   "slug": "2021-spring",
+   "offerings": [
+    {
+     "course": "cs113",
+     "code": "CS 113",
+     "title": "CS 113 The Power and Beauty of Computing",
+     "url": "/courses/archive/2021-spring/cs113/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs400",
+     "code": "CS 400",
+     "title": "CS 400 Projects in Computing",
+     "url": "/courses/archive/2021-spring/cs400/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs222",
+     "code": "CS/EGR 222",
+     "title": "CS/EGR 222 Systems Programming",
+     "url": "/courses/archive/2021-spring/cs222/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds200",
+     "code": "DS 200",
+     "title": "DS 200 Introduction to Data Science",
+     "url": "/courses/archive/2021-spring/ds200/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds495",
+     "code": "DS 495",
+     "title": "DS 495 Data Science Capstone",
+     "url": "/courses/archive/2021-spring/ds495/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2020",
+   "slug": "2020-fall",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "/courses/archive/2020-fall/cs121/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs495",
+     "code": "CS 495",
+     "title": "CS 495 Honors Projects in Computing",
+     "url": "/courses/archive/2020-fall/cs495/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds300",
+     "code": "DS 300",
+     "title": "DS 300 Data Mining",
+     "url": "/courses/archive/2020-fall/ds300/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds420",
+     "code": "DS 420",
+     "title": "DS 420 Big Data",
+     "url": "/courses/archive/2020-fall/ds420/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds495",
+     "code": "DS 495",
+     "title": "DS 495 Data Science Capstone",
+     "url": "/courses/archive/2020-fall/ds495/",
+     "kind": "archive",
+     "note": ""
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Spring 2020",
+   "slug": "2020-spring",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "/courses/archive/2020-spring/cs121/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs222",
+     "code": "CS 222",
+     "title": "CS 222 (EGR 222) Systems Programming",
+     "url": "/courses/archive/2020-spring/cs222/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs400",
+     "code": "CS 400",
+     "title": "CS 400 Projects in Computing",
+     "url": "/courses/archive/2020-spring/cs400/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "cs495",
+     "code": "CS 495",
+     "title": "CS 495 Honors Projects in Computing",
+     "url": "/courses/archive/2020-spring/cs495/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "ds200",
+     "code": "DS 200",
+     "title": "DS 200 Introduction to Data Science",
+     "url": "/courses/archive/2020-spring/ds200/",
+     "kind": "archive",
+     "note": ""
+    },
+    {
+     "course": "egr401",
+     "code": "EGR 401",
+     "title": "EGR 401 Senior Project in Engineering I",
+     "url": "https://users.etown.edu/w/wunderjt/syllabi/EGR401%20Wunderlich,Joseph%20and%20Li,Peilong.pdf",
+     "kind": "external",
+     "note": "co-taught with Dr. Joseph Wunderlich"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2019",
+   "slug": "2019-fall",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)"
+    },
+    {
+     "course": "ds300",
+     "code": "DS 300",
+     "title": "DS 300 Data Mining",
+     "url": "",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)"
+    },
+    {
+     "course": "egr401",
+     "code": "EGR 401",
+     "title": "EGR 401 Senior Project in Engineering I",
+     "url": "https://users.etown.edu/w/wunderjt/syllabi/EGR401%20Wunderlich,Joseph%20and%20Li,Peilong.pdf",
+     "kind": "external",
+     "note": "co-taught with Dr. Joseph Wunderlich"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Spring 2019",
+   "slug": "2019-spring",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)"
+    },
+    {
+     "course": "cs222",
+     "code": "CS 222",
+     "title": "CS 222 Systems Programming",
+     "url": "",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)"
+    },
+    {
+     "course": "ds200",
+     "code": "DS 200",
+     "title": "DS 200 Introduction to Data Science",
+     "url": "",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "term": "Fall 2018",
+   "slug": "2018-fall",
+   "offerings": [
+    {
+     "course": "cs121",
+     "code": "CS 121",
+     "title": "CS 121 Computer Science I",
+     "url": "",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)"
+    },
+    {
+     "course": "ds200",
+     "code": "DS 200",
+     "title": "DS 200 Introduction to Data Science",
+     "url": "",
+     "kind": "none",
+     "note": "before the site's archive began (Dec 2019)"
+    }
+   ],
+   "note": ""
+  }
+ ],
+ "earlier": [
+  {
+   "place": "Elizabethtown College (no course pages)",
+   "items": [
+    {
+     "title": "EGR 402 Senior Project in Engineering II",
+     "url": ""
+    }
+   ]
+  },
+  {
+   "place": "University of Massachusetts Lowell",
+   "items": [
+    {
+     "title": "EECE.2160 ECE Application Programming",
+     "url": "https://www.uml.edu/catalog/courses/EECE/2160"
+    },
+    {
+     "title": "EECE.7110 Special Topics: Heterogeneous Computing (now EECE.6540)",
+     "url": "https://www.uml.edu/catalog/courses/EECE/6540"
+    },
+    {
+     "title": "EECE.3170 Microprocessors Systems Design I",
+     "url": "https://www.uml.edu/catalog/courses/EECE/3170"
+    },
+    {
+     "title": "EECE.5520 Microprocessor Systems II & Embedded Systems",
+     "url": "https://www.uml.edu/catalog/courses/EECE/5520"
+    }
+   ]
+  }
+ ]
+}

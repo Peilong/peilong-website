@@ -1,0 +1,55 @@
+{{- define "main" -}}
+{{- /* One archived course offering (a past semester), generated from the published site's history.
+       Front matter: code, term, lineage, sections [{id,label}], source {repo, commit, date}. */ -}}
+{{ $t := site.Data.teaching }}
+{{ $row := index (where $t.rows "key" .Params.lineage) 0 }}
+
+<style>
+  .arch { max-width: 1000px; }
+  .arch-crumbs { font-size: .85rem; opacity: .75; margin-bottom: 1rem; }
+  .arch-badge { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+                padding: .15rem .6rem; border: 1px solid currentColor; border-radius: 1rem; opacity: .8; }
+  .arch h1 { margin: .5rem 0 1rem 0; }
+  .arch-switch { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; margin-bottom: 1rem; font-size: .9rem; }
+  .arch-switch .arch-lbl { font-weight: 600; margin-right: .25rem; }
+  .arch-switch a { padding: .15rem .65rem; border: 1px solid rgba(127,127,127,.35); border-radius: 1rem; }
+  .arch-switch a.active { font-weight: 700; border-color: currentColor; pointer-events: none; }
+  .arch-switch a.arch-current { border-style: dashed; }
+  .arch-switch .arch-na { padding: .15rem .65rem; border: 1px dotted rgba(127,127,127,.35); border-radius: 1rem; opacity: .55; }
+  .arch-note { font-size: .88rem; opacity: .8; padding: .6rem .9rem; border-left: 3px solid rgba(127,127,127,.5);
+               background: rgba(127,127,127,.08); margin-bottom: 1.25rem; }
+  .arch-toc { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .9rem; padding: .6rem 0; margin-bottom: 1.5rem;
+              border-top: 1px solid rgba(127,127,127,.2); border-bottom: 1px solid rgba(127,127,127,.2);
+              position: sticky; top: 70px; z-index: 2; background: inherit; }
+  .arch-section { padding-top: .5rem; margin-bottom: 2.5rem; scroll-margin-top: 130px; }
+  .arch-section > h2 { padding-bottom: .3rem; border-bottom: 1px solid rgba(127,127,127,.25); }
+  .arch .article-style table { display: block; overflow-x: auto; }
+  .arch-source { font-size: .8rem; opacity: .6; margin-top: 2rem; }
+</style>
+
+<div class="universal-wrapper arch">
+  <nav class="arch-crumbs"><a href="/courses/">Courses</a> &rsaquo; <a href="/courses/#by-semester">Teaching history</a> &rsaquo; {{ .Params.term }}</nav>
+  <span class="arch-badge">Archived &middot; {{ .Params.term }}</span>
+  <h1>{{ .Title }}</h1>
+
+  <div class="arch-switch">
+    <span class="arch-lbl">All offerings:</span>
+    {{ range $term := $t.terms }}{{ with index $row.offerings $term }}
+      {{- if eq .kind "archive" -}}<a href="{{ .url }}"{{ if eq $term $.Params.term }} class="active" aria-current="page"{{ end }}>{{ $term }}{{ if .former }} ({{ .code }}){{ end }}</a>
+      {{- else if eq .kind "none" -}}<span class="arch-na" title="No archived page: {{ .note }}">{{ $term }}{{ if .former }} ({{ .code }}){{ end }}</span>
+      {{- end -}}
+    {{ end }}{{ end }}
+    {{ with $row.url }}<a class="arch-current" href="{{ . }}">Current course page &rarr;</a>{{ end }}
+  </div>
+
+  <div class="arch-note">This is the course website as it was published for {{ .Params.term }}. Dates, links and policies reflect that semester and may be out of date{{ with $row.url }}; see the <a href="{{ . }}">current course page</a> for the latest version{{ end }}.</div>
+
+  <nav class="arch-toc" aria-label="Sections">{{ range .Params.sections }}<a href="#{{ .id }}">{{ .label }}</a>{{ end }}</nav>
+
+  <div class="article-style">
+    {{ .Content }}
+  </div>
+
+  <p class="arch-source">Archived from <a href="https://github.com/{{ .Params.source.repo }}/tree/{{ .Params.source.commit }}/courses/{{ .Params.course_dir }}" target="_blank" rel="noopener">{{ .Params.source.repo }}@{{ .Params.source.commit }}</a> ({{ .Params.source.date }}).</p>
+</div>
+{{- end -}}

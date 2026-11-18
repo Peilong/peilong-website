@@ -1,0 +1,651 @@
+---
+title: "CS/EGR 222 Systems Programming"
+code: "CS/EGR 222"
+term: "Spring 2022"
+lineage: "cs222"
+course_dir: "cs222"
+type: "course-archive"
+date: "2022-04-23"
+sections: [{"id": "sec-info", "label": "Course Info"}, {"id": "sec-overview", "label": "Course Overview"}, {"id": "sec-schedule", "label": "Course Schedule"}, {"id": "sec-grading", "label": "Grading Policies"}, {"id": "sec-policy", "label": "Policy Statements"}, {"id": "sec-software", "label": "Software"}]
+source: {"repo": "Peilong/Peilong.github.io", "commit": "606f37f", "date": "2022-04-23"}
+summary: "Archived Spring 2022 offering of CS/EGR 222 Systems Programming."
+---
+<section id="sec-info" class="arch-section">
+<h2>Course Info</h2>
+<p>This course covers advanced programming and machine representation of data and data structures, including dynamic structures and files.</p>
+<h3 id="sec-info-instructor">Instructor:</h3>
+<p>Dr. Peilong Li</p>
+<h3 id="sec-info-office">Office:</h3>
+<p>Esbenshade 284B</p>
+<h3 id="sec-info-appointments">Appointments:</h3>
+<p>By email</p>
+<h3 id="sec-info-number-of-credits">Number of Credits</h3>
+<p>4</p>
+<h3 id="sec-info-pre-requisites">Pre-requisites</h3>
+<ul>
+<li>CS 122 Computer Science II</li>
+</ul>
+<h3 id="sec-info-textbooks">Textbooks</h3>
+<ul>
+<li>
+<p><strong>(Required)</strong> Brian W. Kernighan and Dennis M. Ritchie.
+<em>The C Programming Language, 2nd Edition</em>.
+1988, Prentice Hall,
+ISBN: 978-0131103627.
+E-copy: <a href="https://kremlin.cc/k&amp;r.pdf">link</a>
+<img src="https://images-na.ssl-images-amazon.com/images/I/41h%2B7zx%2BhFL._SX376_BO1,204,203,200_.jpg" width="200"></p>
+</li>
+<li>
+<p><strong>(Optional)</strong> Michael Kerrisk.
+<em>The Linux Programming Interface, First Edition</em>.
+2010, No Starch Press,
+ISBN: 978-1593272203.
+E-copy: <a href="https://github.com/shihyu/Linux_Programming/blob/master/books/The%20Linux%20Programming%20Interface%20-%20A%20Linux%20and%20UNIX%20System%20Programming%20Handbook.pdf">link</a>
+<img src="https://images-na.ssl-images-amazon.com/images/I/51GhTMoAspL._SX376_BO1,204,203,200_.jpg" width="200"></p>
+</li>
+</ul>
+</section>
+
+<section id="sec-overview" class="arch-section">
+<h2>Course Overview</h2>
+<h3 id="sec-overview-course-coverage">Course Coverage</h3>
+<p>This course covers advanced programming and machine representation of data and data structures, including dynamic structures and files. Topics include C language syntax, memory allocation, run-time data organization, function linkage and parameter passing, and the relationship between high-level and machine languages. C is the primary language of instruction with Java being a comparative language. Linux operating system and command line skills will be introduced throughout the course.</p>
+<h3 id="sec-overview-student-learning-outcomes">Student Learning Outcomes</h3>
+<p>By the end of the course, students will be able to:</p>
+<ul>
+<li>Apply knowledge of computing and mathematics appropriate to the discipline, including common data structures and basic algorithms, to solve problems</li>
+<li>Analyze a problem and identify and define the computing requirements appropriate to its solution</li>
+<li>Design, implement, and evaluate a computer-based system, process, component or program, including operating systems, to meet desired needs</li>
+<li>Function effectively on teams and use software engineering principles to accomplish a common goal</li>
+<li>Understand fundamentals of procedural programming with applications in electrical and computer engineering and embedded systems</li>
+<li>Understand hardware and software elements of data communications and computer networking</li>
+<li>Compare and contrast the features of the Java and C programming languages</li>
+<li>Manage memory allocation explicitly</li>
+<li>Perform low-level file access in programs</li>
+</ul>
+</section>
+
+<section id="sec-schedule" class="arch-section">
+<h2>Course Schedule</h2>
+<h3 id="sec-schedule-schedule">Schedule</h3>
+<p>Note this tentative schedule is subject to change. Please check the schedule regularly.</p>
+<p>Last updated: 04/09/2022</p>
+<table>
+<thead>
+<tr>
+<th align="center">Week</th>
+<th align="center">Starting</th>
+<th>Topics</th>
+<th>Reading</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">1/17/22</td>
+<td>M: MLK Day, No Classes</td>
+<td>Reading 1</td>
+<td>HW1 out</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec1: Course introduction</td>
+<td></td>
+<td>HW1 due on Thur midnight</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lec2: Linux and command line</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">1/24/22</td>
+<td>M: Lec3: C language; Compilation in Linux</td>
+<td>Reading 2</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec4: Data types;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lec5: Printf and scanf; Linux Kernel</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">1/31/22</td>
+<td>M: Lec6: If and switch statements</td>
+<td>Reading 3</td>
+<td>HW2 out.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: PE1 - Flowchart, debugging</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lab 1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">2/7/22</td>
+<td>M: Lec7: Simple Makefile</td>
+<td>Reading 4</td>
+<td>Project 1 out.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec8: While, Do-while loops</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lec9: For loops</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">2/14/22</td>
+<td>M: Lec10: Functions</td>
+<td>Reading 5</td>
+<td>HW2 due Mon; HW3 out.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec11: Function examples</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: PE2 - Conditionals and loops</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">2/21/22</td>
+<td>M: Lab 2</td>
+<td>Reading 6</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec12: Module 1 summary and exam 1 preview</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Exam 1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">2/28/22</td>
+<td>M: Spring Break, No Classes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Spring Break, No Classes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Spring Break, No Classes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">3/7/22</td>
+<td>M: Lec13: Cloud computing and Docker</td>
+<td>Reading 7</td>
+<td>HW3 due Mon; Project 1 due Mon.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec14: Pointers and pointer arguments</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lec 15: More on pointers</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">3/14/22</td>
+<td>M: PE3 - Functions and pointers</td>
+<td>Reading 8</td>
+<td>Project 2 out.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lab3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lec16: C Arrays</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">3/21/22</td>
+<td>M: Lec17: 2D arrays; arrays with functions</td>
+<td>Reading 9</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec18: Character arrays and strings</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lec19: Structures</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">3/28/22</td>
+<td>M: Lec20: Nested structures</td>
+<td>Reading 10</td>
+<td>HW4 out</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: PE4 - Structures</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lab 4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">4/4/22</td>
+<td>M: Lec21: Module 2 summary and exam 2 preview</td>
+<td>Reading 11</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Dr. Li fighting with stomach bug</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Exam 2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">4/11/22</td>
+<td>M: Lec22: Dynamic memory allocation</td>
+<td>Reading 12</td>
+<td>Project 2 due Mon; Project 3 out.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec23: Dynamic memory allocation examples</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: College Holiday, No Classes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">4/18/22</td>
+<td>M: Lec24: Linked lists - add/search</td>
+<td>Reading 13</td>
+<td>HW4 due Mon; HW5 out.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: PE5: Dynamic memory allocation Part 1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: PE5: Dynamic memory allocation Part 2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td align="center">4/25/22</td>
+<td>M: Lab 5</td>
+<td>Reading 14</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Lec26: File I/O</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: Lec27: Character and Line I/O</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">16</td>
+<td align="center">5/2/22</td>
+<td>M: Lec28: Course review and final exam preview</td>
+<td>All notes</td>
+<td>HW5 due Mon</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Final exam Q&amp;A</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>F: No Class</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">17</td>
+<td align="center">5/9/22</td>
+<td>M: No Class</td>
+<td></td>
+<td>Project 3 due Mon.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td>W: Final Exam 7:30 - 10:30 AM</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sec-schedule-weekly-reading-assignments">Weekly Reading Assignments</h3>
+<table>
+<thead>
+<tr>
+<th>Week #</th>
+<th>Reading #</th>
+<th>Assignments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Reading 1</td>
+<td>C: 1.1, 2.1-2.8, 7.4, Linux: 1.1-1.2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Reading 2</td>
+<td>C: 3.1-3.4, Linux: 2.1-2.7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Reading 3</td>
+<td>C: 3.5-3.7, Linux: 6.1-6.7</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Reading 4</td>
+<td>C: 4.1-4.4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Reading 5</td>
+<td>C: 4.5, 4.8-4.11</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Reading 6</td>
+<td>C: 5.1-5.2, 5.4, 5.11</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Reading 7</td>
+<td><a href="https://beginnersbook.com/2014/01/c-pointers/">Tutorial1</a>, <a href="https://beginnersbook.com/2014/01/c-pointer-to-pointer/">Tutorial2</a>, <a href="https://beginnersbook.com/2014/01/c-passing-pointers-to-functions/">Tutorial3</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Reading 8</td>
+<td>C: 1.6, 5.3-5.9</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Reading 9</td>
+<td>C: 6.1-6.4, 6.7</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Reading 10</td>
+<td><a href="https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/">Tutorial4</a>, Linux 7.1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Reading 11</td>
+<td><a href="https://www.geeksforgeeks.org/linked-list-set-1-introduction/">Tutorial5</a>, C: 6.5</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Reading 12</td>
+<td><a href="https://www.sanfoundry.com/c-tutorials-ordered-unordered-singly-linked-lists/">Tutorial6</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Reading 13</td>
+<td>C: 7.5, 7.7, Linux: 4.1-4.7</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Reading 14</td>
+<td>All notes</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="sec-grading" class="arch-section">
+<h2>Grading Policies</h2>
+<h3 id="sec-grading-grading-weights">Grading Weights</h3>
+<p>The final grade for this course depends upon the grades and scores earned on course components weighted as follows:</p>
+<ul>
+<li><strong>6%</strong> : A number of in-class pop quizzes.</li>
+<li><strong>15%</strong>: 5 individual homework.</li>
+<li><strong>24%</strong>: 3 team projects.</li>
+<li><strong>15%</strong>: 5 in-class labs.</li>
+<li><strong>25%</strong>: 2 midterm exams.</li>
+<li><strong>15%</strong>: Final exam.</li>
+</ul>
+<p>Grades will be computed by rounding numerical percentages to the nearest integer and applying the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Range</th>
+<th>Letter</th>
+<th>Range</th>
+<th>Letter</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>93-100</td>
+<td>B-</td>
+<td>80-82</td>
+<td>D+</td>
+<td>67-69</td>
+</tr>
+<tr>
+<td>A-</td>
+<td>90-92</td>
+<td>C+</td>
+<td>77-79</td>
+<td>D</td>
+<td>63-66</td>
+</tr>
+<tr>
+<td>B+</td>
+<td>87-89</td>
+<td>C</td>
+<td>73-76</td>
+<td>D-</td>
+<td>60-62</td>
+</tr>
+<tr>
+<td>B</td>
+<td>83-86</td>
+<td>C-</td>
+<td>70-72</td>
+<td>F</td>
+<td>0-59</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-Note"></code></pre>
+<h3 id="sec-grading-in-class-labs">In-class Labs</h3>
+<p>All labs are to be done individually, in class, with the assistance of the instructor.
+Each assignment will be given near the beginning of a class and must be uploaded to Canvas before the due time. Some of the labs allow for late submission till midnight with late penalty, but no submission is allowed beyond the lab day. To receive full credit, a programming assignment must compile, but partial credit will be awarded based on the understanding of the material demonstrated by the student’s code.</p>
+<h3 id="sec-grading-individual-homework-and-team-projects">Individual Homework and Team Projects</h3>
+<p>All homework assignments have to be completed individually in this course. Homework assignments are &ldquo;lab-like&rdquo; small programs that need to be completed in a week or two.</p>
+<p>All projects are team projects in this course. For each project, students must form a team of 2 members. Teams are responsible for dividing their workload and meeting offline for at least 2 times for each project. Documented meeting minutes have to be submitted as part of the deliverable. Students should select their teams by using the Groups tab under People, on the Canvas webpage.</p>
+<p>Except under extreme circumstances, all members of the team will receive the same grade for each project. One member of each team is designated the leader. The files for each project should be zipped up and uploaded by the team leader using Canvas before the due date. <strong>If the project does not compile, the student will receive a score of 0.</strong></p>
+<p><strong>Late Policy</strong></p>
+<p>In general, homework and projects will be graded with the <em>diff</em> utility. For that reason, it is imperative that project output matches sample output to the character.</p>
+<p>Late assignment will lose <img src="https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Cfn_phv%20%5Clarge%202%5E%7B%28n-1%29%7D" alt="equation"> points per day, including weekends and holidays. For example, -1 after 1 day, -2 after 2 days, -4 after 3 days … until 8+ days students will receive 0 score.  <strong>Under no circumstances should any student disclose their code, or copy the code written by other students or from an outside source. Both students will receive 0 score on the disclosed/copied assignment.</strong></p>
+</section>
+
+<section id="sec-policy" class="arch-section">
+<h2>Policy Statements</h2>
+<h3 id="sec-policy-covid-related-expectations">COVID-related Expectations</h3>
+<p>I recognize that students may need to miss classes due to personal health reasons or for community measures necessary to promote public health. I have already prepared to substitute a reasonable educational experience aligned with that day’s learning objectives for students who miss class due to illness or quarantine.</p>
+<ul>
+<li>In most cases, this will be downloading the gap notes and watching a recording of last year’s hyflex delivery of that same content. Ask me for the lecture recordings.</li>
+<li>If you miss a coaching day, the homework is posted on Canvas and you can use my <a href="https://calendly.com/dr_li/">Calendly link</a> to sign up for a time during office hours to Zoom with any questions.</li>
+<li>Assessments must be taken in person due to academic integrity concerns. However, there are many opportunities to test and if we need a make-up day near the end of the semester, I will offer one.</li>
+<li>Assignments are posted far in advance and, in most cases, will not be adjusted for mild illness.</li>
+</ul>
+<h3 id="sec-policy-course-schedule">Course Schedule</h3>
+<p>The most up-to-date course schedule will be posted on course website schedule page: <a href="#sec-schedule">https://peilong.github.io/courses/cs222/schedule/</a>. Students are responsible for checking the schedule regularly. Schedule page will include: 1) teaching topics for each meeting; 2) reading assignments for each week and 3) special notes on specific days.</p>
+<h3 id="sec-policy-course-announcements--discussion">Course Announcements &amp; Discussion</h3>
+<p>All course announcements will be sent to your E-Town email accounts via Canvas Announcements. You are responsible for signing up for this service and checking your emails regularly.</p>
+<p>I have created a Microsoft Teams channel (<a href="https://teams.microsoft.com/l/team/19%3aa8cdd959c2e249a989d401e20fc95524%40thread.tacv2/conversations?groupId=81ffa3c7-aa45-454a-b495-7f43c78e5024&amp;tenantId=1d884f12-a0d7-42f0-8b15-3a91c853bcb5">link</a>) to facilitate course related discussion.  Discussions are encouraged to be posted on the &ldquo;QA&rdquo; channel from Teams. Private instant messages can be sent directly to your recipient by search your recipient&rsquo;s name on the &ldquo;search&rdquo; bar.</p>
+<h3 id="sec-policy-attendance-policies">Attendance Policies</h3>
+<p>Attendance is expected of every student at every lecture. Students are responsible for all content covered in class as well as assigned book chapters. Due to their nature, pop quizzes cannot be made up.</p>
+<p>Except in the case of documented emergencies, neither exams nor in-class labs can be made up afterwards.  For excused absences, students must arrange to take the exam or do the lab before the normally scheduled time.  Arrangements must be made with the instructor at least two weeks prior to the scheduled time.</p>
+<p>Students are expected to maintain an attitude of respect at all times toward their colleagues, the equipment, and the instructor.  Cell phones and similar devices is prohibited from using during lecturing time.  Students who use offensive language, misuse computing facilities, or are otherwise disruptive of the classroom will be asked to leave.</p>
+<h3 id="sec-policy-statement-on-school-closure">Statement on School Closure</h3>
+<p>In the event that classes do not meet because Elizabethtown College is closed or delayed due to inclement weather or some other emergency, the slides that would have been covered during the missed classes will be posted through Canvas.  Students are expected to do the assigned reading, review the slides, and e-mail the instructor with any questions. There will also be an opportunity to ask questions about the material when classes resume.</p>
+<p>If a scheduled exam or lab is missed, it will normally be made up on the day that classes resume.  If the College is closed on a day when a project is due, the project due date will also normally be extended until the day when classes resume.  If circumstances render either of these makeup policies unreasonable, the instructor will send an e-mail explaining an alternative makeup opportunity to each student’s Elizabethtown e-mail account.</p>
+<h3 id="sec-policy-statement-on-plagiarism">Statement on Plagiarism</h3>
+<p>Check out the up-to-date statement from: <a href="https://catalog.etown.edu/content.php?catoid=24&amp;navoid=1233#Academic_Judicial_System">Elizabethtown College Catalog, &ldquo;Academic Judicial System&rdquo;</a></p>
+<h3 id="sec-policy-statement-on-disability">Statement on Disability</h3>
+<p>Full statement can be found at: <a href="https://elizabethtown-my.sharepoint.com/:w:/g/personal/ouimetc_etown_edu/EfZ-QooKt_VPjgwsWJz230wB3Rb6CIHsPvE0xuqWCpr-UA?e=4%3acZzjpW&amp;at=9">Course Syllabus on Disability Services, Religious Observances, and COVID related expectations</a>.</p>
+<h3 id="sec-policy-diversity-and-inclusivity-statement">Diversity and Inclusivity Statement</h3>
+<p>I consider this classroom to be a place where you will be treated with respect, and I welcome individuals of all ages, backgrounds, beliefs, ethnicities, genders, gender identities, gender expressions, national origins, religious affiliations, sexual orientations, ability - and other visible and non-visible differences. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.</p>
+</section>
+
+<section id="sec-software" class="arch-section">
+<h2>Software</h2>
+<p>You need an Integrated Development Environment (IDE) that contains a GCC compiler, and a machine that supports Linux command line in this course.</p>
+<p>There are many IDEs you can choose, e.g., Eclipse, Code::Blocks, Visual Studio, and CLion, etc, but for the purpose of in-class demonstration, I will stick with Visual Studio Code.</p>
+<h3 id="sec-software-visual-studio-code">Visual Studio Code</h3>
+<p>Downlaod VS Code from this <a href="https://code.visualstudio.com/download">link</a>. Follow the instructions from HW1 to install the C/C++ extensions.</p>
+<h3 id="sec-software-c-compiler">C Compiler</h3>
+<p>For Windows users, install <a href="http://mingw-w64.org/doku.php/download/mingw-builds">MinGW-64</a> for the GCC compiler. For Mac users, install Apple&rsquo;s version of GCC - Clang: <a href="https://www.cs.auckland.ac.nz/~paul/C/Mac/index.php">Tutorial 1</a>, or <a href="http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/">Tutorial 2</a>.</p>
+<h3 id="sec-software-linux-command-line-tool">Linux Command Line Tool</h3>
+<ul>
+<li>
+<p><strong>Windows Options</strong>: 1) use Windows and Ubuntu 18.04 (or newer) dual-boot systems; 2) running Ubuntu on a virtual machine (e.g. virtualbox); 3) Ubuntu App on Windows 10; 4) Use Windows PowerShell; 5) Use the campus server cs64.etown.edu.</p>
+</li>
+<li>
+<p><strong>MacOS Options</strong>: Use the default Terminal.app application.</p>
+</li>
+<li>
+<p><strong>Linux Options</strong>: You are on your own.</p>
+</li>
+</ul>
+<p><strong>Note:</strong></p>
+<p>All the software and operating systems are available on the computers in the Esbenshade 281, Hoover 108 and Nicarry 208 computer laboratories and in the Computer Science commons area (E284).</p>
+</section>

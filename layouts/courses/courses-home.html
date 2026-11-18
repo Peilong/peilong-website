@@ -1,0 +1,192 @@
+{{- define "main" -}}
+{{- /* Courses landing page: current semester first, then the full teaching history.
+       Data: data/teaching.json (generated from the published site's git history + the PI's records).
+       Offering kinds: "archive" (archived course page), "external" (external syllabus), "none" (no archived page). */ -}}
+{{ $t := site.Data.teaching }}
+{{ $cur := $t.current }}
+{{ $curCodes := slice }}{{ range $cur.courses }}{{ $curCodes = $curCodes | append .course }}{{ end }}
+{{ $nOff := 0 }}{{ $nArch := 0 }}{{ $teachTerms := slice }}
+{{ range $t.semesters }}{{ $nOff = add $nOff (len .offerings) }}{{ if .offerings }}{{ $teachTerms = $teachTerms | append .term }}{{ end }}
+  {{ range .offerings }}{{ if eq .kind "archive" }}{{ $nArch = add $nArch 1 }}{{ end }}{{ end }}{{ end }}
+
+<style>
+  .courses-home { max-width: 1140px; }
+  .courses-home .ch-lead { font-size: 1.05rem; opacity: .85; margin-bottom: 2.25rem; }
+  .ch-section { margin-bottom: 3rem; }
+  .ch-eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; font-weight: 700; opacity: .65; }
+  .ch-term { margin: .15rem 0 1.1rem 0; }
+  .ch-card { height: 100%; padding: 1.1rem 1.2rem; border: 1px solid rgba(127,127,127,.25); border-radius: .5rem;
+             display: flex; flex-direction: column; }
+  .ch-card h3 { font-size: 1.15rem; margin: .25rem 0 .5rem 0; }
+  .ch-card p { font-size: .9rem; opacity: .85; flex: 1 1 auto; margin-bottom: .75rem; }
+  .ch-code { font-weight: 700; font-size: .85rem; letter-spacing: .03em; opacity: .75; }
+  .ch-links a { font-size: .85rem; margin-right: .9rem; white-space: nowrap; }
+  .ch-stats { font-size: .9rem; opacity: .75; margin: -.4rem 0 1rem 0; }
+  .courses-home .nav-tabs { margin-bottom: 1rem; }
+  /* history grid */
+  .ch-grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .ch-grid { border-collapse: separate; border-spacing: 0; font-size: .85rem; width: 100%; }
+  .ch-grid th, .ch-grid td { padding: .35rem .2rem; text-align: center; white-space: nowrap;
+                             border-bottom: 1px solid rgba(127,127,127,.15); }
+  .ch-grid thead th { font-weight: 600; opacity: .8; border-bottom: 1px solid rgba(127,127,127,.35); }
+  .ch-grid .ch-year th { border-bottom: 0; font-size: .8rem; opacity: .65; }
+  .ch-grid th.ch-row, .ch-grid td.ch-row { text-align: left; position: sticky; left: 0; z-index: 1; padding-right: 1rem; background: inherit; }
+  .ch-grid tbody tr:hover { background: rgba(127,127,127,.07); }
+  .ch-row-code { font-weight: 700; }
+  .ch-row-title { opacity: .8; }
+  .ch-row-former { display: block; font-size: .75rem; opacity: .6; }
+  /* #2962ff = this theme's link color (light and dark), so every dot matches the linked ones. */
+  .ch-dot { color: #2962ff; display: inline-block; width: .8rem; height: .8rem; border-radius: 50%; background: currentColor;
+            vertical-align: middle; transition: transform .1s; }
+  a:hover .ch-dot { transform: scale(1.35); }
+  .ch-dot.ch-former { background: transparent; border: 2px solid currentColor; }
+  .ch-dot.ch-none { color: rgba(127,127,127,.7); }
+  .ch-dot.ch-ext { border-radius: 2px; }
+  .ch-dot.ch-now { box-shadow: 0 0 0 3px rgba(127,127,127,.35); }
+  .ch-col-now { background: rgba(127,127,127,.09); }
+  .ch-col-off { background: repeating-linear-gradient(135deg, rgba(127,127,127,.13) 0 4px, transparent 4px 9px); }
+  .ch-legend { font-size: .8rem; opacity: .8; margin-top: .6rem; display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; }
+  .ch-legend .ch-sw { display: inline-block; width: .8rem; height: .8rem; vertical-align: middle; margin-right: .3rem; }
+  /* by-semester list */
+  .ch-sem { display: flex; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid rgba(127,127,127,.15); }
+  .ch-sem-term { flex: 0 0 8.5rem; font-weight: 600; }
+  .ch-sem-list { display: flex; flex-wrap: wrap; gap: .4rem .5rem; align-items: center; }
+  .ch-chip { font-size: .85rem; padding: .15rem .6rem; border: 1px solid rgba(127,127,127,.3); border-radius: 1rem; }
+  .ch-chip b { margin-right: .25rem; }
+  span.ch-chip { opacity: .65; }
+  .ch-sem-note { font-size: .9rem; font-style: italic; opacity: .75; }
+  .ch-earlier ul { margin-bottom: 1rem; }
+  @media (max-width: 575px) { .ch-sem { flex-direction: column; gap: .35rem; } .ch-sem-term { flex-basis: auto; } }
+</style>
+
+<div class="universal-wrapper courses-home">
+  <h1>{{ .Title }}</h1>
+  <p class="ch-lead">Courses I teach in the Department of Computer Science at Elizabethtown College. Every past semester's syllabus, schedule and policies are archived below, so you can see how each course has changed over time.</p>
+
+  {{/* ---------------- Current semester ---------------- */}}
+  <div class="ch-section">
+    <div class="ch-eyebrow">Current semester</div>
+    <h2 class="ch-term">{{ $cur.term }}</h2>
+    <div class="row">
+      {{ range $cur.courses }}
+      <div class="col-12 col-md-4 mb-3">
+        <div class="ch-card">
+          <div class="ch-code">{{ .code }}</div>
+          <h3>{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title | default "Course details coming soon" }}{{ end }}</h3>
+          <p>{{ .summary }}</p>
+          {{ with .links }}<div class="ch-links">{{ range . }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}</div>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* ---------------- Teaching history ---------------- */}}
+  <div class="ch-section">
+    <h2>Teaching history</h2>
+    <p class="ch-stats">{{ len $teachTerms }} semesters &middot; {{ $nOff }} course offerings ({{ $nArch }} with archived course pages) &middot; {{ index $teachTerms (sub (len $teachTerms) 1) }} to {{ index $teachTerms 0 }}</p>
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#by-course" role="tab" aria-controls="by-course" aria-selected="true">By course</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#by-semester" role="tab" aria-controls="by-semester" aria-selected="false">By semester</a></li>
+    </ul>
+
+    <div class="tab-content">
+      {{/* Course x semester grid */}}
+      <div class="tab-pane fade show active" id="by-course" role="tabpanel">
+        {{ $years := slice }}{{ $yearCount := dict }}
+        {{ range $t.terms }}{{ $y := index (split . " ") 1 }}
+          {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
+          {{ $yearCount = merge $yearCount (dict $y (add (index $yearCount $y | default 0) 1)) }}
+        {{ end }}
+        {{ $curYear := index (split $cur.term " ") 1 }}
+        {{ $notes := dict }}{{ range $t.semesters }}{{ $term := .term }}{{ with .note }}{{ $notes = merge $notes (dict $term .) }}{{ end }}{{ end }}
+        {{ $off := slice }}{{ range $t.semesters }}{{ if .note }}{{ $off = $off | append .term }}{{ end }}{{ end }}
+        <div class="ch-grid-wrap">
+          <table class="ch-grid">
+            <thead>
+              <tr class="ch-year">
+                <th class="ch-row"></th>
+                {{ range $years }}<th colspan="{{ index $yearCount . }}">{{ . }}</th>{{ end }}
+                {{ if not (in $years $curYear) }}<th>{{ $curYear }}</th>{{ end }}
+              </tr>
+              <tr>
+                <th class="ch-row">Course</th>
+                {{ range $t.terms }}<th{{ if in $off . }} class="ch-col-off"{{ end }} title="{{ . }}">{{ substr . 0 2 }}</th>{{ end }}
+                <th class="ch-col-now" title="{{ $cur.term }} (current)">{{ substr $cur.term 0 2 }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range $t.rows }}
+              {{ $row := . }}
+              <tr>
+                <td class="ch-row">
+                  <span class="ch-row-code">{{ if .url }}<a href="{{ .url }}">{{ .code }}</a>{{ else }}{{ .code }}{{ end }}</span>
+                  <span class="ch-row-title">{{ .title }}</span>
+                  {{ with .former }}<span class="ch-row-former">formerly {{ . }}</span>{{ end }}
+                </td>
+                {{ range $term := $t.terms }}
+                <td{{ if in $off $term }} class="ch-col-off"{{ end }}>
+                  {{- with index $row.offerings $term -}}
+                    {{- $cls := cond .former "ch-dot ch-former" "ch-dot" -}}
+                    {{- if eq .kind "archive" -}}<a href="{{ .url }}" title="{{ .code }} &middot; {{ $term }}" aria-label="{{ .code }}, {{ $term }}"><span class="{{ $cls }}"></span></a>
+                    {{- else if eq .kind "external" -}}<a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .code }} &middot; {{ $term }} &middot; {{ .note }} (syllabus, PDF)" aria-label="{{ .code }}, {{ $term }}, syllabus"><span class="{{ $cls }} ch-ext"></span></a>
+                    {{- else -}}<span class="{{ $cls }} ch-none" title="{{ .code }} &middot; {{ $term }}: no archived page ({{ .note }})"></span>
+                    {{- end -}}
+                  {{- end -}}
+                </td>
+                {{ end }}
+                <td class="ch-col-now">{{ if in $curCodes .key }}<a href="{{ .url }}" title="{{ .code }} &middot; {{ $cur.term }} (current)"><span class="ch-dot ch-now"></span></a>{{ end }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+        <div class="ch-legend">
+          <span><span class="ch-dot ch-sw"></span>archived course page</span>
+          <span><span class="ch-dot ch-former ch-sw"></span>under its former course number</span>
+          <span><span class="ch-dot ch-none ch-sw"></span>taught, no archived page</span>
+          <span><span class="ch-dot ch-ext ch-sw"></span>co-taught; links to the syllabus</span>
+          <span><span class="ch-dot ch-now ch-sw"></span>{{ $cur.term }} (current)</span>
+          {{ range $off }}<span><span class="ch-col-off ch-sw"></span>{{ . }}: {{ lower (index $notes .) }}</span>{{ end }}
+        </div>
+      </div>
+
+      {{/* Semester list */}}
+      <div class="tab-pane fade" id="by-semester" role="tabpanel">
+        <div class="ch-sem">
+          <div class="ch-sem-term">{{ $cur.term }}<br><span class="ch-eyebrow">current</span></div>
+          <div class="ch-sem-list">
+            {{ range $cur.courses }}{{ if .url }}<a class="ch-chip" href="{{ .url }}"><b>{{ .code }}</b>{{ .title }}</a>{{ else }}<span class="ch-chip"><b>{{ .code }}</b>New course</span>{{ end }}{{ end }}
+          </div>
+        </div>
+        {{ range $t.semesters }}
+        <div class="ch-sem">
+          <div class="ch-sem-term">{{ .term }}</div>
+          <div class="ch-sem-list">
+            {{ with .note }}<span class="ch-sem-note">{{ . }}</span>{{ end }}
+            {{ range .offerings }}
+              {{ $name := substr .title (add (len .code) 1) }}
+              {{ if eq .kind "archive" }}<a class="ch-chip" href="{{ .url }}"><b>{{ .code }}</b>{{ $name }}</a>
+              {{ else if eq .kind "external" }}<a class="ch-chip" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .note }}"><b>{{ .code }}</b>{{ $name }} ({{ .note }}) &#8599;</a>
+              {{ else }}<span class="ch-chip" title="No archived page: {{ .note }}"><b>{{ .code }}</b>{{ $name }}</span>{{ end }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{/* ---------------- Other teaching ---------------- */}}
+  <div class="ch-section ch-earlier">
+    <h2>Other teaching</h2>
+    {{ range $t.earlier }}
+    <div class="ch-eyebrow">{{ .place }}</div>
+    <ul>
+      {{ range .items }}<li>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</div>
+{{- end -}}
