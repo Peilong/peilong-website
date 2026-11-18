@@ -37,13 +37,13 @@ Last updated: 01/12/2026
 |      |          | H: Lec9 - Registers and RAMs; Meet & Greet           |         | P1 Raid                       |
 | 6    | 2/16/25  | T: Lec10 - State Machine Design and Program Counter  | Ch 3    | Tue: HW2 due           |
 |      |          | H: PE2 - ALU and Sequential Logic                    |         | P1 Raid                       |
-| 7    | 2/23/25  | T: Lec 11 - Module Summary and Exam 1 Preview        | All     |                        |
+| 7    | 2/23/25  | T: Lec 11 - Module Summary and Exam 1 Preview        | All     | Tue: P2 due; P2 Raid                       |
 |      |          | <span style="color:green"><strong>H: Exam 1</strong></span> |         |                        |
 | 8    | 3/2/25   | <span style="color:red"><em>T: Spring Break, No Classes</em></span> |         |                        |
 |      |          | <span style="color:red"><em>H: Spring Break, No Classes</em></span> |         |                        |
-| 9    | 3/9/25   | T: Lec12 - Machine Language                          | Ch 4    | Tue: P2 due; P3 out    |
+| 9    | 3/9/25   | T: Lec12 - Machine Language                          | Ch 4    | Tue: P3 out    |
 |      |          | H: Lec13 - HACK Assembly 1                           |         | P2 Raid                      |
-| 10   | 3/16/25  | T: Lec14 - HACK Assembly 2                           | Ch 4    | P2 Raid                       |
+| 10   | 3/16/25  | T: Lec14 - HACK Assembly 2                           | Ch 4    |                        |
 |      |          | H: Lec15 - HACK Assembly 3                           |         |                        |
 | 11   | 3/23/25  | T: PE3 - Assembly                                    | Ch 5    | Tue: HW3 out; P3 due   |
 |      |          | H: Lec16 - Comp Arch Intro                           |         | P3 Raid                       |

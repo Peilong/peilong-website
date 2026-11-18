@@ -50,10 +50,10 @@ Last updated: 01/12/2026
 | 9    | 3/9/26   | M: Lec14 - CTF prep                                | IS: 6.1-6.3 or CIS: 20.1-20.3     | Mon: HW 3 due; HW 4 out                |
 |      |          | W: Lec15 - Transport layer; TCP protocol           |                                   |                                        |
 |      |          | F: Lec16 - SYN flooding attack                     |                                   |                                        |
-| 10   | 3/16/26  | M: Lec17 - TCP reset attack                        | IS: 6.4-6.7 or CISS: 20.4-20.7    | Mon: Project milestone due             |
+| 10   | 3/16/26  | M: Lec17 - TCP reset attack                        | IS: 6.4-6.7 or CISS: 20.4-20.7    |              |
 |      |          | W: Lec18 - TCP session hijacking                   |                                   |                                        |
 |      |          | F: Lec19 - reverse shell                           |                                   |                                        |
-| 11   | 3/23/26  | M: PE3 - TCP                                       | Presentation related              |                                        |
+| 11   | 3/23/26  | M: PE3 - TCP                                       | Presentation related              | Mon: Project milestone due                                       |
 |      |          | W: Lab3 - TCP                                      |                                   |                                        |
 |      |          | F: Lec20 - Exam 2 Preview                          |                                   |                                        |
 | 12   | 3/30/26  | <span style="color:green"><strong>M: Exam 2 group 1</strong></span> | Presentation related              | Mon: HW4 due                           |
@@ -64,9 +64,9 @@ Last updated: 01/12/2026
 |      |          | F: Lec23 - VPN Part 1                              | IS: 8.1-8.5 or CIS: 22.1-22.5     |                                        |
 | 14   | 4/13/26  | M: Lec24 - VPN Part 2                              | IS: 8.6-8.9 or CIS: 22.6-22.9     |                                        |
 |      |          | W: Lec25 - Tunneling                               | IS: 9                             |                                        |
-|      |          | F: Lec26 - DNS part 1                              | IS: 10.1-10.3 or CIS: 23.1-23.3   |                                        |
-| 15   | 4/20/26  | M: Lec27 - DNS part 2                              | IS: 10.4-10.7 or CIS: 23.4-23.7   |                                        |
-|      |          | W: Lec28 - DNS part 3                              | IS: 10.8-10.11 or CIS: 10.8-23.11 | Thur: Final project presentation due   |
+|      |          | F: Lec26 - DNS part 1                              | IS: 10.1-10.4 or CIS: 23.1-23.4   |                                        |
+| 15   | 4/20/26  | M: Lec27 - DNS part 2                              | IS: 10.5-10.8 or CIS: 23.5-23.8   |                                        |
+|      |          | W: Lec28 - DNS part 3                              | IS: 10.9-10.11 or CIS: 10.9-23.11 | Thur: Final project presentation due   |
 |      |          | F: Final project group 1                           |                                   |                                        |
 | 16   | 4/27/26  | M: Final project group 2                           |                                   |                                        |
 |      |          | W: Final project group 3                           |                                   |                                        |

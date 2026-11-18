@@ -33,20 +33,20 @@ Last Updated: 01/12/2026
 | 6    | 2/16/26  | T: Lec8 - CNN                          | Ch. 10         | Mon: Project proposal due; Lab 4 week  |
 |      |          | H: PE4 - CNN                           |                |                                        |
 | 7    | 2/23/26  | T: Module 1 Review and Exam Preview    | Ch. 11         | Mon: HW 3 due                          |
-|      |          | <span style="color:green"><strong>H: Exam 1</strong></span> |                |                                        |
+|      |          | <span style="color:green"><strong>H: Exam 1 (canceled) </strong></span> |                |                                        |
 | 8    | 3/2/26   | <span style="color:red"><em>T: Spring Break, No Classes</em></span> | Ch. 14         |                                        |
 |      |          | <span style="color:red"><em>H: Spring Break, No Classes</em></span> |                |                                        |
-| 9    | 3/9/26   | T: Lec9 - Clustering                   | Ch. 9          | Mon: HW 4 out; Lab 5 week              |
-|      |          | H: PE5 - Clustering Exercises          |                |                                        |
-| 10   | 3/16/26  | T: Lec10 - NLP                         |                |                                        |
-|      |          | H: Lec11 - LLM                         |                | Fri: Project milestone due.            |
-| 11   | 3/23/26  | T: PE6 - NLP                           | Ch. 8          | Mon: HW 4 due; HW 5 out; Lab 6 week    |
-|      |          | H: Lec12 - Dimensionality Reduction    |                |                                        |
-| 12   | 3/30/26  | T: PE7 - PCA                           |                |                                        |
+| 9    | 3/9/26   | T: Exam 1                    | Ch. 9          | Mon: HW 4 out; Lab 5 week              |
+|      |          | H: Lec9 - Clustering         |                |                                        |
+| 10   | 3/16/26  | T: PE5 - Clustering Exercises                          |                |                                        |
+|      |          | H: Lec10 - NLP                         |                | Fri: Project milestone due.            |
+| 11   | 3/23/26  | T: Lec11 - LLM                           | Ch. 8          | Mon: HW 4 due; HW 5 out; Lab 6 week    |
+|      |          | H: PE6 - NLP    |                |                                        |
+| 12   | 3/30/26  | T: Lec12 - Dimensionality Reduction                           |                |                                        |
 |      |          | <span style="color:red"><em>H: Easter Break; No Classes</em></span> |                |                                        |
-| 13   | 4/6/26   | T: Lec13 - Association Rule Learning   | Medium Article | Mon: HW5 due                           |
-|      |          | H: PE8 - ARL Exercises                 |                |                                        |
-| 14   | 4/13/26  | T: Module 2 Review and Exam Preview    |                |                                        |
+| 13   | 4/6/26   | T: PE7 - PCA   | Medium Article | Mon: HW5 due                           |
+|      |          | H: Lec13 - Association Rule Learning                 |                |                                        |
+| 14   | 4/13/26  | T: PE8 - ARL Exercises    |                |                                        |
 |      |          | <span style="color:green"><strong>H: Exam 2</strong></span> |                |                                        |
 | 15   | 4/20/26  | T: Final Project Presentation at SCAD  |                | Mon: Final project slides and code due |
 |      |          | H: Final Project Presentation Buffer   |                |                                        |
