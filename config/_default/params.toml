@@ -261,5 +261,5 @@ plugins_js  = []
 ## Marketing
 ############################
 [marketing]
-  google_analytics = ""
-  google_tag_manager = ""
+  google_analytics = "G-VNGHD0MGZ7"  # GA4 property; view visitors at https://analytics.google.com
+  google_tag_manager = ""  # Leave empty: GTM-PMJKX5K4 fires the same GA4 tag, so setting both would double-count.
