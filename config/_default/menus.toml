@@ -34,6 +34,11 @@
   weight = 60
 
 [[main]]
+  name = "Writing"
+  url = "#posts"
+  weight = 65
+
+[[main]]
   name = "Research Lab"
   url = "https://bluejayadal.github.io/"
   weight = 70
