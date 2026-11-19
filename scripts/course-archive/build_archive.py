@@ -196,7 +196,7 @@ def main():
             current["courses"].append({"course": c, "code": code, "title": info["title"][len(code):].strip(),
                                        "summary": info["summary"], "url": info["url"],
                                        "links": [{"label": {"policy": "Policies"}.get(l, l.title()), "url": f"/courses/{c}/{l}/"}
-                                                 for l in ["schedule", "overview", "grading", "policy"] if l in info["pages"]]})
+                                                 for l in ["schedule", "overview", "policy"] if l in info["pages"]]})
         else:
             n = NEW_COURSES[c]
             current["courses"].append({"course": c, "code": n["code"], "title": n["title"], "summary": n["summary"], "url": "", "links": []})

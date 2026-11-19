@@ -18,10 +18,6 @@
       "url": "/courses/cs122/overview/"
      },
      {
-      "label": "Grading",
-      "url": "/courses/cs122/grading/"
-     },
-     {
       "label": "Policies",
       "url": "/courses/cs122/policy/"
      }
@@ -43,10 +39,6 @@
       "url": "/courses/cs230/overview/"
      },
      {
-      "label": "Grading",
-      "url": "/courses/cs230/grading/"
-     },
-     {
       "label": "Policies",
       "url": "/courses/cs230/policy/"
      }
@@ -66,10 +58,6 @@
      {
       "label": "Overview",
       "url": "/courses/cs354/overview/"
-     },
-     {
-      "label": "Grading",
-      "url": "/courses/cs354/grading/"
      },
      {
       "label": "Policies",
