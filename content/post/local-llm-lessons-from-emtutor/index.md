@@ -3,7 +3,7 @@ title: "Running an LLM In-House: Early Lessons from EMTutor"
 subtitle: "What a self-hosted AI tutor on two 2018-era GPUs taught me about deploying local LLMs for small businesses and enterprises"
 summary: "Many organizations want an AI assistant whose data never leaves their own servers. Here are preliminary performance numbers and the tradeoffs we hit while building EMTutor, a self-hosted tutor that runs on modest, reused hardware."
 authors: ["admin"]
-tags: ["Local LLM", "Self-Hosting", "AI Infrastructure", "Privacy", "EMTutor"]
+tags: ["Local LLM", "Self-Hosting", "AI Infrastructure", "Data Privacy", "EMTutor"]
 categories: ["AI Systems"]
 date: 2026-11-19
 lastmod: 2026-11-19
