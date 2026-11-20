@@ -270,4 +270,4 @@ plugins_js  = []
 [newsletter]
   # Buttondown username (https://buttondown.com/<username>). Leave empty to hide the signup forms
   # on the homepage Writing section and at the end of each post.
-  buttondown_username = ""
+  buttondown_username = "dr.li"
