@@ -85,7 +85,8 @@ privacy_pack = false
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "lip@etown.edu"
+email = ""  # Keep empty: a real address here is published (contact widget, structured data) and harvested by spammers.
+email_display = "lip AT etown DOT edu"  # Shown in the contact widget as plain text (layouts/partials/widgets/contact.html).
 phone = ""
 
 # Address

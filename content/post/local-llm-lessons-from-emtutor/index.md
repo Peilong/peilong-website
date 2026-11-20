@@ -164,4 +164,4 @@ For a focused task like ours, a well-tested 8B model with good retrieval and fir
 
 Next for EMTutor: a pilot with students in an introductory course, real course materials in place of our synthetic ones, and tests over winter break of newer engine builds that could fit more conversations on the same cards. I will share updated numbers as they come in.
 
-If your organization is weighing a local deployment and you want to compare notes, you can reach me at [lip@etown.edu](mailto:lip@etown.edu).
+If your organization is weighing a local deployment and you want to compare notes, you can reach me at lip AT etown DOT edu.

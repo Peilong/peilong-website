@@ -74,7 +74,7 @@ Brown's students named the risk themselves. According to the instructors, "a maj
 
 That has always been the promise of a liberal arts education: think clearly, write precisely, weigh evidence and take responsibility for your work. As coding agents take over more of the typing, those skills are no longer the soft side of a computer science degree. They are the job.
 
-If you teach computing at a small college and are trying any of this, I would like to compare notes. You can reach me at [lip@etown.edu](mailto:lip@etown.edu).
+If you teach computing at a small college and are trying any of this, I would like to compare notes. You can reach me at lip AT etown DOT edu.
 
 ## Sources
 
