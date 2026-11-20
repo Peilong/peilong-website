@@ -25,14 +25,34 @@
   .ch-stats { font-size: .9rem; opacity: .75; margin: -.4rem 0 1rem 0; }
   .courses-home .nav-tabs { margin-bottom: 1rem; }
   /* history grid */
-  .ch-grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .ch-grid { border-collapse: separate; border-spacing: 0; font-size: .85rem; width: 100%; }
-  .ch-grid th, .ch-grid td { padding: .35rem .2rem; text-align: center; white-space: nowrap;
+  /* The grid scrolls sideways once it is wider than the page; the course column stays put. */
+  .ch-grid-wrap { position: relative; }
+  .ch-grid-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+  .ch-grid-scroll:focus { outline: 1px dotted rgba(127,127,127,.6); outline-offset: 2px; }
+  .ch-grid-wrap::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 1.75rem; pointer-events: none;
+                         background: linear-gradient(to left, rgba(127,127,127,.28), transparent); opacity: 0; transition: opacity .2s; }
+  .ch-grid-wrap.can-scroll-right::after { opacity: 1; }
+  .ch-scroll-hint { font-size: .8rem; opacity: .7; margin: .4rem 0 0 0; }
+  .ch-grid { --ch-bg: #fff; border-collapse: separate; border-spacing: 0; font-size: .85rem; width: max-content; min-width: 100%;
+             display: table; overflow: visible; }  /* the theme makes tables display:block, which stops the sticky column */
+  body.dark .ch-grid { --ch-bg: #282a36; }  /* the theme's page backgrounds, so the sticky column is opaque */
+  .ch-grid th, .ch-grid td { padding: .35rem .4rem; text-align: center; white-space: nowrap;
                              border-bottom: 1px solid rgba(127,127,127,.15); }
   .ch-grid thead th { font-weight: 600; opacity: .8; border-bottom: 1px solid rgba(127,127,127,.35); }
   .ch-grid .ch-year th { border-bottom: 0; font-size: .8rem; opacity: .65; }
-  .ch-grid th.ch-row, .ch-grid td.ch-row { text-align: left; position: sticky; left: 0; z-index: 1; padding-right: 1rem; background: inherit; }
-  .ch-grid tbody tr:hover { background: rgba(127,127,127,.07); }
+  .ch-grid thead th.ch-row { opacity: 1; }  /* dimmed header cells are see-through; the sticky one must not be */
+  /* Vertical lines: faint between semesters, stronger where a new year starts. */
+  .ch-grid th + th, .ch-grid td + td { border-left: 1px solid rgba(127,127,127,.12); }
+  .ch-grid th.ch-ys, .ch-grid td.ch-ys { border-left-color: rgba(127,127,127,.45); }
+  .ch-grid .ch-row + th, .ch-grid .ch-row + td { border-left: 0; }
+  /* Row shading: every other course, plus the row under the pointer. */
+  .ch-grid tbody tr { --ch-tint: transparent; background: var(--ch-tint); }
+  .ch-grid tbody tr:nth-child(even) { --ch-tint: rgba(127,127,127,.09); }
+  .ch-grid tbody tr:hover { --ch-tint: rgba(127,127,127,.15); }
+  .ch-grid th.ch-row, .ch-grid td.ch-row { text-align: left; position: sticky; left: 0; z-index: 2; padding-right: 1rem;
+      background-color: var(--ch-bg); background-image: linear-gradient(var(--ch-tint, transparent), var(--ch-tint, transparent));
+      box-shadow: inset -1px 0 0 rgba(127,127,127,.45); }
+  .ch-grid-wrap.can-scroll-left .ch-row { box-shadow: inset -1px 0 0 rgba(127,127,127,.45), 6px 0 8px -6px rgba(0,0,0,.35); }
   .ch-row-code { font-weight: 700; }
   .ch-row-title { opacity: .8; }
   .ch-row-former { display: block; font-size: .75rem; opacity: .6; }
@@ -104,17 +124,19 @@
         {{ $notes := dict }}{{ range $t.semesters }}{{ $term := .term }}{{ with .note }}{{ $notes = merge $notes (dict $term .) }}{{ end }}{{ end }}
         {{ $off := slice }}{{ range $t.semesters }}{{ if .note }}{{ $off = $off | append .term }}{{ end }}{{ end }}
         <div class="ch-grid-wrap">
+          <div class="ch-grid-scroll" tabindex="0" role="region" aria-label="Teaching history by course and semester">
           <table class="ch-grid">
             <thead>
               <tr class="ch-year">
                 <th class="ch-row"></th>
-                {{ range $years }}<th colspan="{{ index $yearCount . }}">{{ . }}</th>{{ end }}
-                {{ if not (in $years $curYear) }}<th>{{ $curYear }}</th>{{ end }}
+                {{ range $years }}<th class="ch-ys" colspan="{{ index $yearCount . }}">{{ . }}</th>{{ end }}
+                {{ if not (in $years $curYear) }}<th class="ch-ys">{{ $curYear }}</th>{{ end }}
               </tr>
               <tr>
                 <th class="ch-row">Course</th>
-                {{ range $t.terms }}<th{{ if in $off . }} class="ch-col-off"{{ end }} title="{{ . }}">{{ substr . 0 2 }}</th>{{ end }}
-                <th class="ch-col-now" title="{{ $cur.term }} (current)">{{ substr $cur.term 0 2 }}</th>
+                {{ $prevY := "" }}
+                {{ range $t.terms }}{{ $y := index (split . " ") 1 }}<th class="{{ if ne $y $prevY }}ch-ys {{ end }}{{ if in $off . }}ch-col-off{{ end }}" title="{{ . }}">{{ substr . 0 2 }}</th>{{ $prevY = $y }}{{ end }}
+                <th class="ch-col-now{{ if ne $curYear $prevY }} ch-ys{{ end }}" title="{{ $cur.term }} (current)">{{ substr $cur.term 0 2 }}</th>
               </tr>
             </thead>
             <tbody>
@@ -126,8 +148,9 @@
                   <span class="ch-row-title">{{ .title }}</span>
                   {{ with .former }}<span class="ch-row-former">formerly {{ . }}</span>{{ end }}
                 </td>
-                {{ range $term := $t.terms }}
-                <td{{ if in $off $term }} class="ch-col-off"{{ end }}>
+                {{ $prevY := "" }}
+                {{ range $term := $t.terms }}{{ $y := index (split $term " ") 1 }}
+                <td class="{{ if ne $y $prevY }}ch-ys {{ end }}{{ if in $off $term }}ch-col-off{{ end }}">{{ $prevY = $y }}
                   {{- with index $row.offerings $term -}}
                     {{- $cls := cond .former "ch-dot ch-former" "ch-dot" -}}
                     {{- if eq .kind "archive" -}}<a href="{{ .url }}" title="{{ .code }} &middot; {{ $term }}" aria-label="{{ .code }}, {{ $term }}"><span class="{{ $cls }}"></span></a>
@@ -137,12 +160,14 @@
                   {{- end -}}
                 </td>
                 {{ end }}
-                <td class="ch-col-now">{{ if in $curCodes .key }}<a href="{{ .url }}" title="{{ .code }} &middot; {{ $cur.term }} (current)"><span class="ch-dot ch-now"></span></a>{{ end }}</td>
+                <td class="ch-col-now{{ if ne $curYear $prevY }} ch-ys{{ end }}">{{ if in $curCodes .key }}<a href="{{ .url }}" title="{{ .code }} &middot; {{ $cur.term }} (current)"><span class="ch-dot ch-now"></span></a>{{ end }}</td>
               </tr>
               {{ end }}
             </tbody>
           </table>
+          </div>
         </div>
+        <p class="ch-scroll-hint" hidden>Showing the newest semesters. Scroll sideways for earlier ones.</p>
         <div class="ch-legend">
           <span><span class="ch-dot ch-sw"></span>archived course page</span>
           <span><span class="ch-dot ch-former ch-sw"></span>under its former course number</span>
@@ -190,4 +215,23 @@
     {{ end }}
   </div>
 </div>
+<script>
+  /* When the grid is wider than the page: start at the newest semesters, show the hint, and shade the edge
+     that has more columns behind it. */
+  (function () {
+    var wrap = document.querySelector('.ch-grid-wrap');
+    if (!wrap) return;
+    var sc = wrap.querySelector('.ch-grid-scroll'), hint = document.querySelector('.ch-scroll-hint');
+    function update() {
+      var max = sc.scrollWidth - sc.clientWidth, over = max > 1;
+      wrap.classList.toggle('can-scroll-left', over && sc.scrollLeft > 1);
+      wrap.classList.toggle('can-scroll-right', over && sc.scrollLeft < max - 1);
+      if (hint) hint.hidden = !over;
+    }
+    sc.scrollLeft = sc.scrollWidth;
+    sc.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
 {{- end -}}
