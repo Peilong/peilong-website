@@ -1,0 +1,79 @@
+name: Scheduled publish
+
+# Rebuilds the site every morning so future-dated posts go live on their date, then publishes the
+# result to Peilong/Peilong.github.io. Same build as the local flow: Hugo 0.66.0 (non-extended; SCSS
+# comes from the committed resources/_gen) and the theme at the commit this repo pins.
+# Pushing uses PAGES_DEPLOY_KEY, a deploy key with write access to Peilong.github.io only.
+on:
+  schedule:
+    - cron: "15 12 * * *"   # 12:15 UTC = 7:15 AM EST / 8:15 AM EDT; posts are dated 7:00 AM Eastern
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scheduled-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the site source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          submodules: false
+
+      - name: Fetch the theme at the pinned commit
+        run: |
+          sha=$(git ls-tree HEAD themes/academic | awk '{print $3}')
+          echo "theme commit: $sha"
+          rm -rf themes/academic && mkdir -p themes/academic
+          curl -fsSL "https://codeload.github.com/gcushen/hugo-academic/tar.gz/${sha}" \
+            | tar xz --strip-components=1 -C themes/academic
+
+      - name: Install Hugo 0.66.0 (checksum verified)
+        run: |
+          v=0.66.0
+          curl -fsSLO "https://github.com/gohugoio/hugo/releases/download/v${v}/hugo_${v}_Linux-64bit.tar.gz"
+          curl -fsSLO "https://github.com/gohugoio/hugo/releases/download/v${v}/hugo_${v}_checksums.txt"
+          grep " hugo_${v}_Linux-64bit.tar.gz\$" "hugo_${v}_checksums.txt" | sha256sum -c -
+          tar xzf "hugo_${v}_Linux-64bit.tar.gz" hugo
+          sudo mv hugo /usr/local/bin/hugo
+          hugo version
+
+      - name: Check out the published site
+        uses: actions/checkout@v4
+        with:
+          repository: Peilong/Peilong.github.io
+          ref: master
+          ssh-key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          path: public
+          fetch-depth: 1
+
+      - name: Build
+        run: hugo
+
+      - name: Guard against publishing an email address
+        run: |
+          if grep -rIl -i "lip@etown" public --exclude-dir=.git; then
+            echo "A page contains the raw email address; refusing to publish." >&2
+            exit 1
+          fi
+
+      - name: Publish if anything changed
+        working-directory: public
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing new to publish."
+            exit 0
+          fi
+          git status --short | head -50
+          git config user.name "Scheduled publish"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Scheduled publish $(date -u +%Y-%m-%d)"
+          git push origin HEAD:master
