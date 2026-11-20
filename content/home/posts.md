@@ -8,6 +8,8 @@ weight = 95  # Right after Recent Publications (90).
 title = "Writing"
 subtitle = "Essays and notes on teaching, research and AI"
 
+newsletter = true  # Show the Buttondown signup under the list (layouts/partials/widgets/pages.html).
+
 [content]
   page_type = "post"
   count = 5  # Newest five; the section links to the full list at /post/.
