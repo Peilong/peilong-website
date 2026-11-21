@@ -280,4 +280,4 @@ plugins_js  = []
   # MapMyVisitors (https://mapmyvisitors.com) world map in the footer of every page. Paste only the `d=` value
   # from the embed code they give after signup. Leave empty to hide the map. Colors and size are set in
   # layouts/partials/visitor_map.html, not in their wizard.
-  mapmyvisitors_id = ""
+  mapmyvisitors_id = "plfo7kxgDuGVyltSxPSIaaKelcsH_Ii7IP52datxGys"
