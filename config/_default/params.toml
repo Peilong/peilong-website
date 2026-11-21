@@ -272,3 +272,12 @@ plugins_js  = []
   # Buttondown username (https://buttondown.com/<username>). Leave empty to hide the signup forms
   # on the homepage Writing section and at the end of each post.
   buttondown_username = "dr.li"
+
+############################
+## Visitor map
+############################
+[visitor_map]
+  # MapMyVisitors (https://mapmyvisitors.com) world map in the footer of every page. Paste only the `d=` value
+  # from the embed code they give after signup. Leave empty to hide the map. Colors and size are set in
+  # layouts/partials/visitor_map.html, not in their wizard.
+  mapmyvisitors_id = ""

@@ -1,4 +1,4 @@
-{{/* Site override (theme hook: partials/custom_head.html). Styles for the newsletter signup box. */}}
+{{/* Site override (theme hook: partials/custom_head.html). Styles for the newsletter signup box and the footer visitor map. */}}
 <style>
   .newsletter-signup { margin: 2.5rem 0 1.5rem; padding: 1.25rem 1.5rem; border: 1px solid rgba(0,0,0,.12); border-radius: .5rem; background: rgba(0,0,0,.025); }
   body.dark .newsletter-signup { border-color: rgba(255,255,255,.18); background: rgba(255,255,255,.04); }
@@ -6,4 +6,14 @@
   .newsletter-signup .newsletter-blurb { font-size: .95rem; margin-bottom: .75rem; }
   .newsletter-signup .btn-primary { color: #fff; }
   .newsletter-signup .newsletter-note { font-size: .8rem; margin: .6rem 0 0; opacity: .8; }
+  /* Footer visitor map (layouts/partials/visitor_map.html). The widget draws on a fixed navy (#1C3352) panel, so
+     the rounded card looks the same in day and night mode. */
+  .visitor-map { margin: 0 auto 1.5rem; text-align: center; }
+  .visitor-map .visitor-map-title { margin: 0 0 .5rem; font-size: .75rem; letter-spacing: .02em; opacity: .75; }
+  .visitor-map .visitor-map-card { display: inline-block; position: relative; border-radius: .75rem; overflow: hidden;
+    background: #1c3352; box-shadow: 0 1px 3px rgba(28,51,82,.25); line-height: 0; }
+  .visitor-map #mapmyvisitors-widget { border: 0 !important; }
+  /* Hide the dead +/- zoom buttons baked into the widget's background image (bottom-left corner). */
+  .visitor-map .visitor-map-card::after { content: ""; position: absolute; left: 0; bottom: 0; width: 24px; height: 48px;
+    background: #1c3352; pointer-events: none; z-index: 2; }
 </style>

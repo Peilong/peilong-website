@@ -1,0 +1,13 @@
+{{- /* Site partial: MapMyVisitors world map of visitors, shown in the footer of every page (like shellywhen.github.io).
+     Hidden while params.toml `[visitor_map] mapmyvisitors_id` is empty. The ID is the `d=` value from the embed code
+     that mapmyvisitors.com gives after signup; colors are set here (not in their wizard) to match the site:
+     ocean = Etown navy #1C3352, land = muted Blue Jay blue, dots = light blue (older) and white (newest).
+     Styles live in layouts/partials/custom_head.html (.visitor-map). */ -}}
+{{ with site.Params.visitor_map.mapmyvisitors_id }}
+<div class="visitor-map" aria-label="Map of where visitors to this site come from">
+  <p class="visitor-map-title">Visitors from around the world</p>
+  <div class="visitor-map-card">
+    <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=3d6d9e&w=260&t=m&d={{ . }}&co=1c3352&cmo=8cbde6&ct=ffffff&cmn=ffffff"></script>
+  </div>
+</div>
+{{ end }}

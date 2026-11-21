@@ -1,6 +1,8 @@
 {{- /* Site override. This footer used to be a direct edit of themes/academic; it lives here so a build with the
      pristine theme (e.g. the scheduled GitHub build) produces the same pages. */ -}}
 <footer class="site-footer">
+  {{ partial "visitor_map.html" . }}
+
   {{ if or (site.GetPage "terms.md") (site.GetPage "privacy.md") }}
   <p class="powered-by">
     {{ with site.GetPage "privacy.md" }}
