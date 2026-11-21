@@ -4,6 +4,6 @@ layout: courses-home  # layouts/courses/courses-home.html (current semester + te
 
 # Optional header image (relative to `static/img/` folder).
 header:
-  caption: "Etown Data Science"
+  caption: "Etown Computer Science"
   image: "course-header.jpg"
 ---
