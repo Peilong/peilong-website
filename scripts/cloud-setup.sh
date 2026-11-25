@@ -18,14 +18,21 @@ fail() {
 }
 
 # 1. Theme at the pinned commit (the cloud clone may not check out submodules).
+#    Try git first: some cloud proxies allow git over HTTPS but block codeload tarballs.
 if [ ! -f themes/academic/theme.toml ]; then
   sha=$(git ls-tree HEAD themes/academic | awk '{print $3}')
   [ -n "$sha" ] || fail "could not read the pinned theme commit"
-  rm -rf themes/academic && mkdir -p themes/academic
-  curl -fsSL "https://codeload.github.com/gcushen/hugo-academic/tar.gz/${sha}" \
-    | tar xz --strip-components=1 -C themes/academic \
-    || fail "theme download failed"
-  echo "cloud-setup: theme ready (${sha:0:7})"
+  if git submodule update --init --depth 1 themes/academic >/dev/null 2>&1 \
+     && [ -f themes/academic/theme.toml ]; then
+    echo "cloud-setup: theme ready via git (${sha:0:7})"
+  else
+    git submodule deinit -f themes/academic >/dev/null 2>&1
+    rm -rf themes/academic && mkdir -p themes/academic
+    curl -fsSL "https://codeload.github.com/gcushen/hugo-academic/tar.gz/${sha}" \
+      | tar xz --strip-components=1 -C themes/academic \
+      || fail "theme download failed (git and tarball both)"
+    echo "cloud-setup: theme ready via tarball (${sha:0:7})"
+  fi
 fi
 
 # 2. Hugo 0.66.0, checksum verified.
