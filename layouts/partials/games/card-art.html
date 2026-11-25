@@ -37,4 +37,20 @@
   <circle class="ga-node ga-onroute" cx="140" cy="126" r="12"/><circle class="ga-node ga-onroute" cx="212" cy="150" r="12"/>
   <circle class="ga-node ga-goal" cx="270" cy="110" r="14"/>
 </svg>
+{{- else if eq . "codeword" -}}
+{{- /* Two guesses, SPACE then PLACE (neither is a Code Word answer). Marks: 2 right spot, 1 elsewhere, 0 not in it. */ -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  {{- range $r, $row := slice (slice "S" "P" "A" "C" "E") (slice "P" "L" "A" "C" "E") }}
+  {{- $marks := cond (eq $r 0) (slice 0 1 2 2 2) (slice 2 2 2 2 2) -}}
+  {{- range $i, $ch := $row }}
+  {{- $m := index $marks $i -}}
+  <g transform="translate({{ add 35 (mul $i 52) }} {{ add 26 (mul $r 70) }})">
+    <rect class="{{ if eq $m 2 }}ga-on{{ else if eq $m 1 }}ga-ring{{ else }}ga-off{{ end }}" width="46" height="58" rx="14"/>
+    <text class="ga-letter {{ if eq $m 2 }}ga-on-text{{ end }}" x="23" y="32" text-anchor="middle">{{ $ch }}</text>
+    <text class="ga-mark {{ if eq $m 2 }}ga-on-text{{ end }}" x="23" y="50" text-anchor="middle">{{ if eq $m 2 }}&#9679;{{ else if eq $m 1 }}&#9675;{{ else }}&ndash;{{ end }}</text>
+  </g>
+  {{- end }}
+  {{- end }}
+</svg>
 {{- end -}}

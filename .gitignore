@@ -4,3 +4,4 @@ public/
 node_modules/
 .wrangler/
 .dev.vars
+workers/games/private/

@@ -83,3 +83,9 @@ body.dark .ga-pill-route text { fill: #0f2a1c; }
   .gp-card, .gp-play svg { transition: none; }
   .gp-card:hover, .gp-card:focus-visible { transform: none; }
 }
+
+/* Code Word card */
+.ga-ring { fill: var(--gp-card); stroke: var(--gp-accent); stroke-width: 2; }
+.ga-letter { fill: var(--gp-navy); font: 600 22px "IBM Plex Mono", ui-monospace, monospace; }
+.ga-mark { fill: var(--gp-accent); font: 600 11px "IBM Plex Sans", system-ui, sans-serif; }
+.ga-off + .ga-letter { fill: var(--gp-muted); }

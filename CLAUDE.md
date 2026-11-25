@@ -44,6 +44,12 @@ rules for Claude Code sessions, local and cloud. Keep it free of anything privat
   in `assets/games/campus-route/`. Each day's puzzle comes from the Eastern date; Route #1 = 2026-11-25 (`EPOCH`).
   Map labels and minute numbers are placed automatically to avoid overlaps; after moving a building, check all screen
   sizes for overlaps.
+- **Code Word** (`/games/code-word/`): daily computing-term word puzzle (4–7 letters, one more guess than letters;
+  marks: filled dot right spot, ring elsewhere, dash absent). `layouts/games/codeword.html`, code in
+  `assets/games/code-word/`. The answers are secret: `workers/games/private/codeword-terms.json` (word + plain-language
+  explanation, in schedule order from `EPOCH` 2026-11-25, repeating after the last) is git-ignored and exists only on
+  the owner's Mac and in the deployed Worker. Never commit it or put answers in page code. Guess dictionary:
+  `workers/games/data/words.txt` (public-domain ENABLE + answers + modern tech words); a new answer must be in it.
 - Each game's `core.js` holds its rules and scoring as pure functions and is loaded by the server too, so change rules
   there only. Changing a puzzle generator or `EPOCH` changes the live daily puzzle: redeploy the Worker with it.
 - **Leaderboards**: one Cloudflare Worker + D1 for all games in `workers/games/` (still deployed under its first name

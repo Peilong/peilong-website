@@ -10,6 +10,12 @@ compatibility_date = "2026-10-01"
 # Pages allowed to call the API from a browser.
 ALLOWED_ORIGINS = "https://peilong.github.io,http://localhost:1313"
 
+# Code Word's guess dictionary (data/words.txt) is bundled as text.
+[[rules]]
+type = "Text"
+globs = ["**/*.txt"]
+fallthrough = true
+
 [[d1_databases]]
 binding = "DB"
 database_name = "bitflip"

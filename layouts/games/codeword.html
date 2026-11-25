@@ -1,0 +1,100 @@
+{{- define "main" -}}
+{{- /* Code Word game page (content/games/code-word/index.md sets layout: codeword).
+       Game files: assets/games/code-word/. The answers live only on the server (workers/games). */ -}}
+{{ $css := resources.Get "games/code-word/code-word.css" | fingerprint }}
+{{ $core := resources.Get "games/code-word/core.js" | fingerprint }}
+{{ $game := resources.Get "games/code-word/code-word.js" | fingerprint }}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<div class="universal-wrapper codeword-page">
+  <a class="games-back" href="{{ "games/" | relURL }}">&larr; All games</a>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="cw-lead">{{ . }}</p>{{ end }}
+
+  <div class="cw-modes" role="tablist" aria-label="Puzzle">
+    <button type="button" class="cw-mode" role="tab" aria-selected="true" data-mode="daily">Today&rsquo;s word</button>
+    <button type="button" class="cw-mode" role="tab" aria-selected="false" data-mode="past" tabindex="-1">Past words</button>
+  </div>
+
+  <div class="codeword" id="codeword" data-api="{{ with site.Params.games }}{{ .api }}{{ end }}">
+    <div class="cw-top">
+      <div>
+        <span class="cw-label" data-title>Today&rsquo;s word</span>
+        <span class="cw-meta" data-meta>4 to 7 letters</span>
+      </div>
+      <div class="cw-stat">
+        <span class="cw-label">Time</span>
+        <span class="cw-value cw-mono" data-clock>0:00</span>
+      </div>
+    </div>
+
+    <div class="cw-stage">
+      <div class="cw-rows" data-rows></div>
+      <p class="cw-legend" aria-hidden="true"><span><b>&#9679;</b> right spot</span><span><b>&#9675;</b> in the word, elsewhere</span><span><b>&ndash;</b> not in the word</span></p>
+      <div class="cw-intro" data-intro hidden>
+        <span class="cw-eyebrow">Today&rsquo;s word</span>
+        <h2>Guess today&rsquo;s computing term.</h2>
+        <p>It has 4 to 7 letters, and you get one more guess than it has letters. Every guess must be a real word.
+           After each guess, each letter gets a mark: <b>&#9679;</b> right spot, <b>&#9675;</b> in the word but
+           elsewhere, <b>&ndash;</b> not in the word.</p>
+        <button type="button" class="cw-btn" data-start>Start</button>
+        <p class="cw-hint">The clock starts when you press Start.</p>
+      </div>
+      <div class="cw-pastlist" data-pastlist hidden>
+        <h2>Past words</h2>
+        <p>Play any earlier day&rsquo;s word. Past words don&rsquo;t count for the leaderboard.</p>
+        <div class="cw-pastitems" data-pastitems></div>
+      </div>
+    </div>
+    <div class="cw-sr" data-live aria-live="polite"></div>
+    <p class="cw-msg" data-msg aria-live="polite"></p>
+
+    <div class="cw-keys" data-keys role="group" aria-label="Letters"></div>
+
+    <div class="cw-result" data-result hidden>
+      <span class="cw-eyebrow" data-result-eyebrow></span>
+      <div class="cw-word cw-mono" data-result-word></div>
+      <p class="cw-result-detail" data-result-detail></p>
+      <div class="cw-def">
+        <span class="cw-def-label">What it means</span>
+        <p data-result-about></p>
+      </div>
+      <p class="cw-result-extra" data-result-extra></p>
+      <form class="cw-save" data-save hidden novalidate>
+        <label class="cw-save-label" for="cw-name">Put your result on today&rsquo;s board</label>
+        <div class="cw-save-row">
+          <input id="cw-name" data-name type="text" maxlength="16" autocomplete="nickname" autocapitalize="words"
+                 spellcheck="false" enterkeyhint="done" placeholder="Your name">
+          <button type="submit" class="cw-btn cw-btn-small" data-save-btn>Save</button>
+        </div>
+        <p class="cw-save-msg" data-save-msg aria-live="polite"></p>
+      </form>
+      <p class="cw-save-note" data-save-note hidden></p>
+      <div class="cw-result-actions"><button type="button" class="cw-btn cw-btn-ghost" data-next></button></div>
+    </div>
+  </div>
+
+  <section class="cw-board" id="codeword-board" aria-labelledby="cw-board-title" hidden>
+    <div class="cw-board-head">
+      <h2 id="cw-board-title">Leaderboard</h2>
+      <div class="cw-tabs" role="tablist" aria-label="Leaderboard">
+        <button type="button" class="cw-tab" role="tab" aria-selected="true" data-board-tab="today">Today</button>
+        <button type="button" class="cw-tab" role="tab" aria-selected="false" data-board-tab="yesterday" tabindex="-1">Yesterday</button>
+        <button type="button" class="cw-tab" role="tab" aria-selected="false" data-board-tab="days" tabindex="-1">Most days</button>
+      </div>
+    </div>
+    <ol class="cw-board-list" data-board-list></ol>
+    <p class="cw-board-empty" data-board-empty>Loading&hellip;</p>
+    <p class="cw-board-note">Ranked by fewest guesses, then by time (measured by the server). Each name counts once a
+       day; &ldquo;Most days&rdquo; counts the days a name made the board. Only the name you type and your result are
+       saved, and names with bad words are refused or removed.</p>
+  </section>
+
+  <div class="cw-about-page article-style">{{ .Content }}</div>
+</div>
+
+<script src="{{ $core.RelPermalink }}" integrity="{{ $core.Data.Integrity }}"></script>
+<script src="{{ $game.RelPermalink }}" integrity="{{ $game.Data.Integrity }}"></script>
+{{- end -}}

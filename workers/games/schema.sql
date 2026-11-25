@@ -59,3 +59,32 @@ CREATE TABLE IF NOT EXISTS route_scores (
 );
 CREATE INDEX IF NOT EXISTS route_scores_day ON route_scores (date_key, ms);
 CREATE UNIQUE INDEX IF NOT EXISTS route_scores_day_name ON route_scores (date_key, name_key);
+
+-- Code Word (daily word puzzle). One row per started game; guesses are stored comma-separated.
+CREATE TABLE IF NOT EXISTS word_runs (
+  id         TEXT PRIMARY KEY,
+  date_key   TEXT NOT NULL,
+  started_at INTEGER NOT NULL,
+  ip_hash    TEXT NOT NULL,
+  guesses    TEXT NOT NULL DEFAULT '',
+  done       INTEGER NOT NULL DEFAULT 0,
+  solved_ms  INTEGER,                    -- server-measured time; NULL unless solved
+  solved_at  INTEGER,
+  submitted  INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS word_runs_ip_time ON word_runs (ip_hash, started_at);
+CREATE INDEX IF NOT EXISTS word_runs_time ON word_runs (started_at);
+
+-- Saved Code Word results. Ranked by guesses, then time. One entry per name per day.
+CREATE TABLE IF NOT EXISTS word_scores (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  date_key   TEXT NOT NULL,
+  name       TEXT NOT NULL,
+  name_key   TEXT NOT NULL,
+  guesses    INTEGER NOT NULL,
+  ms         INTEGER NOT NULL,
+  created_at INTEGER NOT NULL,
+  hidden     INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS word_scores_day ON word_scores (date_key, guesses, ms);
+CREATE UNIQUE INDEX IF NOT EXISTS word_scores_day_name ON word_scores (date_key, name_key);
