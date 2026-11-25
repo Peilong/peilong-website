@@ -44,6 +44,11 @@
   weight = 70
 
 [[main]]
+  name = "Games"
+  url = "games/bitflip/"   # Bit Flip; point at a games/ landing page once there is a second game
+  weight = 75
+
+[[main]]
   name = "Contact"
   url = "#contact"
   weight = 80

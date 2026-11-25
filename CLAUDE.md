@@ -33,6 +33,18 @@ rules for Claude Code sessions, local and cloud. Keep it free of anything privat
   Manager (double counting).
 - Design: keep Etown blue and rounded shapes; avoid generic default fonts and icon tiles.
 
+## Games
+
+- **Bit Flip** (`/games/bitflip/`, menu "Games"): `content/games/bitflip/index.md` + `layouts/games/bitflip.html`;
+  code in `assets/games/bitflip/`. `core.js` holds the rules and scoring as pure functions and is shared with the
+  leaderboard server, so change scoring there only, and keep `node`-testable behavior identical on both sides.
+- **Leaderboard**: Cloudflare Worker + D1 in `workers/bitflip/` (API URL in `params.toml` `[games] bitflip_api`;
+  empty = no leaderboard). The server deals each game's seed, re-scores submitted solve times with `core.js`, and
+  enforces the name rules (`src/names.js`: 2–16 letters/numbers, profanity filter incl. leetspeak and spaced-out
+  letters). Admin page: `<bitflip_api>/admin` (hide entries, block names); its key is kept privately by the owner.
+- Worker changes: `cd workers/bitflip && npm test && npx wrangler deploy` (needs the owner's Cloudflare login, so
+  deploy from the owner's Mac, not from a cloud session). Schema: `schema.sql`.
+
 ## Publishing
 
 - `.github/workflows/scheduled-publish.yml` builds the site daily at 12:15 UTC and pushes to

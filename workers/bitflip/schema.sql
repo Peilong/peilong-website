@@ -1,0 +1,33 @@
+-- Bit Flip leaderboard. Apply with: npx wrangler d1 execute bitflip --remote --file schema.sql
+
+-- One row per game started. The server deals the seed, so a score can only be saved for a game it started.
+-- ip_hash is a salted hash (never the address itself), used only to rate-limit starts. Rows are deleted after 2 days.
+CREATE TABLE IF NOT EXISTS runs (
+  id         TEXT PRIMARY KEY,
+  seed       INTEGER NOT NULL,
+  started_at INTEGER NOT NULL,
+  ip_hash    TEXT NOT NULL,
+  submitted  INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS runs_ip_time ON runs (ip_hash, started_at);
+CREATE INDEX IF NOT EXISTS runs_time ON runs (started_at);
+
+-- Saved scores. hidden = 1 removes an entry from every board (set from the admin page).
+CREATE TABLE IF NOT EXISTS scores (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  name        TEXT NOT NULL,
+  name_key    TEXT NOT NULL,
+  score       INTEGER NOT NULL,
+  solved      INTEGER NOT NULL,
+  best_streak INTEGER NOT NULL,
+  created_at  INTEGER NOT NULL,
+  hidden      INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS scores_time ON scores (created_at);
+CREATE INDEX IF NOT EXISTS scores_name ON scores (name_key);
+
+-- Names blocked from the admin page. A blocked name cannot be used again.
+CREATE TABLE IF NOT EXISTS blocked_names (
+  name_key   TEXT PRIMARY KEY,
+  blocked_at INTEGER NOT NULL
+);
