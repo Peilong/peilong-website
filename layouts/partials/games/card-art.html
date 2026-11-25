@@ -53,4 +53,28 @@
   {{- end }}
   {{- end }}
 </svg>
+{{- else if eq . "logiclights" -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  <g class="ga-wire"><path d="M64 52C100 52 100 70 128 70"/><path d="M64 128C100 128 100 112 128 112"/><path d="M200 91C224 91 228 91 250 91"/></g>
+  <g class="ga-wire ga-wire-on"><path d="M64 52C100 52 100 70 128 70"/><path d="M200 91C224 91 228 91 250 91"/></g>
+  <rect class="ga-on" x="24" y="38" width="40" height="28" rx="14"/><circle class="ga-knob-on" cx="52" cy="52" r="10"/>
+  <rect class="ga-off" x="24" y="114" width="40" height="28" rx="14"/><circle class="ga-knob" cx="36" cy="128" r="10"/>
+  <path class="ga-gate" d="M124 58Q142 91 124 124Q172 124 202 91Q172 58 124 58Z"/>
+  <text class="ga-gate-text" x="158" y="96" text-anchor="middle">OR</text>
+  <circle class="ga-glow" cx="270" cy="91" r="34"/><circle class="ga-bulb" cx="270" cy="91" r="20"/>
+</svg>
+{{- else if eq . "cipher" -}}
+{{- /* An illustrative swap (not a real puzzle's): HELLO WORLD, partly cracked. */ -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  {{- $code := slice "Q" "X" "M" "M" "D" " " "T" "D" "W" "M" "K" -}}
+  {{- $plain := slice "H" "E" "L" "L" "O" " " "" "O" "" "L" "" -}}
+  {{- range $i, $c := $code }}{{ if ne $c " " }}
+  {{- $x := add 30 (mul $i 25) -}}
+  <text class="ga-plain" x="{{ $x }}" y="86" text-anchor="middle">{{ index $plain $i }}</text>
+  <line class="{{ if index $plain $i }}ga-slot-on{{ else }}ga-slot{{ end }}" x1="{{ sub $x 10 }}" y1="94" x2="{{ add $x 10 }}" y2="94"/>
+  <text class="ga-cipher" x="{{ $x }}" y="114" text-anchor="middle">{{ $c }}</text>
+  {{- end }}{{ end }}
+</svg>
 {{- end -}}

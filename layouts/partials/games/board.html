@@ -1,0 +1,16 @@
+{{- /* Leaderboard card for a daily game (behavior: GamesShared.board in assets/games/shared.js).
+       Context: dict "id" (element id) "note" (the explanation under the list). */ -}}
+<section class="g-board" id="{{ .id }}" aria-labelledby="{{ .id }}-title" hidden>
+  <div class="g-board-head">
+    <h2 id="{{ .id }}-title">Leaderboard</h2>
+    <div class="g-tabs" role="tablist" aria-label="Leaderboard">
+      <button type="button" class="g-tab" role="tab" aria-selected="true" data-board-tab="today">Today</button>
+      <button type="button" class="g-tab" role="tab" aria-selected="false" data-board-tab="yesterday" tabindex="-1">Yesterday</button>
+      <button type="button" class="g-tab" role="tab" aria-selected="false" data-board-tab="days" tabindex="-1">Most days</button>
+    </div>
+  </div>
+  <ol class="g-board-list" data-board-list></ol>
+  <p class="g-board-empty" data-board-empty>Loading&hellip;</p>
+  <p class="g-board-note">{{ .note | safeHTML }} Each name counts once a day; &ldquo;Most days&rdquo; counts the days a
+     name made the board. Only the name you type and your result are saved, and names with bad words are refused or removed.</p>
+</section>

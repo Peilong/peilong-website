@@ -3,11 +3,16 @@
 //   Campus Route:  POST /route/start, /route/check, /route/submit, GET /route/leaderboard   (see campusroute.js)
 //   Code Word:     POST /word/start, /word/guess, /word/submit, /word/practice, GET /word/leaderboard, /word/past,
 //                  /word/reveal   (see codeword.js)
+//   Logic Lights:  POST /logic/start, /logic/check, /logic/submit, GET /logic/leaderboard   (see logic.js)
+//   Crack the Cipher: POST /cipher/start, /cipher/check, /cipher/hint, /cipher/submit,
+//                  GET /cipher/leaderboard, /cipher/past, /cipher/reveal   (see cipher.js)
 //   Shared:        POST /check-name  -> live name feedback while a player types
 //   Admin:         GET /admin (page), /admin/api/* (needs the ADMIN_KEY secret)
 import * as bitflip from './bitflip.js';
 import * as route from './campusroute.js';
 import * as word from './codeword.js';
+import * as logic from './logic.js';
+import * as cipher from './cipher.js';
 import { json, corsHeaders, readJson, nameCheck, SECURITY_HEADERS } from './common.js';
 import { ADMIN_PAGE } from './admin.js';
 
@@ -28,6 +33,17 @@ const ROUTES = {
   'GET /word/leaderboard': async (req, env) => json({ boards: await word.boards(env) }),
   'GET /word/past': word.past,
   'GET /word/reveal': word.reveal,
+  'POST /logic/start': logic.start,
+  'POST /logic/check': logic.check,
+  'POST /logic/submit': logic.submit,
+  'GET /logic/leaderboard': async (req, env) => json({ boards: await logic.boards(env) }),
+  'POST /cipher/start': cipher.start,
+  'POST /cipher/check': cipher.check,
+  'POST /cipher/hint': cipher.hint,
+  'POST /cipher/submit': cipher.submit,
+  'GET /cipher/leaderboard': async (req, env) => json({ boards: await cipher.boards(env) }),
+  'GET /cipher/past': cipher.past,
+  'GET /cipher/reveal': cipher.reveal,
   'POST /check-name': nameCheck
 };
 
@@ -60,28 +76,34 @@ export default {
     await env.DB.batch([
       env.DB.prepare('DELETE FROM runs WHERE started_at < ?').bind(before),
       env.DB.prepare('DELETE FROM route_runs WHERE started_at < ?').bind(before),
-      env.DB.prepare('DELETE FROM word_runs WHERE started_at < ?').bind(before)
+      env.DB.prepare('DELETE FROM word_runs WHERE started_at < ?').bind(before),
+      env.DB.prepare('DELETE FROM logic_runs WHERE started_at < ?').bind(before),
+      env.DB.prepare('DELETE FROM cipher_runs WHERE started_at < ?').bind(before)
     ]);
   }
 };
 
 /* ---------- admin API (Authorization: Bearer <ADMIN_KEY>) ---------- */
 
-const SCORE_TABLES = { bitflip: 'scores', route: 'route_scores', word: 'word_scores' };
+const SCORE_TABLES = { bitflip: 'scores', route: 'route_scores', word: 'word_scores', logic: 'logic_scores', cipher: 'cipher_scores' };
 
 async function admin(request, env, path) {
   if (!(await isAdmin(request, env))) return json({ error: 'Wrong or missing admin key.' }, 401);
   if (path === '/admin/api/scores' && request.method === 'GET') {
-    const [b, r, w, blocked] = await env.DB.batch([
+    const [b, r, w, l, c, blocked] = await env.DB.batch([
       env.DB.prepare(`SELECT 'bitflip' AS game, id, name, name_key AS nameKey, score, NULL AS ms, NULL AS day,
                              created_at AS at, hidden FROM scores ORDER BY id DESC LIMIT 200`),
       env.DB.prepare(`SELECT 'route' AS game, id, name, name_key AS nameKey, NULL AS score, ms, date_key AS day,
                              created_at AS at, hidden FROM route_scores ORDER BY id DESC LIMIT 200`),
       env.DB.prepare(`SELECT 'word' AS game, id, name, name_key AS nameKey, guesses AS score, ms, date_key AS day,
                              created_at AS at, hidden FROM word_scores ORDER BY id DESC LIMIT 200`),
+      env.DB.prepare(`SELECT 'logic' AS game, id, name, name_key AS nameKey, NULL AS score, ms, date_key AS day,
+                             created_at AS at, hidden FROM logic_scores ORDER BY id DESC LIMIT 200`),
+      env.DB.prepare(`SELECT 'cipher' AS game, id, name, name_key AS nameKey, hints AS score, ms, date_key AS day,
+                             created_at AS at, hidden FROM cipher_scores ORDER BY id DESC LIMIT 200`),
       env.DB.prepare('SELECT name_key AS nameKey, blocked_at AS at FROM blocked_names ORDER BY blocked_at DESC')
     ]);
-    const scores = b.results.concat(r.results, w.results).sort((x, y) => y.at - x.at).slice(0, 300);
+    const scores = b.results.concat(r.results, w.results, l.results, c.results).sort((x, y) => y.at - x.at).slice(0, 300);
     return json({ scores, blocked: blocked.results });
   }
   if (path === '/admin/api/hide' && request.method === 'POST') {
@@ -99,7 +121,9 @@ async function admin(request, env, path) {
         env.DB.prepare('INSERT OR IGNORE INTO blocked_names (name_key, blocked_at) VALUES (?, ?)').bind(body.nameKey, Date.now()),
         env.DB.prepare('UPDATE scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
         env.DB.prepare('UPDATE route_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
-        env.DB.prepare('UPDATE word_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey)
+        env.DB.prepare('UPDATE word_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
+        env.DB.prepare('UPDATE logic_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
+        env.DB.prepare('UPDATE cipher_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey)
       ]);
     } else {
       await env.DB.prepare('DELETE FROM blocked_names WHERE name_key = ?').bind(body.nameKey).run();
