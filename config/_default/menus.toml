@@ -45,7 +45,7 @@
 
 [[main]]
   name = "Games"
-  url = "games/bitflip/"   # Bit Flip; point at a games/ landing page once there is a second game
+  url = "games/"   # Games page: one card per game (layouts/games/list.html)
   weight = 75
 
 [[main]]

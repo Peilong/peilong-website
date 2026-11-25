@@ -35,15 +35,24 @@ rules for Claude Code sessions, local and cloud. Keep it free of anything privat
 
 ## Games
 
-- **Bit Flip** (`/games/bitflip/`, menu "Games"): `content/games/bitflip/index.md` + `layouts/games/bitflip.html`;
-  code in `assets/games/bitflip/`. `core.js` holds the rules and scoring as pure functions and is shared with the
-  leaderboard server, so change scoring there only, and keep `node`-testable behavior identical on both sides.
-- **Leaderboard**: Cloudflare Worker + D1 in `workers/bitflip/` (API URL in `params.toml` `[games] bitflip_api`;
-  empty = no leaderboard). The server deals each game's seed, re-scores submitted solve times with `core.js`, and
-  enforces the name rules (`src/names.js`: 2–16 letters/numbers, profanity filter incl. leetspeak and spaced-out
-  letters). Admin page: `<bitflip_api>/admin` (hide entries, block names); its key is kept privately by the owner.
-- Worker changes: `cd workers/bitflip && npm test && npx wrangler deploy` (needs the owner's Cloudflare login, so
-  deploy from the owner's Mac, not from a cloud session). Schema: `schema.sql`.
+- **Games page** (`/games/`, menu "Games"): `content/games/_index.md` + `layouts/games/list.html` + `assets/games/games.css`.
+  Each game is a page in `content/games/<game>/`; its card comes from front matter (`weight`, `card_tagline`,
+  `card_tags`, `card_art`), and card drawings live in `layouts/partials/games/card-art.html`. Each game page links back.
+- **Bit Flip** (`/games/bitflip/`): `layouts/games/bitflip.html`, code in `assets/games/bitflip/`.
+- **Campus Route** (`/games/campus-route/`): daily shortest-path puzzle on a simplified Elizabethtown College map
+  (15 real buildings, positions from the campus map, spread out to be tappable). `layouts/games/campusroute.html`, code
+  in `assets/games/campus-route/`. Each day's puzzle comes from the Eastern date; Route #1 = 2026-11-25 (`EPOCH`).
+  Map labels and minute numbers are placed automatically to avoid overlaps; after moving a building, check all screen
+  sizes for overlaps.
+- Each game's `core.js` holds its rules and scoring as pure functions and is loaded by the server too, so change rules
+  there only. Changing a puzzle generator or `EPOCH` changes the live daily puzzle: redeploy the Worker with it.
+- **Leaderboards**: one Cloudflare Worker + D1 for all games in `workers/games/` (still deployed under its first name
+  `bitflip-leaderboard`; API URL in `params.toml` `[games] api`; empty = no leaderboards). The server deals seeds /
+  starts clocks, re-checks results with `core.js`, and enforces the name rules (`src/names.js`: 2–16 letters/numbers,
+  profanity filter incl. leetspeak and spaced-out letters). Admin page: `<api>/admin` (hide entries, block names, all
+  games); its key is kept privately by the owner.
+- Worker changes: `cd workers/games && npm test && npx wrangler deploy` (needs the owner's Cloudflare login, so deploy
+  from the owner's Mac, not from a cloud session). Schema: `schema.sql`. Delete any test entries from the live boards.
 
 ## Publishing
 

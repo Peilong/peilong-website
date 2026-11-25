@@ -31,3 +31,31 @@ CREATE TABLE IF NOT EXISTS blocked_names (
   name_key   TEXT PRIMARY KEY,
   blocked_at INTEGER NOT NULL
 );
+
+-- Campus Route (daily puzzle). One row per started game; the server measures the official time.
+CREATE TABLE IF NOT EXISTS route_runs (
+  id         TEXT PRIMARY KEY,
+  date_key   TEXT NOT NULL,              -- the day's puzzle, YYYY-MM-DD in Eastern time
+  started_at INTEGER NOT NULL,
+  ip_hash    TEXT NOT NULL,
+  tries      INTEGER NOT NULL DEFAULT 0,
+  solved_ms  INTEGER,                    -- official time incl. 30 s per wrong guess; NULL until solved
+  solved_at  INTEGER,
+  submitted  INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS route_runs_ip_time ON route_runs (ip_hash, started_at);
+CREATE INDEX IF NOT EXISTS route_runs_time ON route_runs (started_at);
+
+-- Saved Campus Route times. One entry per name per day.
+CREATE TABLE IF NOT EXISTS route_scores (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  date_key   TEXT NOT NULL,
+  name       TEXT NOT NULL,
+  name_key   TEXT NOT NULL,
+  ms         INTEGER NOT NULL,
+  tries      INTEGER NOT NULL,
+  created_at INTEGER NOT NULL,
+  hidden     INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS route_scores_day ON route_scores (date_key, ms);
+CREATE UNIQUE INDEX IF NOT EXISTS route_scores_day_name ON route_scores (date_key, name_key);

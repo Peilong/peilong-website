@@ -286,6 +286,6 @@ plugins_js  = []
 ## Games
 ############################
 [games]
-  # Bit Flip leaderboard API: the Cloudflare Worker in workers/bitflip/ (admin page: <this URL>/admin).
-  # Empty = the game still works, with no leaderboard or name entry.
-  bitflip_api = "https://bitflip-leaderboard.bitflip-leaderboard.workers.dev"
+  # Leaderboard API for every game: the Cloudflare Worker in workers/games/ (admin page: <this URL>/admin).
+  # Empty = the games still work, with no leaderboards or name entry.
+  api = "https://bitflip-leaderboard.bitflip-leaderboard.workers.dev"

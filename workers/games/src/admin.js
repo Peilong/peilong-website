@@ -6,7 +6,7 @@ export const ADMIN_PAGE = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Bit Flip admin</title>
+<title>Games admin</title>
 <style>
   :root { --bg: #f4f7fb; --card: #fff; --ink: #263038; --muted: #66737f; --line: #d7dde3; --accent: #2a7bbe; --warn: #b3261e; }
   @media (prefers-color-scheme: dark) {
@@ -38,7 +38,7 @@ export const ADMIN_PAGE = `<!doctype html>
 </head>
 <body>
 <main>
-  <h1>Bit Flip admin</h1>
+  <h1>Games admin</h1>
   <p class="note">Hide an entry to take it off every board. Block a name to hide all its entries and stop anyone from using it again.</p>
 
   <section id="login" class="card">
@@ -51,7 +51,7 @@ export const ADMIN_PAGE = `<!doctype html>
   <section id="panel" hidden>
     <div class="card">
       <table>
-        <thead><tr><th>Name</th><th class="num">Score</th><th>When (your time)</th><th></th></tr></thead>
+        <thead><tr><th>Game</th><th>Name</th><th class="num">Result</th><th>When (your time)</th><th></th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
@@ -68,6 +68,7 @@ export const ADMIN_PAGE = `<!doctype html>
   try { key = sessionStorage.getItem(KEY) || ''; } catch (e) {}
   var $ = function (id) { return document.getElementById(id); };
   function say(t) { $('status').textContent = t || ''; }
+  function time(ms) { var s = ms / 1000; return Math.floor(s / 60) + ':' + ('0' + (s % 60).toFixed(1)).slice(-4); }
 
   function api(path, body) {
     return fetch('/admin/api/' + path, {
@@ -87,9 +88,12 @@ export const ADMIN_PAGE = `<!doctype html>
     if (!data.scores.length) { var tr0 = document.createElement('tr'); cell(tr0, 'No scores yet.'); rows.appendChild(tr0); }
     data.scores.forEach(function (s) {
       var tr = document.createElement('tr'); if (s.hidden) tr.className = 'hidden';
-      cell(tr, s.name, 'name'); cell(tr, s.score, 'num'); cell(tr, new Date(s.at).toLocaleString());
+      cell(tr, s.game === 'route' ? 'Campus Route' : 'Bit Flip');
+      cell(tr, s.name, 'name');
+      cell(tr, s.game === 'route' ? time(s.ms) + ' (' + s.day + ')' : s.score + ' pts', 'num');
+      cell(tr, new Date(s.at).toLocaleString());
       var td = cell(tr, '', 'actions');
-      btn(td, s.hidden ? 'Show' : 'Hide', '', function () { act('hide', { id: s.id, hidden: !s.hidden }, s.hidden ? 'Shown.' : 'Hidden.'); });
+      btn(td, s.hidden ? 'Show' : 'Hide', '', function () { act('hide', { game: s.game, id: s.id, hidden: !s.hidden }, s.hidden ? 'Shown.' : 'Hidden.'); });
       btn(td, 'Block name', 'danger', function () {
         if (confirm('Block "' + s.name + '"? All its entries will be hidden and the name cannot be used again.'))
           act('block', { nameKey: s.nameKey, blocked: true }, 'Blocked.');

@@ -4,6 +4,10 @@ summary: "A one-minute game about how computers count. Flip the switches so they
 date: 2026-11-24
 layout: bitflip      # layouts/games/bitflip.html; game files in assets/games/bitflip/
 share: false
+weight: 10           # order on the Games page
+card_tagline: "Flip eight switches to make the number before time runs out. A one-minute lesson in how computers count."
+card_tags: ["1 minute", "Leaderboard"]
+card_art: "bitflip"  # drawing in layouts/partials/games/card-art.html
 ---
 
 ### What you just did

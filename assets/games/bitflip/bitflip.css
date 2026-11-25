@@ -208,3 +208,7 @@ body.dark .bitflip-page {
 @keyframes bf-fade { 0%, 60% { opacity: 1; } 100% { opacity: 0; } }
 
 .bf-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Link back to the Games page */
+.games-back { display: inline-block; margin-top: 1.25rem; font-size: .92rem; font-weight: 600; }
+.games-back + h1 { margin-top: .25rem; }

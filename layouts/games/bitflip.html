@@ -9,10 +9,11 @@
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <div class="universal-wrapper bitflip-page">
+  <a class="games-back" href="{{ "games/" | relURL }}">&larr; All games</a>
   <h1>{{ .Title }}</h1>
   {{ with .Params.summary }}<p class="bf-lead">{{ . }}</p>{{ end }}
 
-  <div class="bitflip" id="bitflip" data-phase="ready" data-api="{{ with site.Params.games }}{{ .bitflip_api }}{{ end }}">
+  <div class="bitflip" id="bitflip" data-phase="ready" data-api="{{ with site.Params.games }}{{ .api }}{{ end }}">
     <div class="bf-hud">
       <div class="bf-stat">
         <span class="bf-label">Score</span>

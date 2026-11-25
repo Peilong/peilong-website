@@ -257,6 +257,7 @@
     e.preventDefault();
     var name = cleanName(ui.nameInput.value);
     var local = localNameProblem(name);
+    clearTimeout(checkTimer); checkSeq++;      // a late live check must not overwrite the server's answer
     if (local) { ui.saveMsg.textContent = local; ui.nameInput.focus(); return; }
     var thisRun = runId;
     ui.saveBtn.disabled = true;

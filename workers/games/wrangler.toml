@@ -1,4 +1,6 @@
-# Bit Flip leaderboard API (Cloudflare Worker + D1). Deploy from this folder: npx wrangler deploy
+# Games API: leaderboards for every game on the site (Cloudflare Worker + D1). Deploy from this folder:
+#   npm test && npx wrangler deploy
+# The Worker keeps its first name, bitflip-leaderboard, so its URL (params.toml [games] api) stays the same.
 # Secrets (not in this file): ADMIN_KEY (admin page), HASH_SALT (salts the IP hash used for rate limiting).
 name = "bitflip-leaderboard"
 main = "src/index.js"
