@@ -105,3 +105,11 @@ body.dark .ga-pill-route text { fill: #0f2a1c; }
 .ga-plain { fill: var(--gp-navy); font: 600 22px "IBM Plex Mono", ui-monospace, monospace; }
 .ga-slot { stroke: var(--gp-line-strong); stroke-width: 2; }
 .ga-slot-on { stroke: var(--gp-accent); stroke-width: 2.5; }
+
+/* Exam Slots card (slot colors as on the game page) */
+.ga-edge line { stroke: var(--gp-road); stroke-width: 4; stroke-linecap: round; }
+.ga-course rect { fill: var(--gp-card); stroke: var(--gp-line-strong); stroke-width: 1.5; }
+.ga-course text { fill: var(--gp-ink); font: 600 12px "IBM Plex Sans", system-ui, sans-serif; dominant-baseline: central; }
+.ga-s0 rect { fill: #0072b2; stroke: #0072b2; } .ga-s0 text { fill: #fff; }
+.ga-s1 rect { fill: #e69f00; stroke: #e69f00; } .ga-s1 text { fill: #1d1d1f; }
+.ga-s2 rect { fill: #007a5a; stroke: #007a5a; } .ga-s2 text { fill: #fff; }

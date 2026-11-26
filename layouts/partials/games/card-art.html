@@ -77,4 +77,21 @@
   <text class="ga-cipher" x="{{ $x }}" y="114" text-anchor="middle">{{ $c }}</text>
   {{- end }}{{ end }}
 </svg>
+{{- else if eq . "examslots" -}}
+{{- /* Six courses; lines join courses that share students. Five are scheduled in three slots, one is still open. */ -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  <g transform="translate(0 12)">
+  <g class="ga-edge">
+    <line x1="62" y1="54" x2="160" y2="46"/><line x1="160" y1="46" x2="258" y2="58"/><line x1="62" y1="54" x2="96" y2="128"/>
+    <line x1="160" y1="46" x2="96" y2="128"/><line x1="160" y1="46" x2="200" y2="132"/><line x1="258" y1="58" x2="200" y2="132"/>
+    <line x1="96" y1="128" x2="200" y2="132"/><line x1="258" y1="58" x2="282" y2="132"/>
+  </g>
+  {{- range slice (slice 62 54 "Art" "0") (slice 160 46 "Music" "1") (slice 258 58 "Latin" "2") (slice 96 128 "Drama" "2") (slice 200 132 "French" "0") (slice 282 132 "Ethics" "") }}
+  <g class="ga-course{{ with index . 3 }} ga-s{{ . }}{{ end }}" transform="translate({{ index . 0 }} {{ index . 1 }})">
+    <rect x="-31" y="-14" width="62" height="28" rx="14"/><text y="1" text-anchor="middle">{{ index . 2 }}</text>
+  </g>
+  {{- end }}
+  </g>
+</svg>
 {{- end -}}

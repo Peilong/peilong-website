@@ -1,0 +1,83 @@
+{{- define "main" -}}
+{{- /* Exam Slots game page (content/games/exam-slots/index.md sets layout: examslots).
+       Game files: assets/games/exam-slots/ + the shared assets/games/shared.{css,js}. */ -}}
+{{ $shared := resources.Get "games/shared.css" | fingerprint }}
+{{ $css := resources.Get "games/exam-slots/exam-slots.css" | fingerprint }}
+{{ $sjs := resources.Get "games/shared.js" | fingerprint }}
+{{ $core := resources.Get "games/exam-slots/core.js" | fingerprint }}
+{{ $game := resources.Get "games/exam-slots/exam-slots.js" | fingerprint }}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="{{ $shared.RelPermalink }}" integrity="{{ $shared.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<div class="universal-wrapper game-page slots-page">
+  <a class="games-back" href="{{ "games/" | relURL }}">&larr; All games</a>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="g-lead">{{ . }}</p>{{ end }}
+
+  <div class="g-modes" role="tablist" aria-label="Puzzle">
+    <button type="button" class="g-mode" role="tab" aria-selected="true" data-mode="daily">Today&rsquo;s exams</button>
+    <button type="button" class="g-mode" role="tab" aria-selected="false" data-mode="practice" tabindex="-1">Practice</button>
+  </div>
+
+  <div class="g-card slots" id="examslots" data-api="{{ with site.Params.games }}{{ .api }}{{ end }}">
+    <div class="g-top">
+      <div>
+        <span class="g-label" data-title>Today&rsquo;s exams</span>
+        <span class="g-meta" data-meta></span>
+      </div>
+      <div class="g-stat"><span class="g-label">Time</span><span class="g-value g-mono" data-clock>0:00</span></div>
+    </div>
+    <div class="es-levels" data-levels hidden>
+      <div class="g-modes" role="group" aria-label="Practice level">
+        <button type="button" class="g-mode" data-level="easy">Easy</button>
+        <button type="button" class="g-mode" data-level="medium" aria-selected="true">Medium</button>
+        <button type="button" class="g-mode" data-level="hard">Hard</button>
+      </div>
+      <button type="button" class="g-btn g-btn-small g-btn-ghost" data-new>New puzzle</button>
+    </div>
+
+    <div class="g-stage es-stage">
+      <svg class="es-svg" data-svg role="group" aria-label="Courses and the students they share"></svg>
+      <div class="g-intro" data-intro hidden>
+        <span class="g-eyebrow">Today&rsquo;s exams</span>
+        <h2>Schedule every exam so no student has two at once.</h2>
+        <p>A line joins two courses that share students, so their exams need different time slots. Fit all the exams
+           into the slots you are given: that is always the fewest possible. Easiest on Monday, hardest on Sunday,
+           and Thursdays need four slots.</p>
+        <button type="button" class="g-btn" data-start>Start</button>
+        <p class="g-hint">The clock starts when you press Start.</p>
+      </div>
+    </div>
+    <p class="es-hint" data-hint hidden>A line means two courses share students. Pick a slot, then tap courses; tap again to take one out.</p>
+
+    <div class="es-tools" data-tools hidden>
+      <div class="es-palette" data-palette role="group" aria-label="Exam slots"></div>
+      <button type="button" class="g-btn g-btn-small g-btn-ghost" data-clear>Clear all</button>
+    </div>
+    <p class="g-msg" data-msg aria-live="polite"></p>
+    <p class="g-explain" data-explain aria-live="polite" hidden></p>
+
+    <div class="g-result" data-result hidden>
+      <span class="g-eyebrow">Every exam scheduled!</span>
+      <div class="g-result-big g-mono" data-result-big></div>
+      <p data-result-detail></p>
+      <p class="g-result-extra" data-result-extra></p>
+      {{ partial "games/save-form.html" "es" }}
+      <div class="g-actions">
+        <button type="button" class="g-btn" data-watch>Watch a computer solve it</button>
+        <button type="button" class="g-btn g-btn-ghost" data-next></button>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "games/board.html" (dict "id" "examslots-board" "note" "Fastest time to schedule every exam with no clashes, measured by the server.") }}
+
+  <div class="g-about article-style">{{ .Content }}</div>
+</div>
+
+<script src="{{ $sjs.RelPermalink }}" integrity="{{ $sjs.Data.Integrity }}"></script>
+<script src="{{ $core.RelPermalink }}" integrity="{{ $core.Data.Integrity }}"></script>
+<script src="{{ $game.RelPermalink }}" integrity="{{ $game.Data.Integrity }}"></script>
+{{- end -}}

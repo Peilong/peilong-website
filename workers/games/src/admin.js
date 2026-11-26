@@ -88,11 +88,11 @@ export const ADMIN_PAGE = `<!doctype html>
     if (!data.scores.length) { var tr0 = document.createElement('tr'); cell(tr0, 'No scores yet.'); rows.appendChild(tr0); }
     data.scores.forEach(function (s) {
       var tr = document.createElement('tr'); if (s.hidden) tr.className = 'hidden';
-      cell(tr, { route: 'Campus Route', word: 'Code Word', logic: 'Logic Lights', cipher: 'Crack the Cipher' }[s.game] || 'Bit Flip');
+      cell(tr, { route: 'Campus Route', word: 'Code Word', logic: 'Logic Lights', cipher: 'Crack the Cipher', slots: 'Exam Slots' }[s.game] || 'Bit Flip');
       cell(tr, s.name, 'name');
       cell(tr, s.game === 'route' ? time(s.ms) + ' (' + s.day + ')'
              : s.game === 'word' ? s.score + ' guesses, ' + time(s.ms) + ' (' + s.day + ')'
-             : s.game === 'logic' ? time(s.ms) + ' (' + s.day + ')'
+             : s.game === 'logic' || s.game === 'slots' ? time(s.ms) + ' (' + s.day + ')'
              : s.game === 'cipher' ? time(s.ms) + ', ' + s.score + ' hints (' + s.day + ')' : s.score + ' pts', 'num');
       cell(tr, new Date(s.at).toLocaleString());
       var td = cell(tr, '', 'actions');

@@ -6,6 +6,7 @@
 //   Logic Lights:  POST /logic/start, /logic/check, /logic/submit, GET /logic/leaderboard   (see logic.js)
 //   Crack the Cipher: POST /cipher/start, /cipher/check, /cipher/hint, /cipher/submit,
 //                  GET /cipher/leaderboard, /cipher/past, /cipher/reveal   (see cipher.js)
+//   Exam Slots:    POST /slots/start, /slots/check, /slots/submit, GET /slots/leaderboard   (see slots.js)
 //   Shared:        POST /check-name  -> live name feedback while a player types
 //   Admin:         GET /admin (page), /admin/api/* (needs the ADMIN_KEY secret)
 import * as bitflip from './bitflip.js';
@@ -13,6 +14,7 @@ import * as route from './campusroute.js';
 import * as word from './codeword.js';
 import * as logic from './logic.js';
 import * as cipher from './cipher.js';
+import * as slots from './slots.js';
 import { json, corsHeaders, readJson, nameCheck, SECURITY_HEADERS } from './common.js';
 import { ADMIN_PAGE } from './admin.js';
 
@@ -44,6 +46,10 @@ const ROUTES = {
   'GET /cipher/leaderboard': async (req, env) => json({ boards: await cipher.boards(env) }),
   'GET /cipher/past': cipher.past,
   'GET /cipher/reveal': cipher.reveal,
+  'POST /slots/start': slots.start,
+  'POST /slots/check': slots.check,
+  'POST /slots/submit': slots.submit,
+  'GET /slots/leaderboard': async (req, env) => json({ boards: await slots.boards(env) }),
   'POST /check-name': nameCheck
 };
 
@@ -78,19 +84,20 @@ export default {
       env.DB.prepare('DELETE FROM route_runs WHERE started_at < ?').bind(before),
       env.DB.prepare('DELETE FROM word_runs WHERE started_at < ?').bind(before),
       env.DB.prepare('DELETE FROM logic_runs WHERE started_at < ?').bind(before),
-      env.DB.prepare('DELETE FROM cipher_runs WHERE started_at < ?').bind(before)
+      env.DB.prepare('DELETE FROM cipher_runs WHERE started_at < ?').bind(before),
+      env.DB.prepare('DELETE FROM slots_runs WHERE started_at < ?').bind(before)
     ]);
   }
 };
 
 /* ---------- admin API (Authorization: Bearer <ADMIN_KEY>) ---------- */
 
-const SCORE_TABLES = { bitflip: 'scores', route: 'route_scores', word: 'word_scores', logic: 'logic_scores', cipher: 'cipher_scores' };
+const SCORE_TABLES = { bitflip: 'scores', route: 'route_scores', word: 'word_scores', logic: 'logic_scores', cipher: 'cipher_scores', slots: 'slots_scores' };
 
 async function admin(request, env, path) {
   if (!(await isAdmin(request, env))) return json({ error: 'Wrong or missing admin key.' }, 401);
   if (path === '/admin/api/scores' && request.method === 'GET') {
-    const [b, r, w, l, c, blocked] = await env.DB.batch([
+    const [b, r, w, l, c, x, blocked] = await env.DB.batch([
       env.DB.prepare(`SELECT 'bitflip' AS game, id, name, name_key AS nameKey, score, NULL AS ms, NULL AS day,
                              created_at AS at, hidden FROM scores ORDER BY id DESC LIMIT 200`),
       env.DB.prepare(`SELECT 'route' AS game, id, name, name_key AS nameKey, NULL AS score, ms, date_key AS day,
@@ -101,9 +108,11 @@ async function admin(request, env, path) {
                              created_at AS at, hidden FROM logic_scores ORDER BY id DESC LIMIT 200`),
       env.DB.prepare(`SELECT 'cipher' AS game, id, name, name_key AS nameKey, hints AS score, ms, date_key AS day,
                              created_at AS at, hidden FROM cipher_scores ORDER BY id DESC LIMIT 200`),
+      env.DB.prepare(`SELECT 'slots' AS game, id, name, name_key AS nameKey, NULL AS score, ms, date_key AS day,
+                             created_at AS at, hidden FROM slots_scores ORDER BY id DESC LIMIT 200`),
       env.DB.prepare('SELECT name_key AS nameKey, blocked_at AS at FROM blocked_names ORDER BY blocked_at DESC')
     ]);
-    const scores = b.results.concat(r.results, w.results, l.results, c.results).sort((x, y) => y.at - x.at).slice(0, 300);
+    const scores = b.results.concat(r.results, w.results, l.results, c.results, x.results).sort((x, y) => y.at - x.at).slice(0, 300);
     return json({ scores, blocked: blocked.results });
   }
   if (path === '/admin/api/hide' && request.method === 'POST') {
@@ -123,7 +132,8 @@ async function admin(request, env, path) {
         env.DB.prepare('UPDATE route_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
         env.DB.prepare('UPDATE word_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
         env.DB.prepare('UPDATE logic_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
-        env.DB.prepare('UPDATE cipher_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey)
+        env.DB.prepare('UPDATE cipher_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey),
+        env.DB.prepare('UPDATE slots_scores SET hidden = 1 WHERE name_key = ?').bind(body.nameKey)
       ]);
     } else {
       await env.DB.prepare('DELETE FROM blocked_names WHERE name_key = ?').bind(body.nameKey).run();

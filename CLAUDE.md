@@ -58,10 +58,15 @@ rules for Claude Code sessions, local and cloud. Keep it free of anything privat
   then repeats). Every quotation must be verified word for word against the book's Project Gutenberg text (use the
   mirror gutenberg.pglaf.org; the main site blocks scripts). The day's letter swap is an HMAC of the date with the
   `HASH_SALT` secret, so rotating that secret changes the live puzzle.
+- **Exam Slots** (`/games/exam-slots/`): daily graph-coloring puzzle: courses joined by "shares students" lines get exam
+  slots so no line joins two courses in the same slot, using the fewest slots (3; Thursdays 4; easiest Monday, hardest
+  Sunday by a simulated-solver difficulty score). Generated from the date in `core.js` (lines never cross); practice at
+  3 levels; "Watch a computer solve it" shows backtracking. `layouts/games/examslots.html`, code in `assets/games/exam-slots/`.
+  After changing the generator or layout sizes, recheck pill overlaps on wide and phone layouts.
 - **Shared parts for new games**: `assets/games/shared.{js,css}` (server calls, saved results, streak, name form,
   leaderboard; page wrapper class `.game-page`), partials `games/board.html` and `games/save-form.html`, and server
-  helpers in `workers/games/src/common.js` (`startRun`, `getRun`, `saveDaily`, `dailyBoards`). Logic Lights and
-  Crack the Cipher use them; the older three games have their own copies.
+  helpers in `workers/games/src/common.js` (`startRun`, `getRun`, `saveDaily`, `dailyBoards`). Logic Lights,
+  Crack the Cipher and Exam Slots use them; the older three games have their own copies.
 - Each game's `core.js` holds its rules and scoring as pure functions and is loaded by the server too, so change rules
   there only. Changing a puzzle generator or `EPOCH` changes the live daily puzzle: redeploy the Worker with it.
 - **Leaderboards**: one Cloudflare Worker + D1 for all games in `workers/games/` (still deployed under its first name

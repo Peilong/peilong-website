@@ -117,3 +117,17 @@ CREATE TABLE IF NOT EXISTS cipher_scores (
 );
 CREATE INDEX IF NOT EXISTS cipher_scores_day ON cipher_scores (date_key, ms);
 CREATE UNIQUE INDEX IF NOT EXISTS cipher_scores_day_name ON cipher_scores (date_key, name_key);
+
+-- Exam Slots (daily scheduling puzzle). Ranked by server-measured time.
+CREATE TABLE IF NOT EXISTS slots_runs (
+  id TEXT PRIMARY KEY, date_key TEXT NOT NULL, started_at INTEGER NOT NULL, ip_hash TEXT NOT NULL,
+  solved_ms INTEGER, solved_at INTEGER, submitted INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS slots_runs_ip_time ON slots_runs (ip_hash, started_at);
+CREATE INDEX IF NOT EXISTS slots_runs_time ON slots_runs (started_at);
+CREATE TABLE IF NOT EXISTS slots_scores (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, date_key TEXT NOT NULL, name TEXT NOT NULL, name_key TEXT NOT NULL,
+  ms INTEGER NOT NULL, created_at INTEGER NOT NULL, hidden INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS slots_scores_day ON slots_scores (date_key, ms);
+CREATE UNIQUE INDEX IF NOT EXISTS slots_scores_day_name ON slots_scores (date_key, name_key);
