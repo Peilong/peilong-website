@@ -11,21 +11,31 @@ HUGO_VERSION=0.66.0
 repo="${CLAUDE_PROJECT_DIR:-$(cd "$(dirname "$0")/.." && pwd)}"
 cd "$repo" || exit 0
 
-fail() {
+warn() {
   echo "cloud-setup: $1"
   echo "cloud-setup: if this is a network block, set the environment's network access to Full on claude.ai/code."
-  exit 0
 }
+fail() { warn "$1"; exit 0; }
 
-# 1. Theme at the pinned commit (the cloud clone may not check out submodules).
+# 1. Theme at the pinned commit (the cloud clone may not check out submodules). Plain git first: cloud sessions can
+#    reach github.com with git, but their proxy refuses codeload.github.com (the tarball), so that is only a fallback.
+#    A theme failure doesn't stop the Hugo install below.
 if [ ! -f themes/academic/theme.toml ]; then
   sha=$(git ls-tree HEAD themes/academic | awk '{print $3}')
-  [ -n "$sha" ] || fail "could not read the pinned theme commit"
-  rm -rf themes/academic && mkdir -p themes/academic
-  curl -fsSL "https://codeload.github.com/gcushen/hugo-academic/tar.gz/${sha}" \
-    | tar xz --strip-components=1 -C themes/academic \
-    || fail "theme download failed"
-  echo "cloud-setup: theme ready (${sha:0:7})"
+  if [ -z "$sha" ]; then
+    warn "could not read the pinned theme commit"
+  elif git submodule update --init --depth 1 themes/academic >/dev/null 2>&1 && [ -f themes/academic/theme.toml ]; then
+    echo "cloud-setup: theme ready via git (${sha:0:7})"
+  else
+    git submodule deinit -f themes/academic >/dev/null 2>&1
+    rm -rf themes/academic ".git/modules/themes/academic" && mkdir -p themes/academic
+    if curl -fsSL "https://codeload.github.com/gcushen/hugo-academic/tar.gz/${sha}" \
+         | tar xz --strip-components=1 -C themes/academic 2>/dev/null && [ -f themes/academic/theme.toml ]; then
+      echo "cloud-setup: theme ready via download (${sha:0:7})"
+    else
+      warn "theme not installed: git and the tarball download both failed"
+    fi
+  fi
 fi
 
 # 2. Hugo 0.66.0, checksum verified.

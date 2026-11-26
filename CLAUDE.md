@@ -83,9 +83,11 @@ rules for Claude Code sessions, local and cloud. Keep it free of anything privat
   Peilong/Peilong.github.io when the output changed. It can also be started by hand (Actions → Scheduled
   publish → Run workflow).
 - **Cloud sessions** (Claude Code on the web): `scripts/cloud-setup.sh` installs Hugo 0.66.0 and the theme at
-  session start. Work on a branch and open a pull request; the owner merges it, and the next workflow run
-  publishes. Do not populate or commit `public/` there. To check a build, run `hugo -d /tmp/site-check`, then
-  `grep -rIl -i "lip@etown" /tmp/site-check` must print nothing.
+  session start (theme via `git submodule`, because the cloud proxy blocks codeload.github.com tarballs). Work on a
+  branch and open a pull request; the owner merges it, and the next workflow run publishes. Do not populate or commit
+  `public/` there. To check a build, run `hugo -d /tmp/site-check`, then `grep -rIl -i "lip@etown" /tmp/site-check`
+  must print nothing. If a push is refused with 403, the Claude GitHub App lacks access to this repo: the owner must
+  grant it (github.com/settings/installations → Claude → Configure); retrying won't help.
 - **Local sessions**: `public/` is a submodule of Peilong.github.io. Run `git -C public pull` first (the
   workflow also commits there), build with `hugo`, then commit and push inside `public/`, and push this repo.
   Local copies show a 644→755 mode change on nearly every file, so use `git -c core.fileMode=false add ...`.
