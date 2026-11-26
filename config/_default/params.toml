@@ -281,3 +281,11 @@ plugins_js  = []
   # from the embed code they give after signup. Leave empty to hide the map. Colors and size are set in
   # layouts/partials/visitor_map.html, not in their wizard.
   mapmyvisitors_id = "plfo7kxgDuGVyltSxPSIaaKelcsH_Ii7IP52datxGys"
+
+############################
+## Games
+############################
+[games]
+  # Leaderboard API for every game: the Cloudflare Worker in workers/games/ (admin page: <this URL>/admin).
+  # Empty = the games still work, with no leaderboards or name entry.
+  api = "https://bitflip-leaderboard.bitflip-leaderboard.workers.dev"

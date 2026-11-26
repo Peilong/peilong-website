@@ -1,0 +1,106 @@
+{{- define "main" -}}
+{{- /* Bit Flip game page (content/games/bitflip/index.md sets layout: bitflip).
+       Game files: assets/games/bitflip/ (core.js = rules and scoring, shared with the future leaderboard server). */ -}}
+{{ $css := resources.Get "games/bitflip/bitflip.css" | fingerprint }}
+{{ $core := resources.Get "games/bitflip/core.js" | fingerprint }}
+{{ $game := resources.Get "games/bitflip/bitflip.js" | fingerprint }}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<div class="universal-wrapper bitflip-page">
+  <a class="games-back" href="{{ "games/" | relURL }}">&larr; All games</a>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="bf-lead">{{ . }}</p>{{ end }}
+
+  <div class="bitflip" id="bitflip" data-phase="ready" data-api="{{ with site.Params.games }}{{ .api }}{{ end }}">
+    <div class="bf-hud">
+      <div class="bf-stat">
+        <span class="bf-label">Score</span>
+        <span class="bf-value bf-mono" data-score>0</span>
+      </div>
+      <div class="bf-stat">
+        <span class="bf-label">Streak</span>
+        <span class="bf-streak-row">
+          <span class="bf-value bf-mono" data-mult>&times;1</span>
+          <span class="bf-pips" aria-hidden="true"><span class="bf-pip" data-pip></span><span class="bf-pip" data-pip></span><span class="bf-pip" data-pip></span></span>
+        </span>
+      </div>
+      <div class="bf-stat">
+        <span class="bf-label">Time</span>
+        <span class="bf-value bf-mono" data-time>60</span>
+      </div>
+    </div>
+    <div class="bf-timebar" aria-hidden="true"><span data-timebar></span></div>
+
+    <div class="bf-stage">
+      <div class="bf-play">
+        <div class="bf-target bf-mono" data-goal></div>
+        <div class="bf-sumline bf-mono" data-sumline><span data-binary>00000000</span> = <span data-sum>0</span></div>
+      </div>
+      <div class="bf-float bf-mono" data-float aria-hidden="true"></div>
+      <div class="bf-sr" data-live aria-live="polite"></div>
+
+      <div class="bf-overlay" data-screen="ready">
+        <span class="bf-eyebrow">How to play</span>
+        <h2>Make the switches add up to the number.</h2>
+        <p>Each switch is worth the number above it: to make 37, turn on 32, 4 and 1. You have 60 seconds.
+           Answer within 5 seconds to build a streak and multiply your points.</p>
+        <button type="button" class="bf-btn" data-start>Start</button>
+        <p class="bf-hint bf-keyboard-only">On a keyboard: keys 1&ndash;8 flip the switches, Enter starts.</p>
+      </div>
+      <div class="bf-overlay" data-screen="count" hidden>
+        <span class="bf-count bf-mono" data-count>3</span>
+      </div>
+      <div class="bf-overlay" data-screen="over" hidden>
+        <span class="bf-eyebrow">Time&rsquo;s up</span>
+        <span class="bf-final bf-mono" data-final-score>0</span>
+        <p data-final-stats></p>
+        <p class="bf-best" data-best></p>
+        <form class="bf-save" data-save hidden novalidate>
+          <label class="bf-save-label" for="bf-name">Put your score on the leaderboard</label>
+          <div class="bf-save-row">
+            <input id="bf-name" data-name type="text" maxlength="16" autocomplete="nickname" autocapitalize="words"
+                   spellcheck="false" enterkeyhint="done" placeholder="Your name">
+            <button type="submit" class="bf-btn bf-btn-small" data-save-btn>Save</button>
+          </div>
+          <p class="bf-save-msg" data-save-msg aria-live="polite"></p>
+        </form>
+        <p class="bf-save-note" data-save-note hidden></p>
+        <button type="button" class="bf-btn" data-start data-again>Play again</button>
+      </div>
+    </div>
+
+    <div class="bf-switches" role="group" aria-label="Switches">
+      {{- range $i, $v := slice 128 64 32 16 8 4 2 1 }}
+      <button type="button" class="bf-switch" role="switch" aria-checked="false" aria-label="{{ $v }}" data-value="{{ $v }}" disabled>
+        <kbd class="bf-key" aria-hidden="true">{{ add $i 1 }}</kbd>
+        <span class="bf-switch-value bf-mono">{{ $v }}</span>
+        <span class="bf-toggle" aria-hidden="true"><span class="bf-knob"></span></span>
+        <span class="bf-bit bf-mono" aria-hidden="true">0</span>
+      </button>
+      {{- end }}
+    </div>
+  </div>
+
+  <section class="bf-board" id="bitflip-board" aria-labelledby="bf-board-title" hidden>
+    <div class="bf-board-head">
+      <h2 id="bf-board-title">Leaderboard</h2>
+      <div class="bf-tabs" role="tablist" aria-label="Leaderboard period">
+        <button type="button" class="bf-tab" role="tab" aria-selected="true" data-board-tab="today">Today</button>
+        <button type="button" class="bf-tab" role="tab" aria-selected="false" data-board-tab="week" tabindex="-1">7 days</button>
+        <button type="button" class="bf-tab" role="tab" aria-selected="false" data-board-tab="all" tabindex="-1">All time</button>
+      </div>
+    </div>
+    <ol class="bf-board-list" data-board-list></ol>
+    <p class="bf-board-empty" data-board-empty>Loading&hellip;</p>
+    <p class="bf-board-note">Top 10, best score per name. &ldquo;Today&rdquo; follows Eastern time. Only the name you
+       type and your score are saved, and names with bad words are refused or removed.</p>
+  </section>
+
+  <div class="bf-about article-style">{{ .Content }}</div>
+</div>
+
+<script src="{{ $core.RelPermalink }}" integrity="{{ $core.Data.Integrity }}"></script>
+<script src="{{ $game.RelPermalink }}" integrity="{{ $game.Data.Integrity }}"></script>
+{{- end -}}

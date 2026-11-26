@@ -44,6 +44,11 @@
   weight = 70
 
 [[main]]
+  name = "Games"
+  url = "games/"   # Games page: one card per game (layouts/games/list.html)
+  weight = 75
+
+[[main]]
   name = "Contact"
   url = "#contact"
   weight = 80

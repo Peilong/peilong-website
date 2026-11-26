@@ -1,0 +1,29 @@
+{{- define "main" -}}
+{{- /* Games landing page: one card per game in content/games/ (ordered by weight). See content/games/_index.md. */ -}}
+{{ $css := resources.Get "games/games.css" | fingerprint }}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<div class="universal-wrapper games-page">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="gp-lead">{{ . }}</p>{{ end }}
+
+  <div class="gp-grid">
+    {{ range .Pages.ByWeight }}
+    <a class="gp-card" href="{{ .RelPermalink }}">
+      <div class="gp-art" aria-hidden="true">{{ partial "games/card-art.html" .Params.card_art }}</div>
+      <div class="gp-body">
+        <h2 class="gp-title">{{ .Title }}</h2>
+        <p class="gp-tagline">{{ with .Params.card_tagline }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}</p>
+        {{ with .Params.card_tags }}<ul class="gp-tags">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        <span class="gp-play">Play
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  {{ with .Content }}<div class="gp-about article-style">{{ . }}</div>{{ end }}
+</div>
+{{- end -}}

@@ -1,0 +1,108 @@
+{{- define "main" -}}
+{{- /* Campus Route game page (content/games/campus-route/index.md sets layout: campusroute).
+       Game files: assets/games/campus-route/ (core.js = map, daily puzzle, route checks, Dijkstra). */ -}}
+{{ $css := resources.Get "games/campus-route/campus-route.css" | fingerprint }}
+{{ $core := resources.Get "games/campus-route/core.js" | fingerprint }}
+{{ $game := resources.Get "games/campus-route/campus-route.js" | fingerprint }}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<div class="universal-wrapper campusroute-page">
+  <a class="games-back" href="{{ "games/" | relURL }}">&larr; All games</a>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="cr-lead">{{ . }}</p>{{ end }}
+
+  <div class="cr-modes" role="tablist" aria-label="Puzzle type">
+    <button type="button" class="cr-mode" role="tab" aria-selected="true" data-mode="daily">Today&rsquo;s route</button>
+    <button type="button" class="cr-mode" role="tab" aria-selected="false" data-mode="practice" tabindex="-1">Practice</button>
+  </div>
+
+  <div class="campusroute" id="campusroute" data-mode="daily" data-api="{{ with site.Params.games }}{{ .api }}{{ end }}">
+    <div class="cr-top">
+      <div class="cr-trip">
+        <span class="cr-label" data-title>Today&rsquo;s route</span>
+        <div class="cr-ends">
+          <span class="cr-chip cr-chip-start" data-from></span>
+          <svg class="cr-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+          <span class="cr-chip cr-chip-goal" data-to></span>
+        </div>
+      </div>
+      <div class="cr-stat">
+        <span class="cr-label">Time</span>
+        <span class="cr-value cr-mono" data-clock>0:00</span>
+      </div>
+    </div>
+
+    <div class="cr-mapwrap">
+      <svg class="cr-map" data-map role="group" aria-label="Campus map"></svg>
+      <div class="cr-intro" data-intro hidden>
+        <span class="cr-eyebrow" data-intro-eyebrow>Today&rsquo;s route</span>
+        <h2>Find the fastest walk from <span data-intro-from></span> to <span data-intro-to></span>.</h2>
+        <p>Tap buildings one at a time to walk along the paths. The number on each path is how many minutes it
+           takes. When you reach the goal, check your route. A wrong guess adds 30 seconds.</p>
+        <button type="button" class="cr-btn" data-start>Start</button>
+        <p class="cr-hint">The clock starts when you press Start.</p>
+      </div>
+    </div>
+
+    <p class="cr-explain" data-explain aria-live="polite" hidden></p>
+
+    <div class="cr-routebar">
+      <div class="cr-route-text"><span class="cr-label">Your route</span><span data-route-text></span></div>
+      <div class="cr-route-total cr-mono" data-route-total>0 min</div>
+    </div>
+    <p class="cr-msg" data-msg aria-live="polite"></p>
+
+    <div class="cr-actions" data-actions>
+      <button type="button" class="cr-btn cr-btn-ghost" data-undo>Undo</button>
+      <button type="button" class="cr-btn cr-btn-ghost" data-clear>Start over</button>
+      <button type="button" class="cr-btn" data-check disabled>Check route</button>
+    </div>
+
+    <div class="cr-result" data-result hidden>
+      <span class="cr-eyebrow" data-result-eyebrow></span>
+      <div class="cr-result-big cr-mono" data-result-big></div>
+      <p class="cr-result-detail" data-result-detail></p>
+      <p class="cr-result-extra" data-result-extra></p>
+      <form class="cr-save" data-save hidden novalidate>
+        <label class="cr-save-label" for="cr-name">Put your time on today&rsquo;s board</label>
+        <div class="cr-save-row">
+          <input id="cr-name" data-name type="text" maxlength="16" autocomplete="nickname" autocapitalize="words"
+                 spellcheck="false" enterkeyhint="done" placeholder="Your name">
+          <button type="submit" class="cr-btn cr-btn-small" data-save-btn>Save</button>
+        </div>
+        <p class="cr-save-msg" data-save-msg aria-live="polite"></p>
+      </form>
+      <p class="cr-save-note" data-save-note hidden></p>
+      <div class="cr-result-actions">
+        <button type="button" class="cr-btn" data-watch>Watch a computer solve it</button>
+        <button type="button" class="cr-btn cr-btn-ghost" data-next></button>
+      </div>
+    </div>
+
+    <p class="cr-giveup" data-giveup><button type="button" class="cr-link" data-reveal>Show me the answer</button></p>
+  </div>
+
+  <section class="cr-board" id="campusroute-board" aria-labelledby="cr-board-title" hidden>
+    <div class="cr-board-head">
+      <h2 id="cr-board-title">Leaderboard</h2>
+      <div class="cr-tabs" role="tablist" aria-label="Leaderboard">
+        <button type="button" class="cr-tab" role="tab" aria-selected="true" data-board-tab="today">Today</button>
+        <button type="button" class="cr-tab" role="tab" aria-selected="false" data-board-tab="yesterday" tabindex="-1">Yesterday</button>
+        <button type="button" class="cr-tab" role="tab" aria-selected="false" data-board-tab="days" tabindex="-1">Most days</button>
+      </div>
+    </div>
+    <ol class="cr-board-list" data-board-list></ol>
+    <p class="cr-board-empty" data-board-empty>Loading&hellip;</p>
+    <p class="cr-board-note">Fastest correct routes on the day&rsquo;s puzzle, timed by the server, with 30 seconds added
+       per wrong guess. Each name counts once a day; &ldquo;Most days&rdquo; counts the days a name made the board. Only
+       the name you type and your time are saved, and names with bad words are refused or removed.</p>
+  </section>
+
+  <div class="cr-about article-style">{{ .Content }}</div>
+</div>
+
+<script src="{{ $core.RelPermalink }}" integrity="{{ $core.Data.Integrity }}"></script>
+<script src="{{ $game.RelPermalink }}" integrity="{{ $game.Data.Integrity }}"></script>
+{{- end -}}

@@ -33,15 +33,61 @@ rules for Claude Code sessions, local and cloud. Keep it free of anything privat
   Manager (double counting).
 - Design: keep Etown blue and rounded shapes; avoid generic default fonts and icon tiles.
 
+## Games
+
+- **Games page** (`/games/`, menu "Games"): `content/games/_index.md` + `layouts/games/list.html` + `assets/games/games.css`.
+  Each game is a page in `content/games/<game>/`; its card comes from front matter (`weight`, `card_tagline`,
+  `card_tags`, `card_art`), and card drawings live in `layouts/partials/games/card-art.html`. Each game page links back.
+- **Bit Flip** (`/games/bitflip/`): `layouts/games/bitflip.html`, code in `assets/games/bitflip/`.
+- **Campus Route** (`/games/campus-route/`): daily shortest-path puzzle on a simplified Elizabethtown College map
+  (15 real buildings, positions from the campus map, spread out to be tappable). `layouts/games/campusroute.html`, code
+  in `assets/games/campus-route/`. Each day's puzzle comes from the Eastern date; Route #1 = 2026-11-25 (`EPOCH`).
+  Map labels and minute numbers are placed automatically to avoid overlaps; after moving a building, check all screen
+  sizes for overlaps.
+- **Code Word** (`/games/code-word/`): daily computing-term word puzzle (4–7 letters, one more guess than letters;
+  marks: filled dot right spot, ring elsewhere, dash absent). `layouts/games/codeword.html`, code in
+  `assets/games/code-word/`. The answers are secret: `workers/games/private/codeword-terms.json` (word + plain-language
+  explanation, in schedule order from `EPOCH` 2026-11-25, repeating after the last) is git-ignored and exists only on
+  the owner's Mac and in the deployed Worker. Never commit it or put answers in page code. Guess dictionary:
+  `workers/games/data/words.txt` (public-domain ENABLE + answers + modern tech words); a new answer must be in it.
+- **Logic Lights** (`/games/logic-lights/`): daily circuit (AND/OR/NOT, XOR from Friday; easiest Monday, hardest
+  Sunday) generated from the date; light the bulb with the fewest switches. Practice at 3 levels; "Watch a computer
+  solve it" tries every combination.
+- **Crack the Cipher** (`/games/cipher/`): daily substitution-cipher quotation. The quotations are secret like Code
+  Word's: `workers/games/private/cipher-quotes.json` (git-ignored; schedule order from `EPOCH` 2026-11-25; 60 quotes,
+  then repeats). Every quotation must be verified word for word against the book's Project Gutenberg text (use the
+  mirror gutenberg.pglaf.org; the main site blocks scripts). The day's letter swap is an HMAC of the date with the
+  `HASH_SALT` secret, so rotating that secret changes the live puzzle.
+- **Exam Slots** (`/games/exam-slots/`): daily graph-coloring puzzle: courses joined by "shares students" lines get exam
+  slots so no line joins two courses in the same slot, using the fewest slots (3; Thursdays 4; easiest Monday, hardest
+  Sunday by a simulated-solver difficulty score). Generated from the date in `core.js` (lines never cross); practice at
+  3 levels; "Watch a computer solve it" shows backtracking. `layouts/games/examslots.html`, code in `assets/games/exam-slots/`.
+  After changing the generator or layout sizes, recheck pill overlaps on wide and phone layouts.
+- **Shared parts for new games**: `assets/games/shared.{js,css}` (server calls, saved results, streak, name form,
+  leaderboard; page wrapper class `.game-page`), partials `games/board.html` and `games/save-form.html`, and server
+  helpers in `workers/games/src/common.js` (`startRun`, `getRun`, `saveDaily`, `dailyBoards`). Logic Lights,
+  Crack the Cipher and Exam Slots use them; the older three games have their own copies.
+- Each game's `core.js` holds its rules and scoring as pure functions and is loaded by the server too, so change rules
+  there only. Changing a puzzle generator or `EPOCH` changes the live daily puzzle: redeploy the Worker with it.
+- **Leaderboards**: one Cloudflare Worker + D1 for all games in `workers/games/` (still deployed under its first name
+  `bitflip-leaderboard`; API URL in `params.toml` `[games] api`; empty = no leaderboards). The server deals seeds /
+  starts clocks, re-checks results with `core.js`, and enforces the name rules (`src/names.js`: 2–16 letters/numbers,
+  profanity filter incl. leetspeak and spaced-out letters). Admin page: `<api>/admin` (hide entries, block names, all
+  games); its key is kept privately by the owner.
+- Worker changes: `cd workers/games && npm test && npx wrangler deploy` (needs the owner's Cloudflare login, so deploy
+  from the owner's Mac, not from a cloud session). Schema: `schema.sql`. Delete any test entries from the live boards.
+
 ## Publishing
 
 - `.github/workflows/scheduled-publish.yml` builds the site daily at 12:15 UTC and pushes to
   Peilong/Peilong.github.io when the output changed. It can also be started by hand (Actions → Scheduled
   publish → Run workflow).
 - **Cloud sessions** (Claude Code on the web): `scripts/cloud-setup.sh` installs Hugo 0.66.0 and the theme at
-  session start. Work on a branch and open a pull request; the owner merges it, and the next workflow run
-  publishes. Do not populate or commit `public/` there. To check a build, run `hugo -d /tmp/site-check`, then
-  `grep -rIl -i "lip@etown" /tmp/site-check` must print nothing.
+  session start (theme via `git submodule`, because the cloud proxy blocks codeload.github.com tarballs). Work on a
+  branch and open a pull request; the owner merges it, and the next workflow run publishes. Do not populate or commit
+  `public/` there. To check a build, run `hugo -d /tmp/site-check`, then `grep -rIl -i "lip@etown" /tmp/site-check`
+  must print nothing. If a push is refused with 403, the Claude GitHub App lacks access to this repo: the owner must
+  grant it (github.com/settings/installations → Claude → Configure); retrying won't help.
 - **Local sessions**: `public/` is a submodule of Peilong.github.io. Run `git -C public pull` first (the
   workflow also commits there), build with `hugo`, then commit and push inside `public/`, and push this repo.
   Local copies show a 644→755 mode change on nearly every file, so use `git -c core.fileMode=false add ...`.

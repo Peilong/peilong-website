@@ -1,0 +1,97 @@
+{{- /* Card drawings for the Games page, picked by a game's card_art front matter. Colors come from games.css. */ -}}
+{{- if eq . "bitflip" -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  <text class="ga-big" x="160" y="74" text-anchor="middle">37</text>
+  {{- $on := slice false false true false false true false true -}}
+  {{- range $i, $v := slice "128" "64" "32" "16" "8" "4" "2" "1" }}
+  {{- $x := add 22 (mul $i 35) -}}
+  <g transform="translate({{ $x }} 98)">
+    <rect class="{{ if index $on $i }}ga-on{{ else }}ga-off{{ end }}" width="30" height="58" rx="9"/>
+    <text class="ga-small {{ if index $on $i }}ga-on-text{{ end }}" x="15" y="18" text-anchor="middle">{{ $v }}</text>
+    <text class="ga-bit {{ if index $on $i }}ga-on-text{{ end }}" x="15" y="46" text-anchor="middle">{{ if index $on $i }}1{{ else }}0{{ end }}</text>
+  </g>
+  {{- end }}
+</svg>
+{{- else if eq . "campusroute" -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-lawn" width="320" height="180"/>
+  <ellipse class="ga-water" cx="58" cy="172" rx="70" ry="24"/>
+  <g class="ga-road">
+    <line x1="48" y1="118" x2="105" y2="52"/><line x1="105" y1="52" x2="205" y2="60"/><line x1="105" y1="52" x2="140" y2="126"/>
+    <line x1="140" y1="126" x2="205" y2="60"/><line x1="205" y1="60" x2="270" y2="110"/>
+  </g>
+  <g class="ga-route"><line x1="48" y1="118" x2="140" y2="126"/><line x1="140" y1="126" x2="212" y2="150"/><line x1="212" y1="150" x2="270" y2="110"/></g>
+  <g class="ga-pill">
+    <rect x="62" y="74" width="20" height="16" rx="8"/><text x="72" y="82">6</text>
+    <rect x="145" y="47" width="20" height="16" rx="8"/><text x="155" y="55">3</text>
+    <rect x="228" y="76" width="20" height="16" rx="8"/><text x="238" y="84">4</text>
+  </g>
+  <g class="ga-pill ga-pill-route">
+    <rect x="84" y="114" width="20" height="16" rx="8"/><text x="94" y="122">2</text>
+    <rect x="166" y="130" width="20" height="16" rx="8"/><text x="176" y="138">1</text>
+    <rect x="231" y="122" width="20" height="16" rx="8"/><text x="241" y="130">2</text>
+  </g>
+  <circle class="ga-node ga-start" cx="48" cy="118" r="14"/>
+  <circle class="ga-node" cx="105" cy="52" r="12"/><circle class="ga-node" cx="205" cy="60" r="12"/>
+  <circle class="ga-node ga-onroute" cx="140" cy="126" r="12"/><circle class="ga-node ga-onroute" cx="212" cy="150" r="12"/>
+  <circle class="ga-node ga-goal" cx="270" cy="110" r="14"/>
+</svg>
+{{- else if eq . "codeword" -}}
+{{- /* Two guesses, SPACE then PLACE (neither is a Code Word answer). Marks: 2 right spot, 1 elsewhere, 0 not in it. */ -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  {{- range $r, $row := slice (slice "S" "P" "A" "C" "E") (slice "P" "L" "A" "C" "E") }}
+  {{- $marks := cond (eq $r 0) (slice 0 1 2 2 2) (slice 2 2 2 2 2) -}}
+  {{- range $i, $ch := $row }}
+  {{- $m := index $marks $i -}}
+  <g transform="translate({{ add 35 (mul $i 52) }} {{ add 26 (mul $r 70) }})">
+    <rect class="{{ if eq $m 2 }}ga-on{{ else if eq $m 1 }}ga-ring{{ else }}ga-off{{ end }}" width="46" height="58" rx="14"/>
+    <text class="ga-letter {{ if eq $m 2 }}ga-on-text{{ end }}" x="23" y="32" text-anchor="middle">{{ $ch }}</text>
+    <text class="ga-mark {{ if eq $m 2 }}ga-on-text{{ end }}" x="23" y="50" text-anchor="middle">{{ if eq $m 2 }}&#9679;{{ else if eq $m 1 }}&#9675;{{ else }}&ndash;{{ end }}</text>
+  </g>
+  {{- end }}
+  {{- end }}
+</svg>
+{{- else if eq . "logiclights" -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  <g class="ga-wire"><path d="M64 52C100 52 100 70 128 70"/><path d="M64 128C100 128 100 112 128 112"/><path d="M200 91C224 91 228 91 250 91"/></g>
+  <g class="ga-wire ga-wire-on"><path d="M64 52C100 52 100 70 128 70"/><path d="M200 91C224 91 228 91 250 91"/></g>
+  <rect class="ga-on" x="24" y="38" width="40" height="28" rx="14"/><circle class="ga-knob-on" cx="52" cy="52" r="10"/>
+  <rect class="ga-off" x="24" y="114" width="40" height="28" rx="14"/><circle class="ga-knob" cx="36" cy="128" r="10"/>
+  <path class="ga-gate" d="M124 58Q142 91 124 124Q172 124 202 91Q172 58 124 58Z"/>
+  <text class="ga-gate-text" x="158" y="96" text-anchor="middle">OR</text>
+  <circle class="ga-glow" cx="270" cy="91" r="34"/><circle class="ga-bulb" cx="270" cy="91" r="20"/>
+</svg>
+{{- else if eq . "cipher" -}}
+{{- /* An illustrative swap (not a real puzzle's): HELLO WORLD, partly cracked. */ -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  {{- $code := slice "Q" "X" "M" "M" "D" " " "T" "D" "W" "M" "K" -}}
+  {{- $plain := slice "H" "E" "L" "L" "O" " " "" "O" "" "L" "" -}}
+  {{- range $i, $c := $code }}{{ if ne $c " " }}
+  {{- $x := add 30 (mul $i 25) -}}
+  <text class="ga-plain" x="{{ $x }}" y="86" text-anchor="middle">{{ index $plain $i }}</text>
+  <line class="{{ if index $plain $i }}ga-slot-on{{ else }}ga-slot{{ end }}" x1="{{ sub $x 10 }}" y1="94" x2="{{ add $x 10 }}" y2="94"/>
+  <text class="ga-cipher" x="{{ $x }}" y="114" text-anchor="middle">{{ $c }}</text>
+  {{- end }}{{ end }}
+</svg>
+{{- else if eq . "examslots" -}}
+{{- /* Six courses; lines join courses that share students. Five are scheduled in three slots, one is still open. */ -}}
+<svg viewBox="0 0 320 180" role="presentation">
+  <rect class="ga-bg" width="320" height="180"/>
+  <g transform="translate(0 12)">
+  <g class="ga-edge">
+    <line x1="62" y1="54" x2="160" y2="46"/><line x1="160" y1="46" x2="258" y2="58"/><line x1="62" y1="54" x2="96" y2="128"/>
+    <line x1="160" y1="46" x2="96" y2="128"/><line x1="160" y1="46" x2="200" y2="132"/><line x1="258" y1="58" x2="200" y2="132"/>
+    <line x1="96" y1="128" x2="200" y2="132"/><line x1="258" y1="58" x2="282" y2="132"/>
+  </g>
+  {{- range slice (slice 62 54 "Art" "0") (slice 160 46 "Music" "1") (slice 258 58 "Latin" "2") (slice 96 128 "Drama" "2") (slice 200 132 "French" "0") (slice 282 132 "Ethics" "") }}
+  <g class="ga-course{{ with index . 3 }} ga-s{{ . }}{{ end }}" transform="translate({{ index . 0 }} {{ index . 1 }})">
+    <rect x="-31" y="-14" width="62" height="28" rx="14"/><text y="1" text-anchor="middle">{{ index . 2 }}</text>
+  </g>
+  {{- end }}
+  </g>
+</svg>
+{{- end -}}
